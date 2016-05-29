@@ -880,7 +880,7 @@ support:
 pages:
   - title: _(Cambridge PB Home)
     external: true
-    url: http://www.cambridgema.gov/yourbudget
+    url: http://pb.cambridgema.gov/
   - title: _(Guidelines)
     slug: guidelines
     name: guidelines
