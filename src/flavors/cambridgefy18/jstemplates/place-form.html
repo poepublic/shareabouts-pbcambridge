@@ -1,6 +1,3 @@
-        <p class="drag-marker-instructions">{{#_}}Drag the map to your location.{{/_}}</p>
-        <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to your location.{{/_}}</p>
-
         {{!-- <h4 class="">{{ place_config.title }}</h4> --}}
 
         {{!-- <p>Ideas must be for <strong>capital</strong> projects – please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines">see the guidelines here</a>.</p> --}}
@@ -14,14 +11,28 @@
             {{# place_config.items }}
 
             {{! Heading -- Separate each section by a heading }}
+
+            {{#is name 'issue_or_problem'}}
+            <h4>{{#_}}Describe your idea{{/_}}</h4>
+            {{/is}}
+
+            {{#is name 'title'}}
+            <p>{{#_}}PB funding of $700,000 can be used to support one-time capital (infrastructure) projects on City property in Cambridge Please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines" data-internal>see the guidelines here</a>.{{/_}}</p>
+
+            <p class="drag-marker-instructions">
+              {{#_}}Drag the map to a location for your idea.{{/_}}<br>
+              <small>Even if your idea is throughout the city, choose a particular place that you think of when thinking about the issue.</small>
+            </p>
+            <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to your location.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'be_a_delegate'}}
+            <p>{{#_}}After idea collection closes on July 31, volunteer Budget Delegates will work from August-November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote.{{/_}}
+            {{/is}}
+
             {{#is name 'submitter_name'}}
             <h4>{{#_}}Contact Information{{/_}}</h4>
             <p>{{#_}}Please tell us how we can contact you about your idea.{{/_}}</p>
-            {{/is}}
-
-            {{#is name 'name'}}
-            <h4>{{#_}}Describe your idea{{/_}}</h4>
-            <p>{{#_}}Ideas must be for <strong>capital</strong> projects – please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines">see the guidelines here</a>.{{/_}}</p>
             {{/is}}
 
             {{#is name 'private-age'}}
@@ -38,7 +49,7 @@
               <label for="place-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
               {{/is_authenticated}}
 
-              {{#isAny type 'textarea' 'select' 'file' 'checkbox'}}
+              {{#isAny type 'textarea' 'select' 'file' 'checkbox' 'radio'}}
               {{else}}
                 {{#is_submitter_name}}
                   {{^is_authenticated}}
@@ -68,24 +79,24 @@
               </select>
               {{/is_select}}
 
-              {{#is type 'checkbox'}}
+              {{#isAny type 'checkbox' 'radio'}}
               {{#select_item_value ../.. name}}
               {{#each options}}
                 {{#if label}}
                 <div>
                   <label>
-                    <input type="checkbox" value="{{value}}" name={{../../../../name}}>
+                    <input type="{{../../../../type}}" value="{{value}}" name={{../../../../name}}>
                     {{label}}{{#if other}}<span class="detail-text">:
                       <input type="text" name="{{../../../../../name}}-{{value}}-detail" value="{{get_value ../../../../../.. ../../../../../name}}">
                     </span>{{/if}}
                   </label>
                 </div>
                 {{else}}
-                <div><label><input type="checkbox" value="{{.}}" name={{../name}}> {{.}}</label></div>
+                <div><label><input type="{{../type}}" value="{{.}}" name={{../name}}> {{.}}</label></div>
                 {{/if}} {{! label }}
               {{/each}} {{! options }}
               {{/select_item_value}}
-              {{/is}}
+              {{/isAny}}
 
               {{#is_file}}
               <!--[if lt IE 10 ]><br>Sorry, your browser isn't compatible with our file upload method.<![endif]-->

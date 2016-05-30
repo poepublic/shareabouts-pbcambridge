@@ -575,6 +575,62 @@ place:
   submit_button_label: _(Share my idea)
   location_item_name: location
   items:
+    - prompt: _(What issues or problems would you like to fix in Cambridge?)
+      type: text
+      name: issue_or_problem
+      optional: false
+      attrs:
+        - key: required
+          value: true
+        - key: placeholder
+          value: _(Issue or problem...)
+    - prompt: _(What is the title of your idea?)
+      type: text
+      name: title
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(Idea Title...)
+        - key: size
+          value: 30
+        - key: maxlength
+          value: 100
+        - key: required
+          value: true
+    - prompt: _(How does your idea help improve life in Cambridge?)
+      type: textarea
+      name: description
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
+        - key: maxlength
+          value: 1000
+        - key: required
+          value: true
+    - prompt: _(Pick a category for your idea)
+      type: select
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Culture & Community Facilities)
+          value: culture
+        - label: _(Education)
+          value: education
+        - label: _(Environment)
+          value: environment
+        - label: _(Parks & Recreation)
+          value: parks
+        - label: _(Public Health & Safety)
+          value: health
+        - label: _(Streets & Sidewalks)
+          value: streets
+        - label: _(Transportation)
+          value: transit
+      name: location_type
+      attrs:
+        - key: required
+          value: true
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
       name: submitter_name
@@ -608,53 +664,6 @@ place:
       attrs:
         - key: size
           value: 10
-        - key: required
-          value: true
-    - prompt: _(My project idea is...)
-      type: text
-      name: name
-      optional: false
-      attrs:
-        - key: placeholder
-          value: _(...)
-        - key: size
-          value: 30
-        - key: maxlength
-          value: 100
-        - key: required
-          value: true
-    - prompt: _(My idea is needed because...)
-      type: textarea
-      name: description
-      optional: false
-      attrs:
-        - key: placeholder
-          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
-        - key: maxlength
-          value: 1000
-        - key: required
-          value: true
-    - prompt: _(Pick a category for your idea)
-      type: select
-      options:
-        - label: _(Please choose...)
-          value:
-        - label: _(Culture & Community Facilities)
-          value: culture
-        - label: _(Education)
-          value: education
-        - label: _(Environment)
-          value: environment
-        - label: _(Parks & Recreation)
-          value: parks
-        - label: _(Public Health & Safety)
-          value: health
-        - label: _(Streets & Sidewalks)
-          value: streets
-        - label: _(Transportation)
-          value: transit
-      name: location_type
-      attrs:
         - key: required
           value: true
     - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
@@ -692,7 +701,7 @@ place:
         - label: _(Other)
           value: other
           other: true
-    - prompt: _(After idea collection closes on August 31, volunteer Budget Delegates will work from September- November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote.  Would you like to volunteer as a Budget Delegate?)
+    - prompt: _(Would you like to volunteer as a Budget Delegate?)
       name: be_a_delegate
       sticky: true
       optional: false
@@ -741,7 +750,7 @@ place:
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your gender)
-      type: select
+      type: radio
       name: private-gender
       sticky: true
       optional: false
@@ -755,8 +764,9 @@ place:
           value: female
         - label: _(Male)
           value: male
-        - label: _(Other)
+        - label: _(Different gender identity)
           value: other
+          other: true
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your Race/Ethnicity)
@@ -778,7 +788,7 @@ place:
           value: hawaii-native-or-pacific-islander
         - label: _(White)
           value: white
-        - label: _(Hispanic)
+        - label: _(Hispanic or Latino/a)
           value: hispanic
         - label: _(Non-Hispanic)
           value: non-hispanic
@@ -795,56 +805,61 @@ place:
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Less than $30,000)
-          value: under30
-        - label: _($30,000 - $59,999)
-          value: 30to59
-        - label: _($60,000 - $89,999)
-          value: 60to89
-        - label: _($90,000 - $119,999)
-          value: 90to119
-        - label: _($120,000 or more)
-          value: 120ormore
-        - label: _(Prefer not to answer)
+        - label: _(Less than $35,999)
+          value: under35
+        - label: _($36,000 - $69,999)
+          value: 36to69
+        - label: _($70,000 - $105,999)
+          value: 70to105
+        - label: _($90,000 - $141,999)
+          value: 106to141
+        - label: _($142,000 or more)
+          value: 142ormore
+        - label: _(Prefer not to answer/unsure)
           value: no-answer
       name: private-income
       sticky: true
       optional: false
-    - prompt: _(Number of people in your household)
+    - prompt: _(What is your highest level of education?)
       type: select
+      optional: false
+      sticky: true
       attrs:
         - key: required
           value: true
       options:
-        - label: _(Please choose...)
-          value:
-        - label: _(1)
-          value: 1
-        - label: _(2)
-          value: 2
-        - label: _(3)
-          value: 3
-        - label: _(4)
-          value: 4
-        - label: _(5)
-          value: 5
-        - label: _(6)
-          value: 6
-        - label: _(7)
-          value: 7
-        - label: _(8)
-          value: 8
-        - label: _(9)
-          value: 9
-        - label: _(10)
-          value: 10
-        - label: _(More than 10)
-          value: more-than-10
-        - label: _(Prefer not to answer)
-          value: no-answer
-      name: private-household_size
-      sticky: true
+      - label: _(Please choose...)
+        value:
+      - label: _(Less than high school diploma)
+        value: lessthanhigh
+      - label: _(High school diploma, GED, or equivalent)
+        value: highschool
+      - label: _(Some college, no degree)
+        value: somecollege
+      - label: _(Associate’s degree)
+        value: associates
+      - label: _(Bachelor’s degree)
+        value: bachelors
+      - label: _(Graduate or professional degree)
+        value: graduate
+      - label: _(Prefer not to answer)
+        value: no-answer
+    - prompt: _(Are you a U.S. citizen?)
+      type: select
       optional: false
+      sticky: true
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(Please choose...)
+        value:
+      - label: _(Yes)
+        value: yes
+      - label: _(No)
+        value: no
+      - label: _(Prefer not to answer)
+        value: no-answer
 
 survey:
   submission_type: comments
