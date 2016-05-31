@@ -85,7 +85,7 @@
                 {{#if label}}
                 <div>
                   <label>
-                    <input type="{{../../../../type}}" value="{{value}}" name={{../../../../name}}>
+                    <input type="{{../../../../type}}" value="{{value}}" name={{../../../../name}} {{#unless ../../../../optional}}required data-group-required{{/unless}}>
                     {{label}}{{#if other}}<span class="detail-text">:
                       <input type="text" name="{{../../../../../name}}-{{value}}-detail" value="{{get_value ../../../../../.. ../../../../../name}}">
                     </span>{{/if}}

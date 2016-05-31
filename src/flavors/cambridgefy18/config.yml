@@ -771,8 +771,6 @@ place:
         - key: required
           value: true
       options:
-        - label: _(Please choose...)
-          value:
         - label: _(Female)
           value: female
         - label: _(Male)
