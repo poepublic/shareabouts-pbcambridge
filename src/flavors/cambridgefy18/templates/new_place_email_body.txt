@@ -2,8 +2,8 @@ Thanks for sharing an idea to improve Cambridge!
 
 Here's what you suggested: {{ place.properties.name }}
 
-You can see people's comments on your idea at http://shareabouts-pbcambridgefy17.herokuapp.com/{{ place.id }}.
+You can see people's comments on your idea at {{site_root}}{{ place.id }}.
 
 Volunteer as a Budget Delegate!  Help us turn these ideas into concrete project proposals. Sign up here!  http://cambridgema.nationbuilder.com/volunteer
 
-For more information on the participatory budgeting process, go to http://www.cambridgema.gov/yourbudget.
+For more information on the participatory budgeting process, go to http://pb.cambridgema.gov/.
