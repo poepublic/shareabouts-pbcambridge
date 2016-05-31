@@ -729,8 +729,6 @@ place:
         value: yes
       - label: _(No)
         value: no
-      - label: _(Maybe)
-        value: maybe
     - prompt: _(Your age)
       type: select
       name: private-age
