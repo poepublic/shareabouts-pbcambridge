@@ -631,6 +631,19 @@ place:
       attrs:
         - key: required
           value: true
+    - prompt: _(Is your idea about a specific location or the entire city?)
+      name: city_wide
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(A specific location)
+        value: no
+      - label: _(City-wide)
+        value: yes
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
       name: submitter_name
