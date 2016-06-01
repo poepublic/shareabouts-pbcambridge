@@ -733,22 +733,18 @@ place:
           value:
         - label: _(Under 18)
           value: under18
-        - label: _(18 to 29)
-          value: 18to29
-        - label: _(30 to 39)
-          value: 30to39
-        - label: _(40 to 49)
-          value: 40to49
-        - label: _(50 to 59)
-          value: 50to59
-        - label: _(60 to 69)
-          value: 60to69
-        - label: _(70 to 79)
-          value: 70to79
-        - label: _(80 to 89)
-          value: 80to89
-        - label: _(90 and older)
-          value: 90-or-older
+        - label: _(18 to 24)
+          value: 18to24
+        - label: _(25 to 34)
+          value: 25to34
+        - label: _(35 to 44)
+          value: 35to44
+        - label: _(45 to 54)
+          value: 45to54
+        - label: _(55 to 64)
+          value: 55to64
+        - label: _(65+)
+          value: 65-or-older
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your gender)
@@ -807,11 +803,11 @@ place:
           value:
         - label: _(Less than $35,999)
           value: under35
-        - label: _($36,000 - $69,999)
-          value: 36to69
-        - label: _($70,000 - $105,999)
-          value: 70to105
-        - label: _($90,000 - $141,999)
+        - label: _($36,000 - $70,999)
+          value: 36to70
+        - label: _($71,000 - $105,999)
+          value: 71to105
+        - label: _($106,000 - $141,999)
           value: 106to141
         - label: _($142,000 or more)
           value: 142ormore
