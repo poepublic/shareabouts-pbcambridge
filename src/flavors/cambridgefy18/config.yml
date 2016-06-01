@@ -646,14 +646,14 @@ place:
         - key: required
           value: true
     - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
-      type: text
+      type: tel
       name: private-phone
       sticky: true
       attrs:
         - key: size
           value: 10
     - prompt: _(Your Email (required, will NOT be shown on the map))
-      type: text
+      type: email
       name: private-email
       sticky: true
       attrs:
