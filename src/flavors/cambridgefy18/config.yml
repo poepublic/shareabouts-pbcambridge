@@ -575,15 +575,6 @@ place:
   submit_button_label: _(Share my idea)
   location_item_name: location
   items:
-    - prompt: _(What issues or problems would you like to fix in Cambridge?)
-      type: text
-      name: issue_or_problem
-      optional: false
-      attrs:
-        - key: required
-          value: true
-        - key: placeholder
-          value: _(Issue or problem...)
     - prompt: _(What is the title of your idea?)
       type: text
       name: title
