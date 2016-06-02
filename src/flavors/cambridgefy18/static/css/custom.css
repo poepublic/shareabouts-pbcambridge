@@ -205,7 +205,9 @@ input.geocode-address-field {
 #powered-by a.shareabouts-logo,
 #powered-by a.shareabouts-logo:hover,
 #powered-by a.openplans-logo,
-#powered-by a.openplans-logo:hover {
+#powered-by a.openplans-logo:hover,
+#powered-by a.poepublic-logo,
+#powered-by a.poepublic-logo:hover {
   background-color: #fff;
   color: #888;
 }
