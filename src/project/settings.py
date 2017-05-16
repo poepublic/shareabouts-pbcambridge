@@ -2,7 +2,7 @@
 import datetime
 import os.path
 
-HERE = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+HERE = os.path.dirname(__file__)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -85,6 +85,9 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+
+# Cache-busting static assets
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 ATTACHMENT_STORAGE = 'django.core.files.storage.FileSystemStorage'
 
@@ -371,6 +374,7 @@ if 'PACKAGE' not in SHAREABOUTS:
 # Help Django find any translation files.
 
 LOCALE_PATHS = (
+    os.path.join(HERE, '..', 'conf', 'locale'),
     os.path.join(HERE, '..', 'sa_web', 'locale'),
     os.path.join(HERE, '..', 'flavors', flavor, 'locale'),
 )
@@ -436,5 +440,3 @@ if SHAREABOUTS['DATASET_ROOT'].startswith('/'):
     #
 
     CELERY_RESULT_BACKEND='djcelery.backends.database:DatabaseBackend'
-
-
