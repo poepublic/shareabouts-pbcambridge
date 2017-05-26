@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block site-title %}
+<a href="http://cambridgema.nationbuilder.com/" target="_blank">CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING</a>
+{% endblock %}
+
+
+{% block meta %}
+  {% if place %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ place.properties.name }}">
+    <meta name="twitter:description" content="{{ place.properties.description }}">
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="twitter:image:src" content="{{ attachment.file }}">
+    {% endwith %}
+    {% comment %} TODO: Fill this in when we know if the username is from twitter
+      <meta name="twitter:creator" content="place.submitter.username">
+    {% endcomment %}
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ place.properties.name }}" />
+    <meta property="og:description" content="{{ place.properties.description }}" />
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="og:image" content="{{ attachment.file }}">
+    {% endwith %}
+  {% else %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ config.app.title }}">
+    <meta name="twitter:description" content="{{ config.app.meta_description }}">
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ config.app.title }}" />
+    <meta property="og:description" content="{{ config.app.meta_description }}" />
+  {% endif%}
+
+  <!-- google translate button -->
+   <meta name="google-translate-customization" content="3c552f6e53f80301-15c3ddc023b5ea89-g0cef58dda6812023-25"></meta>
+
+  <!-- This doesn't quite belong in meta, but there's nowhere else for it right now. -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Oswald:400,300,700|Lato:400,700,400italic,700italic|Bree+Serif|Josefin+Sans:700|Bitter:400,700,400italic|Open+Sans:400italic,700italic,400,700,800" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--
+  This will place content at the top of the side bar
+ -->
+{% block sidebar %}
+
+<ul class="icons legend">
+  <li class="clearfix"><img src="/static/css/images/markers/new/facilities-small.png" width="25" height="30"> {% trans 'Culture and Community Facilities' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/education-small.png" width="25" height="30"> {% trans 'Education' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/tree-small.png" width="25" height="30"> {% trans 'Environment' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/playground-small.png" width="25" height="30"> {% trans 'Parks and Recreation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/health-small.png" width="25" height="30"> {% trans 'Public Health and Safety' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/street-sidewalk-small.png" width="25" height="30"> {% trans 'Streets and Sidewalks' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/transit-small.png" width="25" height="30"> {% trans 'Transportation' %}</li>
+</ul>
+<ul class="translate legend">
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht,pt,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: '{{ settings.GOOGLE_ANALYTICS_ID }}'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </ul>
+{% endblock %}
+
+
+<!--
+  This will place content in the colophon below the map
+ -->
+{% block colophon %}
+<p id="powered-by">{% blocktrans %}Powered by{% endblocktrans %} <a href="https://github.com/openplans/shareabouts" class="shareabouts-logo" target="_blank">Shareabouts</a>, <span class="nobreak">built by <a href="" class="poepublic-logo" target="_blank">Poe<strong>Public</strong></a>.</span></p>
+{% endblock %}
+
+<!--
+  Analytics, custom JS, and such go here
+ -->
+{% block includes %}
+<script>
+var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
+Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
+  // Since this is all Chicago-specific, go ahead and specify the city.
+  if (location.toLowerCase().indexOf('Cambridge') === -1) {
+    location += ', Cambridge, MA'
+  }
+  return mapQuest_geocode.call(this, location, bounds, options);
+}
+
+var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
+Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
+  placeFormView_setLocation.call(this, locationData);
+
+  var $placeNameField = this.$('[name="name"]'),
+      $approxAddress = $placeNameField.next();
+
+  if ($approxAddress.length === 0) {
+    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
+  }
+
+  $approxAddress.html('<span class="address-label">{% trans 'Approximate location:' %}</span> ' + Handlebars.templates['location-string'](locationData));
+}
+</script>
+
+<!-- zoom to marker on click -->
+<script>
+  (function(NS, $, H) {
+
+    $(Shareabouts).on('panelshow', function(evt, app, path) {
+      $( "<br/><br/>{% trans '<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> and will help us to assess whether these maps are reaching the full diversity of our community:' %}</p>" ).insertAfter( "#place-private-volunteer" );
+      //$( "<br/><small>{% trans 'Note: City staff will review idea categories and make any revisions as needed.' %}</small>" ).insertAfter( "#place-location_type" );
+      var firstRaceItem = $('#place-private-race-amerind').parent('p');
+      $( "<br/><label>{% trans 'Your Race/Ethnicity:' %}</label>" ).insertBefore(firstRaceItem);
+    });
+
+    var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
+    NS.LayerView.prototype.onMarkerClick = function(evt) {
+      var self = this;
+      originalOnMarkerClick.apply(this, arguments);
+      if (this.map.getZoom() < this.map.getMaxZoom()-3) {
+        _.delay(function() {
+          self.map.setView(evt.latlng, self.map.getMaxZoom()-3, {
+            animate: true
+          });
+
+          self.map.invalidateSize({ animate:false, pan:false });
+        }, 200);
+      }
+    }
+
+    H.registerHelper('isAny', function(value /*, test1, test2, ..., options*/) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      var options = args.pop();
+      var tests = args;
+      var i;
+
+      for(i = 0; i < tests.length; i++) {
+        if (value === tests[i]) { return options.fn(this); }
+      }
+      return options.inverse(this);
+    });
+
+  }(Shareabouts, jQuery, Handlebars));
+</script>
+{% endblock %}
