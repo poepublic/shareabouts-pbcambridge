@@ -705,13 +705,6 @@ place:
         - label: _(Other)
           value: other
           other: true
-      options:
-      - label: _(Please choose...)
-        value:
-      - label: _(Yes)
-        value: yes
-      - label: _(No)
-        value: no
     - prompt: _(Your age)
       type: select
       name: private-age
