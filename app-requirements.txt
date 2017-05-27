@@ -14,7 +14,7 @@ django_compressor==1.6
 
 # Web interface helpers
 django-proxy>=1.0.2
-requests>=1.2.0
+requests>=2.16.1
 httpagentparser
 ujson==1.33
 
