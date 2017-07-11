@@ -826,23 +826,6 @@ place:
         value: graduate
       - label: _(Prefer not to answer)
         value: no-answer
-    - prompt: _(Are you a U.S. citizen?)
-      type: select
-      optional: false
-      name: private-citizenship
-      sticky: true
-      attrs:
-        - key: required
-          value: true
-      options:
-      - label: _(Please choose...)
-        value:
-      - label: _(Yes)
-        value: yes
-      - label: _(No)
-        value: no
-      - label: _(Prefer not to answer)
-        value: no-answer
 
 survey:
   submission_type: comments
