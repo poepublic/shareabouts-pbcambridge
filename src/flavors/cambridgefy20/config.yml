@@ -820,9 +820,9 @@ place:
         value: highschool
       - label: _(Some college, no degree)
         value: somecollege
-      - label: _(Associate’s degree)
+      - label: _(Associate's degree)
         value: associates
-      - label: _(Bachelor’s degree)
+      - label: _(Bachelor's degree)
         value: bachelors
       - label: _(Graduate or professional degree)
         value: graduate
