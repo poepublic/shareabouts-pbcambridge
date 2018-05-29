@@ -1,0 +1,130 @@
+        {{!-- <h4 class="">{{ place_config.title }}</h4> --}}
+
+        {{!-- <p>Ideas must be for <strong>capital</strong> projects – please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines">see the guidelines here</a>.</p> --}}
+
+        <form id="place-form" class="place-form clearfix">
+
+          <fieldset>
+            <input type="hidden" name="visible" value="on">
+            <input type="hidden" name="user_token" value="{{{ user_token }}}">
+
+            {{# place_config.items }}
+
+            {{! Heading -- Separate each section by a heading }}
+
+            {{#is name 'title'}}
+            <h4>{{#_}}Describe your idea{{/_}}</h4>
+            <p>{{#_}}<strong>What issues or problems would you like to fix in Cambridge?</strong> PB funding of $800,000 can be used to support one-time capital (infrastructure) projects that benefit the public and are located on City property in Cambridge. Please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines" data-internal>see the guidelines here</a>.{{/_}}</p>
+
+            <p class="drag-marker-instructions">
+              <span>{{#_}}Drag the map to a location for your idea.{{/_}}</span><br>
+              <small style="font-weight: normal;">Even if your idea pertains to multiple locations or the entire city, choose a particular place that you think of when thinking about the issue.</small>
+            </p>
+            <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to a location for your idea.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'submitter_name'}}
+            <h4>{{#_}}Contact Information{{/_}}</h4>
+            <p>{{#_}}Please tell us how we can contact you about your idea.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'private-age'}}
+            <h4>{{#_}}Personal Information{{/_}}</h4>
+            <p>{{#_}}<strong>Please tell us a little more about yourself to help us assess whether we are reaching the full diversity of our community.</strong>{{/_}}</p>
+            {{/is}}
+
+            <p class="{{ type }}">
+              {{#is_authenticated}}
+                {{^is_submitter_name}}
+                <label for="place-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
+                {{/is_submitter_name}}
+              {{^}}
+              <label for="place-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
+              {{/is_authenticated}}
+
+              {{#isAny type 'textarea' 'select' 'file' 'checkbox' 'radio'}}
+              {{else}}
+                {{#is_submitter_name}}
+                  {{^is_authenticated}}
+                    <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}} value="{{get_value ../../../.. name}}">
+                    <span class="or-sign-in">{{#_}}Or sign in with <a class="auth-inline twitter-btn" href="/users/login/twitter/">Twitter</a> <a class="auth-inline facebook-btn" href="/users/login/facebook/">Facebook</a>{{/_}}</span>
+                  {{/is_authenticated}}
+                {{^}}
+                  <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}} value="{{get_value ../../.. name}}">
+                {{/is_submitter_name}}
+              {{/isAny}}
+
+              {{#is_textarea}}
+              <textarea id="place-{{ name }}" name="{{ name }}"{{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>{{get_value ../.. name}}</textarea>
+              {{/is_textarea}}
+
+              {{#is_select}}
+              <select id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+                {{#select_item_value ../.. name}}
+                {{# options }}
+                  {{#if label}}
+                  <option value="{{value}}">{{label}}</option>
+                  {{else}}
+                  <option value="{{.}}">{{.}}</option>
+                  {{/if}}
+                {{/ options }}
+                {{/select_item_value}}
+              </select>
+              {{/is_select}}
+
+              {{#isAny type 'checkbox' 'radio'}}
+              {{#select_item_value ../.. name}}
+              {{#each options}}
+                {{#if label}}
+                <div>
+                  <label>
+                    <input type="{{../../../../type}}" value="{{value}}" name={{../../../../name}} {{#unless ../../../../optional}}required data-group-required{{/unless}}>
+                    {{label}}{{#if other}}<span class="detail-text">:
+                      <input type="text" name="{{../../../../../name}}-{{value}}-detail" value="{{get_value ../../../../../.. ../../../../../name}}">
+                    </span>{{/if}}
+                  </label>
+                </div>
+                {{else}}
+                <div><label><input type="{{../type}}" value="{{.}}" name={{../name}}> {{.}}</label></div>
+                {{/if}} {{! label }}
+              {{/each}} {{! options }}
+              {{/select_item_value}}
+              {{/isAny}}
+
+              {{#is_file}}
+              <!--[if lt IE 10 ]><br>Sorry, your browser isn't compatible with our file upload method.<![endif]-->
+              <!--[if (gt IE 9)|!(IE)]><!-->
+              <span class="fileinput-container btn btn-small{{^is_fileinput_supported}} btn-disabled{{/is_fileinput_supported}}">
+                <span>{{ inputfile_label }}</span>
+                <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}"
+                       {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}
+                       {{^is_fileinput_supported}} disabled{{/is_fileinput_supported}}>
+              </span>
+              <span class="fileinput-name">
+                {{^is_fileinput_supported}}{{#_}}Sorry, your browser doesn't support file uploads.{{/_}}{{/is_fileinput_supported}}
+              </span>
+              <!--<![endif]-->
+              {{/is_file}}
+
+              {{#if help_text }}
+              <div class="help-text place-{{ name }}-help-text">{{ help_text }}</div>
+              {{/if}}
+            </p>
+
+            {{#is name 'heard_about_pb'}}
+            <p>{{#_}}After idea collection closes on July 31, volunteer Budget Delegates will work from August-November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote. <a href="http://pb.cambridgema.gov/volunteer2" target="_blank">Click here to learn more and sign up as a Budget Delegate.</a>{{/_}}
+            {{/is}}
+
+            {{/ place_config.items }}
+          </fieldset>
+
+          <input name="save-place-btn" id="save-place-btn" type="submit" value="{{ place_config.submit_button_label }}" class="btn btn-primary submit-btn">
+
+          {{#is_authenticated}}
+            <p class="signed-in-as"><img src="{{ current_user "avatar_url" }}" class="avatar" /> {{ current_user "name" }} <a class="" href="/users/logout/">Log Out</a></p>
+          {{^}}
+          {{/is_authenticated}}
+
+          <div class="form-spinner"></div>
+
+        </form>
