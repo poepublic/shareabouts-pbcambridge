@@ -672,6 +672,19 @@ place:
           value: 10
         - key: required
           value: true
+    - prompt: _(Have you submitted an idea in a previous PB cycle?)
+      name: private-previous_participant
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(No I haven't)
+        value: no
+      - label: _(Yes I have)
+        value: yes
     - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
       type: checkbox
       name: heard_about_pb
