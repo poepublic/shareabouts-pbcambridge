@@ -672,7 +672,7 @@ place:
           value: 10
         - key: required
           value: true
-    - prompt: _(Have you submitted an idea in a previous PB cycle?)
+    - prompt: _(Have you submitted an idea in a previous participatory budgeting cycle?)
       name: private-previous_participant
       sticky: true
       optional: false
