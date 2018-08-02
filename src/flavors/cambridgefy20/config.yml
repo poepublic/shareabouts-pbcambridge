@@ -565,7 +565,7 @@ activity:
 place:
   adding_supported:
     from: '2018-05-29 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2018-08-02 00:00 -0500'  # and ends mid-October.
+    until: '2018-08-03 00:00 -0500'  # and ends mid-October.
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show Ideas as a list)
