@@ -23,10 +23,14 @@ map:
     zoom: 14
     minZoom: 13
     maxZoom: 18
+    maxBounds: [ [42.44461466242642, -71.22642517089844], [42.30971644816202, -70.99845886230469] ]
   layers:
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
+    - type: mapbox
+      style: mapbox://styles/poepublic/cjvse8hab1bum1cqitvwqtcwg
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.Cambridge/{z}/{x}/{y}.png
+      fallback:
+        url: https://api.mapbox.com/styles/v1/poepublic/cjvse8hab1bum1cqitvwqtcwg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicG9lcHVibGljIiwiYSI6ImNqdnNndXpoMTBxNTQ0YW1hdnBqbHZ1aHoifQ.YDK21j8x_K228nND9E49kg
+        attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
 
 
 place_types:
