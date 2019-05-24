@@ -496,6 +496,52 @@ p.checkbox + p.select {
 #current-filter-type.unfiltered { background: none; border: none; }
 
 
+/* ====================
+ * Location type choice
+ * ==================== */
+
+.place-location_type-field .radio-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.place-location_type-field .radio-group label {
+  margin: 0.25rem;
+}
+
+.radio-group input[name="location_type"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  top: 0;
+}
+
+input[name="location_type"] + .label-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.5rem;
+  width: 10rem;
+  height: 8rem;
+  background-position: center 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 3rem 3.6rem;
+  text-align: center;
+}
+
+input[name="location_type"][value="environment"] + .label-text { background-image: url("/static/css/images/markers/environment.png"); }
+input[name="location_type"][value="streetsmarts"] + .label-text { background-image: url("/static/css/images/markers/streetsmarts.png"); }
+input[name="location_type"][value="resources"] + .label-text { background-image: url("/static/css/images/markers/resources.png"); }
+input[name="location_type"][value="facilities"] + .label-text { background-image: url("/static/css/images/markers/facilities.png"); }
+input[name="location_type"][value="youth"] + .label-text { background-image: url("/static/css/images/markers/youth.png"); }
+
+input[name="location_type"][value="environment"]:checked + .label-text { background-color: #55a504; }
+input[name="location_type"][value="streetsmarts"]:checked + .label-text { background-color: #8ac4fa; }
+input[name="location_type"][value="resources"]:checked + .label-text { background-color: #ff78be; }
+input[name="location_type"][value="facilities"]:checked + .label-text { background-color: #aa3c1e; }
+input[name="location_type"][value="youth"]:checked + .label-text { background-color: #b5ac57; }
+
 
 
 /* =============
