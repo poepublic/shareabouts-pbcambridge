@@ -51,13 +51,11 @@
 {% block sidebar %}
 
 <ul class="icons legend">
-  <li class="clearfix"><img src="/static/css/images/markers/new/facilities-small.png" width="25" height="30"> {% trans 'Culture and Community Facilities' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/education-small.png" width="25" height="30"> {% trans 'Education' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/tree-small.png" width="25" height="30"> {% trans 'Environment' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/playground-small.png" width="25" height="30"> {% trans 'Parks and Recreation' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/health-small.png" width="25" height="30"> {% trans 'Public Health and Safety' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/street-sidewalk-small.png" width="25" height="30"> {% trans 'Streets and Sidewalks' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/transit-small.png" width="25" height="30"> {% trans 'Transportation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/environment.png" width="25" height="30"> {% trans 'Environment' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/streetsmarts.png" width="25" height="30"> {% trans 'Street Smarts' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/resources.png" width="25" height="30"> {% trans 'Community Resources' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/facilities.png" width="25" height="30"> {% trans 'Facilities, Parks & Recreation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/youth.png" width="25" height="30"> {% trans 'Youth' %}</li>
 </ul>
 <ul class="translate legend">
 <div id="google_translate_element"></div><script type="text/javascript">
@@ -81,15 +79,6 @@ function googleTranslateElementInit() {
  -->
 {% block includes %}
 <script>
-var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
-Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
-  // Since this is all Chicago-specific, go ahead and specify the city.
-  if (location.toLowerCase().indexOf('Cambridge') === -1) {
-    location += ', Cambridge, MA'
-  }
-  return mapQuest_geocode.call(this, location, bounds, options);
-}
-
 var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
 Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   placeFormView_setLocation.call(this, locationData);
@@ -105,16 +94,9 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
 }
 </script>
 
-<!-- zoom to marker on click -->
+<!-- zoom to marker on click & isAny Hadlebars helper -->
 <script>
   (function(NS, $, H) {
-
-    $(Shareabouts).on('panelshow', function(evt, app, path) {
-      $( "<br/><br/>{% trans '<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> and will help us to assess whether these maps are reaching the full diversity of our community:' %}</p>" ).insertAfter( "#place-private-volunteer" );
-      //$( "<br/><small>{% trans 'Note: City staff will review idea categories and make any revisions as needed.' %}</small>" ).insertAfter( "#place-location_type" );
-      var firstRaceItem = $('#place-private-race-amerind').parent('p');
-      $( "<br/><label>{% trans 'Your Race/Ethnicity:' %}</label>" ).insertBefore(firstRaceItem);
-    });
 
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
     NS.LayerView.prototype.onMarkerClick = function(evt) {

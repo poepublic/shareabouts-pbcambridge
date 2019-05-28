@@ -511,26 +511,20 @@ pages:
       - title: All
         external: true
         url: /filter/all
-      - title: _(Culture & Community Facilities)
-        url: /filter/culture
-        external: true
-      - title: _(Education)
-        url: /filter/education
-        external: true
       - title: _(Environment)
         url: /filter/environment
         external: true
-      - title: _(Parks & Recreation)
-        url: /filter/parks
+      - title: _(Street Smarts)
+        url: /filter/streetsmarts
         external: true
-      - title: _(Public Health & Safety)
-        url: /filter/health
+      - title: _(Community Resources)
+        url: /filter/resources
         external: true
-      - title: _(Streets & Sidewalks)
-        url: /filter/streets
+      - title: _(Facilities, Parks & Recreation)
+        url: /filter/facilities
         external: true
-      - title: _(Transportation)
-        url: /filter/transit
+      - title: _(Youth)
+        url: /filter/youth
         external: true
 
 notifications:
