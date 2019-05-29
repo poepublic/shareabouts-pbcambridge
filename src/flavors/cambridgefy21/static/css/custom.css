@@ -329,62 +329,6 @@ input.geocode-address-field {
 .description {
   font-size: 1.5em;
 }
-.approved-location-type {
-  background-color: #ffee80;
-  float: left;
-  padding: 0.5em 1em 0.5em 56px;
-  position: relative;
-  font-size: 0.85em;
-  line-height: 1.5;
-}
-.approved-location-type + h1 {
-  clear: left;
-}
-.approved-location-icon {
-  float: left;
-  width: 50px;
-  height: 60px;
-  position: absolute;
-  top: -6px;
-  left: 2px;
-  z-index: 2;
-  background-color: transparent;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.culture .approved-location-icon {
-  background-image: url(images/markers/new/facilities-small.png);
-}
-.education .approved-location-icon {
-  background-image: url(images/markers/new/education-small.png);
-}
-.environment .approved-location-icon {
-  background-image: url(images/markers/new/tree-small.png);
-}
-.housing .approved-location-icon {
-  background-image: url(images/markers/new/housing-small.png);
-}
-.parks .approved-location-icon {
-  background-image: url(images/markers/new/playground-small.png);
-}
-.health .approved-location-icon {
-  background-image: url(images/markers/new/health-small.png);
-}
-.safety .approved-location-icon {
-  background-image: url(images/markers/new/safety-small.png);
-}
-.seniors .approved-location-icon {
-  background-image: url(images/markers/new/seniors-small.png);
-}
-.streets .approved-location-icon {
-  background-image: url(images/markers/new/street-sidewalk-small.png);
-}
-.transit .approved-location-icon {
-  background-image: url(images/markers/new/transit-small.png);
-}
-.youth .approved-location-icon {
-  background-image: url(images/markers/new/youth-small.png);
-}
 
 /* Promotion: Voting & Sharing */
 .user-support label {
