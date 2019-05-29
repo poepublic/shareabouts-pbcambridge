@@ -48,18 +48,18 @@ place_types:
           weight: 2
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/environment.png
+          iconUrl: /static/css/images/markers/environment.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/environment.png
+          iconUrl: /static/css/images/markers/environment.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/environment.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconUrl: /static/css/images/markers/environment.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
@@ -77,18 +77,18 @@ place_types:
           weight: 2
       - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/streetsmarts.png
+          iconUrl: /static/css/images/markers/streetsmarts.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/streetsmarts.png
+          iconUrl: /static/css/images/markers/streetsmarts.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/streetsmarts.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconUrl: /static/css/images/markers/streetsmarts.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
@@ -106,18 +106,18 @@ place_types:
           weight: 2
       - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/resources.png
+          iconUrl: /static/css/images/markers/resources.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/resources.png
+          iconUrl: /static/css/images/markers/resources.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/resources.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconUrl: /static/css/images/markers/resources.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
@@ -135,18 +135,18 @@ place_types:
           weight: 2
       - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities.png
+          iconUrl: /static/css/images/markers/facilities.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities.png
+          iconUrl: /static/css/images/markers/facilities.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconUrl: /static/css/images/markers/facilities.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
@@ -164,18 +164,18 @@ place_types:
           weight: 2
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/youth.png
+          iconUrl: /static/css/images/markers/youth.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/youth.png
+          iconUrl: /static/css/images/markers/youth.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/youth.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconUrl: /static/css/images/markers/youth.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
