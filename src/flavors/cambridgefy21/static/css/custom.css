@@ -442,6 +442,52 @@ p.checkbox + p.select {
 
 
 /* ====================
+ * General or specific location
+ * ==================== */
+
+.place-city_wide-field .radio-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.place-city_wide-field .radio-group label {
+  margin: 0.25rem;
+}
+
+.radio-group input[name="city_wide"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  top: 0;
+}
+
+input[name="city_wide"] + .label-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.5rem;
+  width: 10rem;
+  height: 8rem;
+  background-position: center 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 3.8rem 3.6rem;
+  text-align: center;
+}
+
+input[name="city_wide"]:checked + .label-text {
+  background-color: #1b1949;
+}
+
+input[name="city_wide"][value="true"] + .label-text { background-image: url("/static/css/images/cityhall-light.png"); }
+input[name="city_wide"][value="false"] + .label-text { background-image: url("/static/css/images/location-light.png"); }
+
+input[name="city_wide"][value="true"]:checked + .label-text { background-image: url("/static/css/images/cityhall-dark.png"); }
+input[name="city_wide"][value="false"]:checked + .label-text { background-image: url("/static/css/images/location-dark.png"); }
+
+
+
+/* ====================
  * Location type choice
  * ==================== */
 

@@ -8,15 +8,13 @@
 
             {{! Heading -- Separate each section by a heading }}
 
+            {{#is name 'city_wide'}}
+              <h4>{{#_}}Project Location{{/_}}</h4>
+            {{/is}}
+
             {{#is name 'title'}}
             <h4>{{#_}}Describe your idea{{/_}}</h4>
             <p>{{#_}}<strong>What issues or problems would you like to fix in Cambridge?</strong> PB funding of $900,000 can be used to support one-time capital (infrastructure) projects that benefit the public and are located on City property in Cambridge. Please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines" data-internal>see the guidelines here</a>.{{/_}}</p>
-
-            <p class="drag-marker-instructions">
-              <span>{{#_}}Drag the map to a location for your idea.{{/_}}</span><br>
-              <small style="font-weight: normal;">Even if your idea pertains to multiple locations or the entire city, choose a particular place that you think of when thinking about the issue.</small>
-            </p>
-            <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to a location for your idea.{{/_}}</p>
             {{/is}}
 
             {{#is name 'submitter_name'}}
@@ -30,6 +28,14 @@
             {{/is}}
 
             {{> form-field form_config=..}}
+
+            {{#is name 'city_wide'}}
+              <p class="drag-marker-instructions">
+                <span>{{#_}}Drag the map to a location for your idea.{{/_}}</span><br>
+                <small style="font-weight: normal;">Even if your idea pertains to multiple locations or the entire city, choose a particular place that you think of when thinking about the issue.</small>
+              </p>
+              <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to a location for your idea.{{/_}}</p>
+            {{/is}}
 
             {{#is name 'heard_about_pb'}}
             <p>{{#_}}After idea collection closes on July 31, volunteer Budget Delegates will work from August-November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote. <a href="http://pb.cambridgema.gov/volunteer2" target="_blank">Click here to learn more and sign up as a Budget Delegate.</a>{{/_}}
