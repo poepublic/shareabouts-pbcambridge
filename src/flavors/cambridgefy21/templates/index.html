@@ -79,18 +79,34 @@ function googleTranslateElementInit() {
  -->
 {% block includes %}
 <script>
-var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
-Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
-  placeFormView_setLocation.call(this, locationData);
-
-  var $placeNameField = this.$('[name="title"]'),
-      $approxAddress = $placeNameField.next();
-
-  if ($approxAddress.length === 0) {
-    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
+// Toggle place-specific or city-wide mode.
+Shareabouts.PlaceFormView.prototype.events['change input[name="city_wide"]'] = 'onCityWideChange';
+Shareabouts.PlaceFormView.prototype.onCityWideChange = function(evt) {
+  if (evt.currentTarget.checked) {
+    this.resetCityWide(evt.currentTarget.value);
   }
+}
 
-  $approxAddress.html('<span class="address-label">{% trans 'Approximate location:' %}</span> ' + locationData);
+var original_PlaceFormView_setLatLng = Shareabouts.PlaceFormView.prototype.setLatLng;
+Shareabouts.PlaceFormView.prototype.setLatLng = function(ll) {
+  original_PlaceFormView_setLatLng.call(this, ll);
+  this.$('.approx-address').removeClass('is-visuallyhidden');
+}
+
+Shareabouts.PlaceFormView.prototype.unsetLatLng = function() {
+  this.center = null;
+  this.$('.drag-marker-instructions').removeClass('is-visuallyhidden');
+  this.$('.approx-address, .drag-marker-warning').addClass('is-visuallyhidden');
+}
+
+Shareabouts.PlaceFormView.prototype.resetCityWide = function(tf) {
+  $('body').attr('data-city_wide', tf);
+
+  if (tf == 'true') {
+    this.setLatLng({lng: -71.10568553209306, lat: 42.36710953619132}) // <- Cambridge City Hall.
+  } else {
+    this.unsetLatLng();
+  }
 }
 </script>
 
