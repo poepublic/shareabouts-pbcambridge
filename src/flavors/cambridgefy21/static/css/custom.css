@@ -160,6 +160,7 @@ a#sign-in-btn:hover {
 a#add-place {
   background-color: #f93c04;
   color: #fff;
+  transition: all 0.1s;
 }
 a#add-place:hover {
   background-color: #1b194a;
