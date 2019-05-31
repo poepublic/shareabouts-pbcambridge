@@ -79,7 +79,8 @@ function googleTranslateElementInit() {
  -->
 {% block includes %}
 <script>
-// Toggle place-specific or city-wide mode.
+
+// Toggle between place-specific and city-wide mode
 Shareabouts.PlaceFormView.prototype.events['change input[name="city_wide"]'] = 'onCityWideChange';
 Shareabouts.PlaceFormView.prototype.onCityWideChange = function(evt) {
   if (evt.currentTarget.checked) {
@@ -99,14 +100,20 @@ Shareabouts.PlaceFormView.prototype.unsetLatLng = function() {
   this.$('.approx-address, .drag-marker-warning').addClass('is-visuallyhidden');
 }
 
-Shareabouts.PlaceFormView.prototype.resetCityWide = function(tf) {
-  $('body').attr('data-city_wide', tf);
+Shareabouts.PlaceFormView.prototype.resetCityWide = function(isCityWide) {
+  $('body').attr('data-city_wide', isCityWide);
 
-  if (tf == 'true') {
+  if (isCityWide == 'true') {
     this.setLatLng({lng: -71.10568553209306, lat: 42.36710953619132}) // <- Cambridge City Hall.
   } else {
     this.unsetLatLng();
   }
+}
+
+var original_AppView_newPlace = Shareabouts.AppView.prototype.newPlace;
+Shareabouts.AppView.prototype.newPlace = function() {
+  $('body').removeAttr('data-city_wide');
+  original_AppView_newPlace.call(this);
 }
 </script>
 
