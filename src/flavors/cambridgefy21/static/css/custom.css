@@ -345,8 +345,7 @@ p.checkbox {
   clear: both;
 }
 input[type=checkbox] {
-  float: left;
-  margin: 0.25em 0.5em 0 0;
+  margin-right: 0.25em;
 }
 p.checkbox + p.select {
   margin-top: 1.5em;
