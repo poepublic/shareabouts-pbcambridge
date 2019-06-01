@@ -545,6 +545,21 @@ input[name="location_type"][value="facilities"]:checked + .label-text { backgrou
 input[name="location_type"][value="youth"]:checked + .label-text { background-color: #b5ac57; }
 
 
+/* ==================================
+ * Social media login (Facebook only)
+ * ==================================
+ */
+
+.sign-in-menu-item {
+  width: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+  .sign-in-menu {
+    width: 9em;
+  }
+}
+
 
 /* =============
  * Disable input
