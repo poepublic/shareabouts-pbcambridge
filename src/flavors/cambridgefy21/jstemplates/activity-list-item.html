@@ -23,7 +23,7 @@
               , <span class="place-name">{{ place.name }}</span>
             {{^}}
               {{#if place.location }}
-                at <span class="place-name">{{ place.location }}</span>
+                at <span class="place-name">{{>location-string place }}</span>
               {{/if }}
             {{/if }}
           {{else}}
@@ -64,7 +64,7 @@
             {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class="place-type">{{     place.place_type_label }} idea</span>{{#if place.name }}: <span class="place-name">{{ place.name }}</span>
             {{^}}
               {{#if place.location }}
-                at <span class="place-name">{{ place.location }}</span>
+                at <span class="place-name">{{>location-string place }}</span>
               {{/if }}
             {{/if }}
           {{else}}

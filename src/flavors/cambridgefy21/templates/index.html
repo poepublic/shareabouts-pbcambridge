@@ -148,6 +148,14 @@ Shareabouts.AppView.prototype.newPlace = function() {
       return options.inverse(this);
     });
 
+    H.registerHelper('formatLocation', function(location) {
+      if (!location) { return ''; }
+      return location
+        .replace(/, United States$/, '')     // Get rid of "Unites States"
+        .replace(/ \d+$/, '')                // Get rid of zip code at the end
+        .replace(/, Massachusetts$/, ', MA')  // Shorten state name
+    })
+
   }(Shareabouts, jQuery, Handlebars));
 </script>
 {% endblock %}
