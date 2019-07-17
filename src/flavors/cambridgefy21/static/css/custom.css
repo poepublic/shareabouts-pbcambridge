@@ -441,7 +441,7 @@ p.checkbox + p.select {
 
 .drag-marker-instructions { display: none; }
 .approx-address { display: none; }
-#centerpoint.newpin * { display: none; }
+#centerpoint.newpin { display: none; }
 
 [data-city_wide="false"] .drag-marker-instructions { display: block; }
 [data-city_wide="false"] .approx-address { display: block; }
