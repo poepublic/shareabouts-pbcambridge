@@ -1,28 +1,37 @@
 #!/usr/bin/env python3
 
 """
-Usage:
-
-1. Generate a places snapshot by visiting
-https://shareaboutsapi.poepublic.com/api/v2/<owner>/datasets/<dataset>/places/snapshots?new[&include_private]
-
-2. Run this script:
+Required python-dateutil
 """
 
 import collections
 import csv
-import json
+from dateutil.parser import parse
+import os
+import pytz
+from request_utils import download_all_pages
+import requests
 import sys
 
 
+USERNAME = os.environ['USERNAME']
+PASSWORD = os.environ['PASSWORD']
+
+session = requests.Session()
+session.auth = (USERNAME, PASSWORD)
+session.headers = {'content-type': 'application/json', 'x-shareabouts-silent': 'true'}
+
+IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2021/places?include_private=True'
+ET = pytz.timezone('US/Eastern')
+
 # Load in the data
-data = json.load(sys.stdin)
+idea_pages = download_all_pages(IDEAS_URL, session=session)
 
 # Transform the data
 rows = []
 fields = collections.OrderedDict([
     ('ID', lambda f: f['properties']['id']),
-    ('Submitted', lambda f: f['properties']['created_datetime']), # TODO: Convert to ET
+    ('Submitted', lambda f: parse(f['properties']['created_datetime']).astimezone(ET).isoformat()[:19].replace('T', ' ')),
     ('Category', lambda f: f['properties']['location_type']),
     ('Title', lambda f: f['properties']['title']),
     ('Description', lambda f: f['properties']['description']),
@@ -32,7 +41,7 @@ fields = collections.OrderedDict([
 
     ('Longitude', lambda f: f['geometry']['coordinates'][0]),
     ('Latitude', lambda f: f['geometry']['coordinates'][1]),
-    ('Near...', lambda f: f['properties'].get('location', {}).get('street', '')),
+    ('Near...', lambda f: f['properties'].get('location', '')),
 
     ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
     ('Email', 'private-email'),
@@ -46,9 +55,10 @@ fields = collections.OrderedDict([
     ('Phone #', 'private-phone'),
 
 ])
-for feature in data['features']:
-    row = {key: getter(feature) if callable(getter) else feature['properties'].get(getter, '') for key, getter in fields.items()}
-    rows.append(row)
+for page in idea_pages:
+    for feature in page['features']:
+        row = {key: getter(feature) if callable(getter) else feature['properties'].get(getter, '') for key, getter in fields.items()}
+        rows.append(row)
 
 writer = csv.DictWriter(sys.stdout, fieldnames=fields.keys())
 writer.writeheader()
