@@ -188,8 +188,8 @@ activity:
 
 place:
   adding_supported:
-    from: '2019-05-01 00:00 -0500'   # Daylight savings begins mid-March
-    until: '2019-08-01 00:00 -0500'  # and ends mid-October.
+    from: '2020-08-01 00:00 -0500'   # Daylight savings begins mid-March
+    until: '2020-10-01 00:00 -0500'  # and ends mid-October.
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show Ideas as a list)
@@ -290,19 +290,6 @@ place:
           value: 10
         - key: required
           value: true
-    - prompt: _(Have you submitted an idea in a previous participatory budgeting cycle?)
-      name: private-previous_participant
-      sticky: true
-      optional: false
-      type: select
-      attrs:
-        - key: required
-          value: true
-      options:
-      - label: _(No I haven't)
-        value: no
-      - label: _(Yes I have)
-        value: yes
     - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
       type: checkbox
       name: heard_about_pb
@@ -338,6 +325,53 @@ place:
         - label: _(Other)
           value: other
           other: true
+    - prompt: _(Did you submit an idea, vote, or participate in any way in previous cycles of participatory budgeting?)
+      name: private-previous_participant
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(No I haven't)
+        value: no
+      - label: _(Yes I have)
+        value: yes
+      - label: _(I am not sure)
+        value: not-sure
+    - prompt: _(In the past 12 months, have you worked with other people in your neighborhood to fix a problem or improve a condition in your community, not including work you may have done related to participatory budgeting?)
+      name: private-other_civic_participant
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(Yes, I have done that)
+          value: yes
+        - label: _(No, I have not done that)
+          value: no
+        - label: _(I am not sure)
+          value: not-sure
+    - prompt: _(Did you vote in the November 5, 2019 municipal election?)
+      name: private-municipal_election_voter
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(No, I am not eligible to vote)
+          value: not-eligible
+        - label: _(No, I did not vote but am eligible to)
+          value: no
+        - label: _(Yes, I voted)
+          value: yes
+        - label: _(I am not sure)
+          value: not-sure
     - prompt: _(Your age)
       type: select
       name: private-age
@@ -378,6 +412,8 @@ place:
           value: female
         - label: _(Male)
           value: male
+        - label: _(Nonbinary)
+          value: nonbinary
         - label: _(Different gender identity)
           value: other
           other: true
@@ -404,8 +440,6 @@ place:
           value: white
         - label: _(Hispanic or Latino/a)
           value: hispanic
-        - label: _(Non-Hispanic)
-          value: non-hispanic
         - label: _(Other)
           value: other
           other: true
@@ -419,16 +453,16 @@ place:
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Less than $45,000)
-          value: under45
-        - label: _($45,000 - $90,000)
-          value: 45to90
-        - label: _($90,001 - $135,000)
-          value: 90to135
-        - label: _($135,001 - $180,000)
-          value: 135to180
-        - label: _($180,001 or more)
-          value: 180ormore
+        - label: _(Less than $40,000)
+          value: under40
+        - label: _($40,000 - $79,999)
+          value: 40to79
+        - label: _($80,000 - $119,999)
+          value: 80to119
+        - label: _($120,000 - $159,999)
+          value: 120to159
+        - label: _($160,000 or more)
+          value: 160ormore
         - label: _(Prefer not to answer/unsure)
           value: no-answer
       name: private-income
