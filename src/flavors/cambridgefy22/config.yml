@@ -1,0 +1,532 @@
+# Settings for the app
+app:
+  # HTML Title
+  title: _(City of Cambridge Participatory Budgeting)
+  # Header name
+  name: _(City of Cambridge Participatory Budgeting)
+  # Meta description that will show up in Google search results
+  meta_description: _(Participatory Budgeting for Cambridge, MA)
+  district:
+  tagline: _(How would YOU spend $500K?)
+
+# Settings for map and layer configs
+map:
+  geolocation_enabled: true
+  geolocation_onload: false
+
+  geocoding_enabled: true
+  geocoding_engine: 'Mapbox'
+  geocode_field_label: _(Enter an address...)
+  options:
+    center:
+      lat: 42.3783903
+      lng: -71.1129096
+    zoom: 14
+    minZoom: 13
+    maxZoom: 18
+    maxBounds: [ [42.44461466242642, -71.22642517089844], [42.30971644816202, -70.99845886230469] ]
+  layers:
+    - type: mapbox
+      style: mapbox://styles/poepublic/cjvse8hab1bum1cqitvwqtcwg
+      attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+      fallback:
+        url: https://api.mapbox.com/styles/v1/poepublic/cjvse8hab1bum1cqitvwqtcwg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicG9lcHVibGljIiwiYSI6ImNqdnNndXpoMTBxNTQ0YW1hdnBqbHZ1aHoifQ.YDK21j8x_K228nND9E49kg
+        attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+
+
+place_types:
+  environment:
+    label: _(Environment)
+    rules:
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#55a504'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/environment.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/environment.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/environment.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+  streetsmarts:
+    label: _(Street Smarts)
+    rules:
+      - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#8ac4fa'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/streetsmarts.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/streetsmarts.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "streetsmarts" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/streetsmarts.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+  resources:
+    label: _(Community Resources)
+    rules:
+      - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#ff78be'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/resources.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/resources.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "resources" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/resources.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+  facilities:
+    label: _(Facilities, Parks & Recreation)
+    rules:
+      - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#aa3c1e'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/facilities.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/facilities.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "facilities" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/facilities.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+  youth:
+    label: _(Youth)
+    rules:
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#b5ac57'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+activity:
+  # Optional. Activity is supported by default. Set to false to disable.
+  enabled: true
+  # How often to refresh the activity list, in milliseconds.
+  interval: 30000
+
+place:
+  adding_supported:
+    from: '2019-05-01 00:00 -0500'   # Daylight savings begins mid-March
+    until: '2019-08-01 00:00 -0500'  # and ends mid-October.
+  add_button_label: _(Submit an idea)
+  # Labels for the buttons that toggle the map and list views
+  show_list_button_label: _(Show Ideas as a list)
+  show_map_button_label: _(Show on a map)
+  title: _(Describe your idea)
+  action_text: _(suggested)
+  help_text: _(Ideas must be for <strong>capital</strong> projects – Please see the guidelines here)
+  anonymous_name: _(Someone)
+  submit_button_label: _(Share my idea)
+  location_item_name: location
+  items:
+    - prompt: _(Is your idea about a specific location or the entire city?)
+      name: city_wide
+      sticky: true
+      optional: false
+      type: radiogroup
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(A specific location)
+        value: no
+      - label: _(City-wide)
+        value: yes
+    - prompt: _(What is the title of your idea?)
+      type: text
+      name: title
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(Idea Title...)
+        - key: size
+          value: 30
+        - key: maxlength
+          value: 100
+        - key: required
+          value: true
+    - prompt: _(How does your idea help improve life in Cambridge?)
+      type: textarea
+      name: description
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
+        - key: maxlength
+          value: 1000
+        - key: required
+          value: true
+    - prompt: _(Pick a category for your idea)
+      name: location_type
+      type: radiogroup
+      options:
+        - label: _(Environment)
+          value: environment
+        - label: _(Street Smarts)
+          value: streetsmarts
+        - label: _(Community Resources)
+          value: resources
+        - label: _(Facilities, Parks & Recreation)
+          value: facilities
+        - label: _(Youth)
+          value: youth
+      attrs:
+        - key: required
+          value: true
+    - prompt: _(Your Name (required, will be shown on the map))
+      type: text
+      name: submitter_name
+      sticky: true
+      optional: false
+      attrs:
+        - key: size
+          value: 30
+        - key: required
+          value: true
+    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
+      type: tel
+      name: private-phone
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
+    - prompt: _(Your Email (required, will NOT be shown on the map))
+      type: email
+      name: private-email
+      sticky: true
+      attrs:
+        - key: size
+          value: 30
+        - key: required
+          value: true
+    - prompt: _(Your ZIP Code (required, will NOT be shown on the map))
+      type: text
+      name: private-zip
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
+        - key: required
+          value: true
+    - prompt: _(Have you submitted an idea in a previous participatory budgeting cycle?)
+      name: private-previous_participant
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(No I haven't)
+        value: no
+      - label: _(Yes I have)
+        value: yes
+    - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
+      type: checkbox
+      name: heard_about_pb
+      sticky: true
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(City Council member)
+          value: city-council-member
+        - label: _(City website)
+          value: city-website
+        - label: _(Community group)
+          value: community-group
+          other: true
+        - label: _(Email)
+          value: email
+        - label: _(Event)
+          value: event
+          other: true
+        - label: _(Flyer/door hanger/sign/banner)
+          value: flyer/door-hanger/sign/banner
+        - label: _(Facebook/Twitter)
+          value: facebook/twitter
+        - label: _(Newspaper/TV/radio)
+          value: newspaper-tv-radio
+          other: true
+        - label: _(School)
+          value: school
+          other: true
+        - label: _(Word of mouth)
+          value: word-of-mouth
+        - label: _(Other)
+          value: other
+          other: true
+    - prompt: _(Your age)
+      type: select
+      name: private-age
+      sticky: true
+      optional: false
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Under 18)
+          value: under18
+        - label: _(18 to 24)
+          value: 18to24
+        - label: _(25 to 34)
+          value: 25to34
+        - label: _(35 to 44)
+          value: 35to44
+        - label: _(45 to 54)
+          value: 45to54
+        - label: _(55 to 64)
+          value: 55to64
+        - label: _(65+)
+          value: 65-or-older
+        - label: _(Prefer not to answer)
+          value: no-answer
+    - prompt: _(Your gender)
+      type: radio
+      name: private-gender
+      sticky: true
+      optional: false
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(Female)
+          value: female
+        - label: _(Male)
+          value: male
+        - label: _(Different gender identity)
+          value: other
+          other: true
+        - label: _(Prefer not to answer)
+          value: no-answer
+    - prompt: _(Your Race/Ethnicity)
+      type: checkbox
+      name: private-race
+      sticky: true
+      optional: false
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(American Indian or Alaska native)
+          value: american-indian-or-alaska-native
+        - label: _(Asian)
+          value: asian
+        - label: _(Black or African American)
+          value: black-or-african-american
+        - label: _(Hawaii native or Pacific Islander)
+          value: hawaii-native-or-pacific-islander
+        - label: _(White)
+          value: white
+        - label: _(Hispanic or Latino/a)
+          value: hispanic
+        - label: _(Non-Hispanic)
+          value: non-hispanic
+        - label: _(Other)
+          value: other
+          other: true
+        - label: _(Prefer not to answer)
+          value: no-answer
+    - prompt: _(Annual Household Income)
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Less than $45,000)
+          value: under45
+        - label: _($45,000 - $90,000)
+          value: 45to90
+        - label: _($90,001 - $135,000)
+          value: 90to135
+        - label: _($135,001 - $180,000)
+          value: 135to180
+        - label: _($180,001 or more)
+          value: 180ormore
+        - label: _(Prefer not to answer/unsure)
+          value: no-answer
+      name: private-income
+      sticky: true
+      optional: false
+    - prompt: _(What is your highest level of education?)
+      type: select
+      optional: false
+      name: private-education
+      sticky: true
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(Please choose...)
+        value:
+      - label: _(Less than high school diploma)
+        value: lessthanhigh
+      - label: _(High school diploma, GED, or equivalent)
+        value: highschool
+      - label: _(Some college, no degree)
+        value: somecollege
+      - label: _(Associate's degree)
+        value: associates
+      - label: _(Bachelor's degree)
+        value: bachelors
+      - label: _(Graduate or professional degree)
+        value: graduate
+      - label: _(Prefer not to answer)
+        value: no-answer
+
+survey:
+  submission_type: comments
+  adding_supported: true
+    # from: '2018-07-01 00:00 -0500'   # Daylight savings begins mid-March
+    # until: '2018-08-01 00:00 -0500'  # and ends mid-October.
+
+  # Response config
+  show_responses: true
+  response_name: _(comment)
+  response_plural_name: _(comments)
+  action_text: _(commented on)
+  anonymous_name: _(Someone)
+
+  # Survey form config
+  title: _(Leave a Comment)
+  form_link_text: _(Leave a Comment)
+  submit_btn_text: _(Comment)
+  items:
+    - prompt: _(Comment)
+      label: _(Comment)
+      type: textarea
+      name: comment
+    - prompt: _(Your Name)
+      type: text
+      name: submitter_name
+
+support:
+  submission_type: support
+  adding_supported: true
+    # from: '2018-07-01 00:00 -0500'   # Daylight savings begins mid-March
+    # until: '2018-08-01 00:00 -0500'  # and ends mid-October.
+  submit_btn_text: _(Support This!)
+  response_name: _(support)
+  response_plural_name: _(supports)
+  action_text: _(supported)
+  anonymous_name: _(Someone)
+
+pages:
+  - title: _(Cambridge PB Home)
+    external: true
+    url: http://pb.cambridgema.gov/
+  - title: _(Guidelines)
+    slug: guidelines
+    name: guidelines
+    start_page: true
+  - title: Filter Ideas
+    slug: filter-type
+    pages:
+      - title: All
+        external: true
+        url: /filter/all
+      - title: _(Environment)
+        url: /filter/environment
+        external: true
+      - title: _(Street Smarts)
+        url: /filter/streetsmarts
+        external: true
+      - title: _(Community Resources)
+        url: /filter/resources
+        external: true
+      - title: _(Facilities, Parks & Recreation)
+        url: /filter/facilities
+        external: true
+      - title: _(Youth)
+        url: /filter/youth
+        external: true
+
+notifications:
+  on_new_place: true
+  submitter_email_field: "private-email"
