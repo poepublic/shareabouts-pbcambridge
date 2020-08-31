@@ -544,6 +544,10 @@ input[name="location_type"][value="resources"]:checked + .label-text { backgroun
 input[name="location_type"][value="facilities"]:checked + .label-text { background-color: #aa3c1e; }
 input[name="location_type"][value="youth"]:checked + .label-text { background-color: #b5ac57; }
 
+.recent-points .avatar {
+  width: auto;
+}
+
 
 /* ==================================
  * Social media login (Facebook only)
