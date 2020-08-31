@@ -329,7 +329,7 @@ place:
       name: private-previous_participant
       sticky: true
       optional: false
-      type: select
+      type: radio
       attrs:
         - key: required
           value: true
@@ -344,7 +344,7 @@ place:
       name: private-other_civic_participant
       sticky: true
       optional: false
-      type: select
+      type: radio
       attrs:
         - key: required
           value: true
@@ -359,7 +359,7 @@ place:
       name: private-municipal_election_voter
       sticky: true
       optional: false
-      type: select
+      type: radio
       attrs:
         - key: required
           value: true
