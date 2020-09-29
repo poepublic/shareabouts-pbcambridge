@@ -21,7 +21,7 @@ session = requests.Session()
 session.auth = (USERNAME, PASSWORD)
 session.headers = {'content-type': 'application/json', 'x-shareabouts-silent': 'true'}
 
-IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2021/places?include_private=True'
+IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2022/places?include_private=True'
 ET = pytz.timezone('US/Eastern')
 
 # Load in the data
@@ -46,11 +46,16 @@ fields = collections.OrderedDict([
     ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
     ('Email', 'private-email'),
     ('Previous participant', 'private-previous_participant'),
+    ('Civically involved', 'private-other_civic_participant'),
+    ('Municipal election voter', 'private-municipal_election_voter'),
     ('Heard about PB from...', lambda f: ', '.join(f['properties']['heard_about_pb']) if isinstance(f['properties']['heard_about_pb'], list) else f['properties']['heard_about_pb']),
-    ('Race', lambda f: ', '.join(f['properties']['private-race']) if isinstance(f['properties']['private-race'], list) else f['properties']['private-race']),
-    ('Education', 'private-education'),
+    ('Other-source detail', 'heard_about_pb-other-detail'),
+    ('Age', 'private-age'),
     ('Gender', 'private-gender'),
     ('Other-gender detail', 'private-gender-other-detail'),
+    ('Race', lambda f: ', '.join(f['properties']['private-race']) if isinstance(f['properties']['private-race'], list) else f['properties']['private-race']),
+    ('Education', 'private-education'),
+    ('Household income', 'private-income'),
     ('ZIP', 'private-zip'),
     ('Phone #', 'private-phone'),
 
