@@ -21,7 +21,11 @@ session = requests.Session()
 session.auth = (USERNAME, PASSWORD)
 session.headers = {'content-type': 'application/json', 'x-shareabouts-silent': 'true'}
 
+<<<<<<< Updated upstream
 IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2021/places?include_private=True'
+=======
+IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2022/places?include_private=True&include_invisible=True'
+>>>>>>> Stashed changes
 ET = pytz.timezone('US/Eastern')
 
 # Load in the data
@@ -42,6 +46,7 @@ fields = collections.OrderedDict([
     ('Longitude', lambda f: f['geometry']['coordinates'][0]),
     ('Latitude', lambda f: f['geometry']['coordinates'][1]),
     ('Near...', lambda f: f['properties'].get('location', '')),
+    ('Hidden', lambda f: not f['properties']['visible']),
 
     ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
     ('Email', 'private-email'),
