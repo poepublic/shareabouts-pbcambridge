@@ -496,9 +496,9 @@ place:
 
 survey:
   submission_type: comments
-  adding_supported: true
-    # from: '2018-07-01 00:00 -0500'   # Daylight savings begins mid-March
-    # until: '2018-08-01 00:00 -0500'  # and ends mid-October.
+  adding_supported:
+    from: '2020-09-01 00:00 -0500'   # Daylight savings begins mid-March
+    until: '2020-10-01 00:00 -0500'  # and ends mid-October.
 
   # Response config
   show_responses: true
@@ -522,9 +522,9 @@ survey:
 
 support:
   submission_type: support
-  adding_supported: true
-    # from: '2018-07-01 00:00 -0500'   # Daylight savings begins mid-March
-    # until: '2018-08-01 00:00 -0500'  # and ends mid-October.
+  adding_supported:
+    from: '2020-09-01 00:00 -0500'   # Daylight savings begins mid-March
+    until: '2020-10-01 00:00 -0500'  # and ends mid-October.
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
