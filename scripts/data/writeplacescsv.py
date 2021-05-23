@@ -21,8 +21,11 @@ session = requests.Session()
 session.auth = (USERNAME, PASSWORD)
 session.headers = {'content-type': 'application/json', 'x-shareabouts-silent': 'true'}
 
-IDEAS_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2022/places?include_private=True'
->>>>>>> 393832b0ae2a6b82d2236ac770656d720e1da474
+# Update the DATASET_URL with the root URL of the dataset. There are a few ways
+# you can find the root URL.
+DATASET_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2022'
+
+IDEAS_URL = DATASET_URL + '/places?include_private=True&include_invisible=True'
 ET = pytz.timezone('US/Eastern')
 
 # Load in the data
