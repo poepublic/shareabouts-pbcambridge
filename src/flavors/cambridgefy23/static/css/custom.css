@@ -335,7 +335,7 @@ input.geocode-address-field {
 .user-support label {
   color: #fff;
 }
-.user-support input[type=checkbox]:checked ~ label {}
+:checked ~ .user-support-content {}
 .user-support:hover label {
   background-color: #1b194a;
 }
