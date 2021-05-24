@@ -7,7 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for Cambridge, MA)
   district:
-  tagline: _(How would YOU spend $500K?)
+  tagline: _(How would YOU spend $1M?)
 
 # Settings for map and layer configs
 map:
