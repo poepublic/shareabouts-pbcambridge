@@ -1,6 +1,6 @@
 Thanks for sharing an idea to improve Cambridge!
 
-Here's what you suggested: {{ place.properties.name }}
+Here's what you suggested: {{ place.properties.title }}
 
 You can see people's comments on your idea at {{site_root}}place/{{ place.id }}.
 
