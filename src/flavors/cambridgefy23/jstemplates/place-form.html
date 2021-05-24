@@ -22,9 +22,9 @@
             <p>{{#_}}Please tell us how we can contact you about your idea.{{/_}}</p>
             {{/is}}
 
-            {{#is name 'private-previous_participant'}}
+            {{#is name 'private-completed_personal_info_survey'}}
             <h4>{{#_}}Personal Information{{/_}}</h4>
-            <p>{{#_}}<strong>Please tell us a little more about yourself to help us assess whether we are reaching the full diversity of our community.</strong>{{/_}}</p>
+            <p>{{#_}}<strong>Please tell us a little more about yourself to help us assess whether we are reaching the full diversity of our community.</strong>{{/_}} {{#_}}If you submit more than one idea, please only complete the survey once.{{/_}}</p>
             {{/is}}
 
             {{> form-field form_config=..}}
@@ -42,7 +42,7 @@
             {{/is}}
 
             {{#is name 'heard_about_pb'}}
-            <p>{{#_}}After idea collection closes on September 30, volunteer Budget Delegates will work from August-November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote. <a href="http://pb.cambridgema.gov/volunteer2" target="_blank">Click here to learn more and sign up as a Budget Delegate.</a>{{/_}}
+            <p>{{#_}}After idea collection closes on July 31, volunteer Budget Delegates will work from August-November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote. <a href="http://pb.cambridgema.gov/volunteer2" target="_blank">Click here to learn more and sign up as a Budget Delegate.</a>{{/_}}
             {{/is}}
 
             {{/ place_config.items }}

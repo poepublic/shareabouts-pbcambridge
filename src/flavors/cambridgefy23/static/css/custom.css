@@ -550,9 +550,32 @@ input[name="location_type"][value="youth"]:checked + .label-text { background-co
 
 
 /* ==================================
- * Social media login (Facebook only)
+ * Personal information survey
  * ==================================
  */
+
+.place-private-completed_personal_info_survey-field .radio-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input[name="private-completed_personal_info_survey"]:checked + .label-text {
+  background-color: #1b1949;
+}
+
+[data-personal-info-complete="true"] .place-private-previous_participant-field { display: none; }
+[data-personal-info-complete="true"] .place-private-other_civic_participant-field { display: none; }
+[data-personal-info-complete="true"] .place-private-municipal_election_voter-field { display: none; }
+[data-personal-info-complete="true"] .place-private-age-field { display: none; }
+[data-personal-info-complete="true"] .place-private-gender-field { display: none; }
+[data-personal-info-complete="true"] .place-private-race-field { display: none; }
+[data-personal-info-complete="true"] .place-private-income-field { display: none; }
+[data-personal-info-complete="true"] .place-private-education-field { display: none; }
+
+ /* ==================================
+  * Social media login (Facebook only)
+  * ==================================
+  */
 
 .sign-in-menu-item {
   width: 100%;

@@ -43,14 +43,25 @@
           {{#if label}}
             <div>
               <label>
-                <input type="{{../../../type}}" value="{{value}}" name={{../../../name}} {{#unless ../../../optional}}required data-group-required{{/unless}}>
+                <input type="{{../../../type}}"
+                       value="{{value}}"
+                       name={{../../../name}}
+                       {{#each ../../../attrs}} {{ key }}="{{ value }}"{{/each}}
+                       {{#unless ../../../optional}}required data-group-required{{/unless}}>
                 {{label}}{{#if other}}<span class="detail-text">:
                   <input type="text" name="{{../../../../name}}-{{value}}-detail" value="{{get_value ../../../../.. ../../../../name}}">
                 </span>{{/if}}
               </label>
             </div>
           {{else}}
-            <div><label><input type="{{../type}}" value="{{.}}" name={{../name}}> {{.}}</label></div>
+            <div>
+              <label>
+                <input type="{{../type}}"
+                       value="{{.}}"
+                       name={{../name}}
+                       {{#each ../attrs}} {{ key }}="{{ value }}"{{/each}}> {{.}}
+              </label>
+            </div>
           {{/if}} {{! label }}
         {{/each}} {{! options }}
       {{/select_item_value}}
