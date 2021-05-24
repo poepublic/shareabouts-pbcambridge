@@ -265,13 +265,6 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
-      type: tel
-      name: private-phone
-      sticky: true
-      attrs:
-        - key: size
-          value: 10
     - prompt: _(Your Email (required, will NOT be shown on the map))
       type: email
       name: private-email
@@ -281,6 +274,13 @@ place:
           value: 30
         - key: required
           value: true
+    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
+      type: tel
+      name: private-phone
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
     - prompt: _(Your ZIP Code (required, will NOT be shown on the map))
       type: text
       name: private-zip
