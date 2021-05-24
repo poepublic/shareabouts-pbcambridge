@@ -441,7 +441,7 @@ place:
           value: male
         - label: _(Nonbinary)
           value: nonbinary
-        - label: _(Different gender identity)
+        - label: _(Other gender identity)
           value: other
           other: true
         - label: _(Prefer not to answer)
