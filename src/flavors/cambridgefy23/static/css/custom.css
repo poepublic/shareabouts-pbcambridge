@@ -24,6 +24,20 @@ h1, h4 {
   font-size: 1.75em;
 }
 
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+li {
+  padding-bottom: 0;
+  margin-bottom: 0.75em;
+}
+
+p {
+  margin: 0 0 0.75em;
+}
+
 
 /* Buttons */
 .btn,
