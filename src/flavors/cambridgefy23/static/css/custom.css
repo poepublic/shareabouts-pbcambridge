@@ -163,6 +163,18 @@ a#sign-in-btn:hover {
   color: #1b194a;
 }
 
+/* =Filter Menu (specifically on mobile)
+-------------------------------------------------------------- */
+
+.access .menu ul {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.access .menu ul .menu-item {
+  margin-bottom: 0;
+}
+
 
 /* =The Big Button to Add A New Point
 -------------------------------------------------------------- */
