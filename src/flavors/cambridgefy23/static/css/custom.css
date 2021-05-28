@@ -183,12 +183,12 @@ a#sign-in-btn:hover {
   background-color: #fbfbf3;
   border: 0;
 }
-a#add-place {
+a#add-place, .add-place-btn, .add-place-btn:visited, .add-place-btn:link {
   background-color: #f93c04;
   color: #fff;
   transition: all 0.1s;
 }
-a#add-place:hover {
+a#add-place:hover, .add-place-btn:hover {
   background-color: #1b194a;
   color: #fff;
 }
