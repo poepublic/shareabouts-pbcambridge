@@ -305,6 +305,8 @@ place:
         - label: _(Community group)
           value: community-group
           other: true
+        - label: _(Mail)
+          value: mail
         - label: _(Email)
           value: email
         - label: _(Event)
