@@ -23,7 +23,7 @@ session.headers = {'content-type': 'application/json', 'x-shareabouts-silent': '
 
 # Update the DATASET_URL with the root URL of the dataset. There are a few ways
 # you can find the root URL.
-DATASET_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2022'
+DATASET_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2023'
 
 IDEAS_URL = DATASET_URL + '/places?include_private=True&include_invisible=True'
 ET = pytz.timezone('US/Eastern')
@@ -50,15 +50,16 @@ fields = collections.OrderedDict([
 
     ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
     ('Email', 'private-email'),
+    ('Already submitted personal info', 'private-completed_personal_info_survey'),
     ('Previous participant', 'private-previous_participant'),
     ('Civically involved', 'private-other_civic_participant'),
     ('Municipal election voter', 'private-municipal_election_voter'),
-    ('Heard about PB from...', lambda f: ', '.join(f['properties']['heard_about_pb']) if isinstance(f['properties']['heard_about_pb'], list) else f['properties']['heard_about_pb']),
+    ('Heard about PB from...', lambda f: ', '.join(f['properties'].get('heard_about_pb')) if isinstance(f['properties'].get('heard_about_pb'), list) else f['properties'].get('heard_about_pb')),
     ('Other-source detail', 'heard_about_pb-other-detail'),
     ('Age', 'private-age'),
     ('Gender', 'private-gender'),
     ('Other-gender detail', 'private-gender-other-detail'),
-    ('Race', lambda f: ', '.join(f['properties']['private-race']) if isinstance(f['properties']['private-race'], list) else f['properties']['private-race']),
+    ('Race', lambda f: ', '.join(f['properties'].get('private-race')) if isinstance(f['properties'].get('private-race'), list) else f['properties'].get('private-race')),
     ('Education', 'private-education'),
     ('Household income', 'private-income'),
     ('ZIP', 'private-zip'),
