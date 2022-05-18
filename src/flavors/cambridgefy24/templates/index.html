@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block site-title %}
+<a href="http://cambridgema.nationbuilder.com/" target="_blank">CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING</a>
+{% endblock %}
+
+
+{% block meta %}
+  {% if place %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ place.properties.name }}">
+    <meta name="twitter:description" content="{{ place.properties.description }}">
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="twitter:image:src" content="{{ attachment.file }}">
+    {% endwith %}
+    {% comment %} TODO: Fill this in when we know if the username is from twitter
+      <meta name="twitter:creator" content="place.submitter.username">
+    {% endcomment %}
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ place.properties.name }}" />
+    <meta property="og:description" content="{{ place.properties.description }}" />
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="og:image" content="{{ attachment.file }}">
+    {% endwith %}
+  {% else %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ config.app.title }}">
+    <meta name="twitter:description" content="{{ config.app.meta_description }}">
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ config.app.title }}" />
+    <meta property="og:description" content="{{ config.app.meta_description }}" />
+  {% endif%}
+
+  <!-- google translate button -->
+   <meta name="google-translate-customization" content="3c552f6e53f80301-15c3ddc023b5ea89-g0cef58dda6812023-25"></meta>
+
+  <!-- This doesn't quite belong in meta, but there's nowhere else for it right now. -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Oswald:400,300,700|Lato:400,700,400italic,700italic|Bree+Serif|Josefin+Sans:700|Bitter:400,700,400italic|Open+Sans:400italic,700italic,400,700,800" rel="stylesheet" type="text/css">
+{% endblock %}
+
+<!--
+  This will place content at the top of the side bar
+ -->
+{% block sidebar %}
+
+<ul class="icons legend">
+  <li class="clearfix"><img src="/static/css/images/markers/environment.png" width="25" height="30"> {% trans 'Environment' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/streetsmarts.png" width="25" height="30"> {% trans 'Street Smarts' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/resources.png" width="25" height="30"> {% trans 'Community Resources' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/facilities.png" width="25" height="30"> {% trans 'Facilities, Parks & Recreation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/youth.png" width="25" height="30"> {% trans 'Youth' %}</li>
+</ul>
+<ul class="translate legend">
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'am,ar,bn,en,es,fr,ht,pt,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: '{{ settings.GOOGLE_ANALYTICS_ID }}'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </ul>
+{% endblock %}
+
+
+<!--
+  This will place content in the colophon below the map
+ -->
+{% block colophon %}
+<p id="powered-by">{% blocktrans %}Powered by{% endblocktrans %} <a href="https://github.com/openplans/shareabouts" class="shareabouts-logo" target="_blank">Shareabouts</a>, <span class="nobreak">built by <a href="" class="poepublic-logo" target="_blank">Poe<strong>Public</strong></a>.</span></p>
+{% endblock %}
+
+<!--
+  Analytics, custom JS, and such go here
+ -->
+{% block includes %}
+<script>
+
+// Toggle between place-specific and city-wide mode
+Shareabouts.PlaceFormView.prototype.events['change input[name="city_wide"]'] = 'onCityWideChange';
+Shareabouts.PlaceFormView.prototype.onCityWideChange = function(evt) {
+  if (evt.currentTarget.checked) {
+    this.resetCityWide(evt.currentTarget.value);
+  }
+}
+
+// Toggle the personal information survey
+Shareabouts.PlaceFormView.prototype.events['change input[name="private-completed_personal_info_survey"]'] = 'onPersonalInfoCompleteChange';
+Shareabouts.PlaceFormView.prototype.onPersonalInfoCompleteChange = function(evt) {
+  if (evt.currentTarget.checked) {
+    this.resetPersonalInformationSurvey(evt.currentTarget.value);
+  }
+}
+
+var original_PlaceFormView_setLatLng = Shareabouts.PlaceFormView.prototype.setLatLng;
+Shareabouts.PlaceFormView.prototype.setLatLng = function(ll) {
+  original_PlaceFormView_setLatLng.call(this, ll);
+  this.$('.approx-address').removeClass('is-visuallyhidden');
+}
+
+Shareabouts.PlaceFormView.prototype.unsetLatLng = function() {
+  this.center = null;
+  this.$('.drag-marker-instructions').removeClass('is-visuallyhidden');
+  this.$('.approx-address, .drag-marker-warning').addClass('is-visuallyhidden');
+}
+
+Shareabouts.PlaceFormView.prototype.resetCityWide = function(isCityWide) {
+  $('body').attr('data-city_wide', isCityWide);
+
+  if (isCityWide == 'true') {
+    this.setLatLng({lng: -71.10568553209306, lat: 42.36710953619132}) // <- Cambridge City Hall.
+  } else {
+    this.unsetLatLng();
+  }
+}
+
+Shareabouts.PlaceFormView.prototype.resetPersonalInformationSurvey = function(hasCompleted) {
+  // By default, use the personal info completed value from the selected radio
+  // button.
+  if (hasCompleted === undefined) {
+    hasCompleted = this.$('[name="private-completed_personal_info_survey"]:checked').val();
+  }
+
+  // If still no value (i.e., no radio button selected), skip setting the attr
+  // on the body.
+  if (hasCompleted !== undefined) {
+    $('body').attr('data-personal-info-complete', hasCompleted);
+  }
+
+  if (this.$requiredPersonalInfoFieldCache) {
+    this.$requiredPersonalInfoFieldCache.attr('required', 'required');
+    this.$requiredPersonalInfoFieldCache = null;
+  }
+
+  if (hasCompleted == 'true') {
+    this.$requiredPersonalInfoFieldCache = this.$('[data-personal-info][required]')
+    this.$requiredPersonalInfoFieldCache.removeAttr('required');
+  }
+}
+
+var original_PlaceFormView_render = Shareabouts.PlaceFormView.prototype.render;
+Shareabouts.PlaceFormView.prototype.render = function() {
+  var retVal = original_PlaceFormView_render.call(this);
+  this.resetPersonalInformationSurvey();
+  return retVal
+}
+
+var original_AppView_newPlace = Shareabouts.AppView.prototype.newPlace;
+Shareabouts.AppView.prototype.newPlace = function() {
+  $('body').removeAttr('data-city_wide');
+  $('body').removeAttr('data-personal-info-complete');
+  original_AppView_newPlace.call(this);
+}
+</script>
+
+<!-- zoom to marker on click & isAny Hadlebars helper -->
+<script>
+  (function(NS, $, H) {
+
+    var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
+    NS.LayerView.prototype.onMarkerClick = function(evt) {
+      var self = this;
+      originalOnMarkerClick.apply(this, arguments);
+      if (this.map.getZoom() < this.map.getMaxZoom()-3) {
+        _.delay(function() {
+          self.map.setView(evt.latlng, self.map.getMaxZoom()-3, {
+            animate: true
+          });
+
+          self.map.invalidateSize({ animate:false, pan:false });
+        }, 200);
+      }
+    }
+
+    H.registerHelper('isAny', function(value /*, test1, test2, ..., options*/) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      var options = args.pop();
+      var tests = args;
+      var i;
+
+      for(i = 0; i < tests.length; i++) {
+        if (value === tests[i]) { return options.fn(this); }
+      }
+      return options.inverse(this);
+    });
+
+    H.registerHelper('formatLocation', function(location) {
+      if (!location) { return ''; }
+      return location
+        .replace(/, United States$/, '')     // Get rid of "Unites States"
+        .replace(/ \d+$/, '')                // Get rid of zip code at the end
+        .replace(/, Massachusetts$/, ', MA')  // Shorten state name
+    })
+
+  }(Shareabouts, jQuery, Handlebars));
+</script>
+{% endblock %}
