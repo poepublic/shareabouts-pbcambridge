@@ -51,11 +51,9 @@
 {% block sidebar %}
 
 <ul class="icons legend">
-  <li class="clearfix"><img src="/static/css/images/markers/arts_and_culture.png" width="25" height="30"> {% trans 'Arts & Culture' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/community_resources.png" width="25" height="30"> {% trans 'Community Resources & Education' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/environment_and_sustainability.png" width="25" height="30"> {% trans 'Environment & Sustainability' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/parks_and_recreation.png" width="25" height="30"> {% trans 'Parks & Recreation' %}</li>
-  <li class="clearfix"><img src="/static/css/images/markers/transpo_streets_and_sidewalks.png" width="25" height="30"> {% trans 'Transportation, Streets & Sidewalks' %}</li>
+  {% for place_type_key, place_type_config in config.place_types.items %}
+    <li class="clearfix"><img src="{{ place_type_config.rules.1.icon.iconUrl }}" width="25" height="30"> {% trans place_type_config.label %}</li>
+  {% endfor %}
 </ul>
 <ul class="translate legend">
 <div id="google_translate_element"></div><script type="text/javascript">
