@@ -556,17 +556,17 @@ input[name="location_type"] + .label-text {
   text-align: center;
 }
 
-input[name="location_type"][value="environment"] + .label-text { background-image: url("/static/css/images/markers/environment.png"); }
-input[name="location_type"][value="streetsmarts"] + .label-text { background-image: url("/static/css/images/markers/streetsmarts.png"); }
-input[name="location_type"][value="resources"] + .label-text { background-image: url("/static/css/images/markers/resources.png"); }
-input[name="location_type"][value="facilities"] + .label-text { background-image: url("/static/css/images/markers/facilities.png"); }
-input[name="location_type"][value="youth"] + .label-text { background-image: url("/static/css/images/markers/youth.png"); }
+input[name="location_type"][value="arts_and_culture"] + .label-text { background-image: url("/static/css/images/markers/arts_and_culture.png"); }
+input[name="location_type"][value="community_resources"] + .label-text { background-image: url("/static/css/images/markers/community_resources.png"); }
+input[name="location_type"][value="environment_and_sustainability"] + .label-text { background-image: url("/static/css/images/markers/environment_and_sustainability.png"); }
+input[name="location_type"][value="parks_and_recreation"] + .label-text { background-image: url("/static/css/images/markers/parks_and_recreation.png"); }
+input[name="location_type"][value="transpo_streets_and_sidewalks"] + .label-text { background-image: url("/static/css/images/markers/transpo_streets_and_sidewalks.png"); }
 
-input[name="location_type"][value="environment"]:checked + .label-text { background-color: #55a504; }
-input[name="location_type"][value="streetsmarts"]:checked + .label-text { background-color: #8ac4fa; }
-input[name="location_type"][value="resources"]:checked + .label-text { background-color: #ff78be; }
-input[name="location_type"][value="facilities"]:checked + .label-text { background-color: #aa3c1e; }
-input[name="location_type"][value="youth"]:checked + .label-text { background-color: #b5ac57; }
+input[name="location_type"][value="arts_and_culture"]:checked + .label-text { background-color: #55a504; }
+input[name="location_type"][value="community_resources"]:checked + .label-text { background-color: #8ac4fa; }
+input[name="location_type"][value="environment_and_sustainability"]:checked + .label-text { background-color: #ff78be; }
+input[name="location_type"][value="parks_and_recreation"]:checked + .label-text { background-color: #aa3c1e; }
+input[name="location_type"][value="transpo_streets_and_sidewalks"]:checked + .label-text { background-color: #b5ac57; }
 
 .recent-points .avatar {
   width: auto;
