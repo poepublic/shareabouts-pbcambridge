@@ -377,6 +377,13 @@ p.checkbox + p.select {
   margin-top: 1.5em;
 }
 
+/* =Comments
+-------------------------------------------------------------- */
+.response-submitter .avatar {
+  /* Override the max-width, set on all img elements in default.css */
+  max-width: 3rem;
+}
+
 
 /* =Media Queries
 -------------------------------------------------------------- */
