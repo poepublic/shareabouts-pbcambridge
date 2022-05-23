@@ -133,7 +133,7 @@ place_types:
     rules:
       - condition: '"{{location_type}}" === "parks_and_recreation" && {{layer.focused}} === false && {{map.zoom}} < 14'
         style:
-          fillColor: '#aa3c1e'
+          fillColor: '#fa5b13'
           fillOpacity: 1
           radius: 6
           color: 'black'
@@ -194,8 +194,8 @@ activity:
 
 place:
   adding_supported:
-    from: '2021-05-23 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2021-08-01 00:00 -0400'  # and ends early-November.
+    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2022-08-01 00:00 -0400'  # and ends early-November.
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show Ideas as a list)
@@ -220,7 +220,7 @@ place:
         value: no
       - label: _(City-wide)
         value: yes
-    - prompt: _(What is the title of your idea?)
+    - prompt: _(Title of your idea?)
       type: text
       name: title
       optional: false
@@ -233,7 +233,7 @@ place:
           value: 100
         - key: required
           value: true
-    - prompt: _(How does your idea help improve life in Cambridge?)
+    - prompt: _(What is your idea, and how does it improve Cambridge?)
       type: textarea
       name: description
       optional: false
@@ -278,8 +278,6 @@ place:
       attrs:
         - key: size
           value: 30
-        - key: required
-          value: true
     - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
       type: tel
       name: private-phone
@@ -287,15 +285,15 @@ place:
       attrs:
         - key: size
           value: 10
-    - prompt: _(Your ZIP Code (required, will NOT be shown on the map))
-      type: text
-      name: private-zip
-      sticky: true
-      attrs:
-        - key: size
-          value: 10
-        - key: required
-          value: true
+    # - prompt: _(Your ZIP Code (required, will NOT be shown on the map))
+    #   type: text
+    #   name: private-zip
+    #   sticky: true
+    #   attrs:
+    #     - key: size
+    #       value: 10
+    #     - key: required
+    #       value: true
     - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
       type: checkbox
       name: heard_about_pb
@@ -306,28 +304,22 @@ place:
       options:
         - label: _(City Council member)
           value: city-council-member
-        - label: _(City website)
-          value: city-website
+        - label: _(City website / Social media)
+          value: city-media
         - label: _(Community group)
           value: community-group
           other: true
-        - label: _(Mail)
-          value: mail
         - label: _(Email)
           value: email
         - label: _(Event)
           value: event
           other: true
-        - label: _(Flyer/door hanger/sign/banner)
-          value: flyer/door-hanger/sign/banner
-        - label: _(Facebook/Twitter/Instagram)
-          value: social-media
         - label: _(Newspaper/TV/radio)
           value: newspaper-tv-radio
-          other: true
-        - label: _(School)
-          value: school
-          other: true
+        - label: _(PB Advertising (Street banner/mailing/flyer/lawn sign, etc.))
+          value: pb-advertising
+        - label: _(School / Youth center)
+          value: youth-center
         - label: _(Word of mouth)
           value: word-of-mouth
         - label: _(Other)
@@ -350,7 +342,7 @@ place:
         - label: _(Not sure 🤷)
           value: not-sure
 
-    - prompt: _(Did you submit an idea, vote, or participate in any way in previous cycles of participatory budgeting?)
+    - prompt: _(Have you submitted an idea, voted, or volunteered in any of the previous PB cycles?)
       name: private-previous_participant
       sticky: true
       optional: false
@@ -382,9 +374,9 @@ place:
           value: yes
         - label: _(No, I have not done that)
           value: no
-        - label: _(I am not sure)
+        - label: _(Prefer not to answer/unsure)
           value: not-sure
-    - prompt: _(Did you vote in the November 5, 2019 municipal election?)
+    - prompt: _(Did you vote in the November 2, 2021 municipal election?)
       name: private-municipal_election_voter
       sticky: true
       optional: false
@@ -401,7 +393,7 @@ place:
           value: no
         - label: _(Yes, I voted)
           value: yes
-        - label: _(I am not sure)
+        - label: _(Prefer not to answer/unsure)
           value: not-sure
     - prompt: _(Your age)
       type: select
@@ -538,8 +530,8 @@ place:
 survey:
   submission_type: comments
   adding_supported:
-    from: '2021-05-23 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2021-08-01 00:00 -0400'  # and ends early-November.
+    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2022-08-01 00:00 -0400'  # and ends early-November.
 
   # Response config
   show_responses: true
@@ -564,8 +556,8 @@ survey:
 support:
   submission_type: support
   adding_supported:
-    from: '2021-05-23 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2021-08-01 00:00 -0400'  # and ends early-November.
+    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2022-08-01 00:00 -0400'  # and ends early-November.
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
