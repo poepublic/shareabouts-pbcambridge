@@ -91,6 +91,7 @@ var Shareabouts = Shareabouts || {};
       $button.attr('disabled', 'disabled');
 
       this.model.save({visible: !this.model.get('visible')}, {
+        patch: true,
         beforeSend: function($xhr) {
           $xhr.setRequestHeader('X-Shareabouts-Silent', 'true');
         },
