@@ -194,10 +194,14 @@ activity:
 
 place:
   adding_supported:
-    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    from: '2022-06-01 00:00 -0400'   # Daylight savings begins mid-March
     until: '2022-08-01 00:00 -0400'  # and ends early-November.
-  add_button_label: _(Submit an idea)
+  editors: cambridge-staff
+  moderators: cambridge-staff
+  response_name: _(idea)
+  response_plural_name: _(ideas)
   # Labels for the buttons that toggle the map and list views
+  add_button_label: _(Submit an idea)
   show_list_button_label: _(Show Ideas as a list)
   show_map_button_label: _(Show on a map)
   title: _(Describe your idea)
@@ -530,7 +534,7 @@ place:
 survey:
   submission_type: comments
   adding_supported:
-    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    from: '2022-06-01 00:00 -0400'   # Daylight savings begins mid-March
     until: '2022-08-01 00:00 -0400'  # and ends early-November.
 
   # Response config
@@ -556,7 +560,7 @@ survey:
 support:
   submission_type: support
   adding_supported:
-    from: '2022-05-21 00:00 -0400'   # Daylight savings begins mid-March
+    from: '2022-06-01 00:00 -0400'   # Daylight savings begins mid-March
     until: '2022-08-01 00:00 -0400'  # and ends early-November.
   submit_btn_text: _(Support This!)
   response_name: _(support)
