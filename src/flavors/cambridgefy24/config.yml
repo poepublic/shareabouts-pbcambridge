@@ -275,7 +275,7 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your Email (required, will NOT be shown on the map))
+    - prompt: _(Your Email (optional, will NOT be shown on the map))
       type: email
       name: private-email
       sticky: true
