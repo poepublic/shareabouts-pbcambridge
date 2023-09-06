@@ -1,0 +1,9 @@
+Thank you for sharing a Participatory Budgeting idea to improve Cambridge!
+
+Here is what you suggested: {{ place.properties.title }}
+
+You can see people's comments on your idea at {{site_root}}place/{{ place.id }}.
+
+Volunteer as a PB Delegate!  Help us turn these ideas into concrete project proposals. Sign up here!  http://pb.cambridgema.gov/volunteer2
+
+For more information on the participatory budgeting process, go to http://pb.cambridgema.gov/.
