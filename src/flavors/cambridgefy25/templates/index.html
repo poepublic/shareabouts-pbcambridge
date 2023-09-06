@@ -159,15 +159,16 @@ Shareabouts.AppView.prototype.newPlace = function() {
 <script>
   Shareabouts.PlaceFormView.prototype.events['change input[name="private-subscribe"]'] = 'onMailinglistSubscribeChange';
   Shareabouts.PlaceFormView.prototype.onMailinglistSubscribeChange = function(evt) {
-    var $emailInput = this.$el.find('input[name="private-submitter_email"]');
-    var $emailOptionalLabel = this.$el.find('span.email-requirement-label');
+    var $emailInput = this.$el.find('input[name="private-email"]');
+    var $emailOptionalLabel = this.$el.find('label[for="place-private-email"]');
 
+    var labelText = $emailOptionalLabel.text();
     if (evt.target.checked) {
       $emailInput.prop('required', true);
-      $emailOptionalLabel.text('required');
+      $emailOptionalLabel.text(labelText.replace('optional', 'required'));
     } else {
       $emailInput.prop('required', false);
-      $emailOptionalLabel.text('optional');
+      $emailOptionalLabel.text(labelText.replace('required', 'optional'));
     }
   };
 
@@ -182,7 +183,7 @@ Shareabouts.AppView.prototype.newPlace = function() {
         url: '/mailinglist/subscribe',
         type: 'POST',
         data: {
-          email: this.placeFormView.model.get('private-submitter_email'),
+          email: this.placeFormView.model.get('private-email'),
         }
       });
     }
