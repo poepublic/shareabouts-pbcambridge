@@ -357,6 +357,15 @@ input.geocode-address-field {
   font-size: 1.5em;
 }
 
+.place-gender-field-select-pair {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.place-gender-field-select-separator {
+  text-align: center;
+}
+
 /* Promotion: Voting & Sharing */
 .user-support label {
   color: #fff;

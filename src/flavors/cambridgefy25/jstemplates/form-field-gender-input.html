@@ -1,0 +1,43 @@
+<div class="place-gender-field-select-pair">
+  <select id="place-private-gender-alignment" name="private-gender-alignment"  {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+    {{#select_item_value form_config "private-gender-alignment"}}
+      <option value="">Please choose...</option>
+      <option
+        value="cisgender"
+        title="Cisgender – birth gender same as current gender"
+        aria-label="Cisgender – birth gender same as current gender">Cisgender</option>
+      <option
+        value="transgender"
+        title="Transgender – birth gender different from current gender"
+        aria-label="Transgender – birth gender different from current gender">Transgender</option>
+    {{/select_item_value}}
+  </select>
+
+  <select id="place-private-gender" name="private-gender" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+    {{#select_item_value form_config "private-gender"}}
+      <option value="">Please choose...</option>
+      <option value="woman">Female/woman</option>
+      <option value="man">Male/man</option>
+      <option value="nonbinary">Non-binary/gender non-conforming</option>
+    {{/select_item_value}}
+  </select>
+</div>
+
+<div class="place-gender-field-select-separator">- or -</div>
+
+<div>
+  {{#select_item_value form_config "private-gender"}}
+    <div>
+      <label>
+        <input type="radio" name="private-gender" value="other" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+        Other gender identity
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="private-gender" value="no-answer" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+        Prefer not to answer
+      </label>
+    </div>
+  {{/select_item_value}}
+</div>

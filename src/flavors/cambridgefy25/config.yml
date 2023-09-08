@@ -433,7 +433,7 @@ place:
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your gender)
-      type: radio
+      type: gender-select
       name: private-gender
       sticky: true
       optional: false

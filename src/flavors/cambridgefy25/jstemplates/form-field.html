@@ -8,6 +8,9 @@
       <label class="field-label {{ type }}-field-label" for="{{ default submission_type 'place' }}-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
     {{/is_authenticated}}
 
+    {{#is type 'gender-select'}}
+      {{> form-field-gender-input form_config=form_config }}
+    {{/is}}
 
     {{#isAny type 'email' 'tel' 'text'}}
       {{> form-field-input form_config=form_config }}
