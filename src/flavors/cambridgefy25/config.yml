@@ -384,7 +384,7 @@ place:
           value: yes
         - label: _(Prefer not to answer/unsure)
           value: not-sure
-    - prompt: _(In the past 12 months, have you worked with other people in your neighborhood to fix a problem or improve a condition in your community, not including< work you may have done related to participatory budgeting?)
+    - prompt: _(In the past 12 months, have you worked with other people in your neighborhood to fix a problem or improve a condition in your community, not including work you may have done related to participatory budgeting?)
       name: private-other_civic_participant
       sticky: true
       optional: false
