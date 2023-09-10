@@ -443,10 +443,10 @@ place:
         - key: data-personal-info
           value: true
       options:
-        - label: _(Female/woman)
-          value: female
-        - label: _(Male/man)
-          value: male
+        - label: _(Woman)
+          value: woman
+        - label: _(Man)
+          value: man
         - label: _(Nonbinary/gender non-conforming)
           value: nonbinary
         - label: _(Transgender – birth gender different from current gender)
