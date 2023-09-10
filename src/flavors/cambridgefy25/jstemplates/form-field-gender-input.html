@@ -1,4 +1,13 @@
 <div class="place-gender-field-select-pair">
+  <select id="place-private-gender" name="private-gender" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+    {{#select_item_value form_config "private-gender"}}
+      <option value="">Please choose...</option>
+      <option value="woman">Female/woman</option>
+      <option value="man">Male/man</option>
+      <option value="nonbinary">Non-binary/gender non-conforming</option>
+    {{/select_item_value}}
+  </select>
+
   <select id="place-private-gender-alignment" name="private-gender-alignment"  {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
     {{#select_item_value form_config "private-gender-alignment"}}
       <option value="">Please choose...</option>
@@ -10,15 +19,6 @@
         value="transgender"
         title="Transgender – birth gender different from current gender"
         aria-label="Transgender – birth gender different from current gender">Transgender</option>
-    {{/select_item_value}}
-  </select>
-
-  <select id="place-private-gender" name="private-gender" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
-    {{#select_item_value form_config "private-gender"}}
-      <option value="">Please choose...</option>
-      <option value="woman">Female/woman</option>
-      <option value="man">Male/man</option>
-      <option value="nonbinary">Non-binary/gender non-conforming</option>
     {{/select_item_value}}
   </select>
 </div>
