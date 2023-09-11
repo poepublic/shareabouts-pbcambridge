@@ -302,9 +302,6 @@ place:
       type: checkbox
       name: heard_about_pb
       sticky: true
-      attrs:
-        - key: required
-          value: true
       options:
         - label: _(City Council member)
           value: city-council-member
@@ -335,11 +332,8 @@ place:
     - prompt: _(Have you completed this personal information survey already in this participatory budgeting cycle?)
       name: private-completed_personal_info_survey
       sticky: true
-      optional: false
+      optional: true
       type: radiogroup
-      attrs:
-        - key: required
-          value: true
       options:
         - label: _(Yes ✅)
           value: yes
@@ -351,11 +345,9 @@ place:
     - prompt: _(Have you submitted an idea, voted, or volunteered in any of the previous PB cycles?)
       name: private-previous_participant
       sticky: true
-      optional: false
+      optional: true
       type: radio
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -368,11 +360,9 @@ place:
     - prompt: _(Did you vote in the November 2, 2021 municipal election?)
       name: private-municipal_election_voter
       sticky: true
-      optional: false
+      optional: true
       type: radio
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -387,11 +377,9 @@ place:
     - prompt: _(In the past 12 months, have you worked with other people in your neighborhood to fix a problem or improve a condition in your community, not including work you may have done related to participatory budgeting?)
       name: private-other_civic_participant
       sticky: true
-      optional: false
+      optional: true
       type: radio
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -405,10 +393,8 @@ place:
       type: select
       name: private-age
       sticky: true
-      optional: false
+      optional: true
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -436,10 +422,8 @@ place:
       type: gender-select
       name: private-gender
       sticky: true
-      optional: false
+      optional: true
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -462,10 +446,8 @@ place:
       type: checkbox
       name: private-race
       sticky: true
-      optional: false
+      optional: true
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -493,8 +475,6 @@ place:
     - prompt: _(Annual Household Income)
       type: select
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:
@@ -516,15 +496,13 @@ place:
           value: no-answer
       name: private-income
       sticky: true
-      optional: false
+      optional: true
     - prompt: _(What is your highest level of education?)
       type: select
-      optional: false
+      optional: true
       name: private-education
       sticky: true
       attrs:
-        - key: required
-          value: true
         - key: data-personal-info
           value: true
       options:

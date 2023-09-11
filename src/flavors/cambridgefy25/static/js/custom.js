@@ -41,29 +41,12 @@ Shareabouts.PlaceFormView.prototype.initializeGenderField = function() {
   const $radioButtons = this.$('[name="private-gender"][type="radio"]');
   const $selectBoxes = this.$('select[name="private-gender"], select[name="private-gender-alignment"]');
 
-  const setGenderFieldRequirements = () => {
-    // If either of the radio buttons is selected, remove requirement from
-    // select boxes. Otherwise, add requirement to both select boxes and
-    // remove from radio buttons.
-    console.log('setting gender field requirements')
-    if ($radioButtons.is(':checked')) {
-      console.log('removing required from radio buttons')
-      $selectBoxes.prop('required', false);
-    } else {
-      console.log('removing requirement from selects')
-      $selectBoxes.prop('required', true);
-      $radioButtons.prop('required', false);
-    }
-  }
-
   $radioButtons.on('change', () => {
     $selectBoxes.val('');
-    setGenderFieldRequirements();
   });
 
   $selectBoxes.on('change', () => {
     $radioButtons.prop('checked', false);
-    setGenderFieldRequirements();
   });
 }
 
