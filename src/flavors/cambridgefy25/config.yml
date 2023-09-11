@@ -209,7 +209,11 @@ place:
   help_text: _(Ideas must be for <strong>capital</strong> projects – Please see the guidelines here)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
+
   location_item_name: location
+  city_wide_location_label: _(Multiple locations throughout the city)
+  unset_location_label: _(Drag the map to a location for your idea.)
+
   items:
     - prompt: _(Is your idea about a specific location or the entire city?)
       name: city_wide

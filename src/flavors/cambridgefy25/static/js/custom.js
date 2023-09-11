@@ -15,6 +15,14 @@ Shareabouts.PlaceFormView.prototype.onPersonalInfoCompleteChange = function(evt)
   }
 }
 
+// Use a custom version of the form view's setLocation function when city-wide
+// is set to true:
+var original_PlaceFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
+function cityWide_PlaceFormView_setLocation() {
+  const location = null;
+  this.$('.location-receiver').html(this.options.placeConfig.city_wide_location_label);
+}
+
 var original_PlaceFormView_setLatLng = Shareabouts.PlaceFormView.prototype.setLatLng;
 Shareabouts.PlaceFormView.prototype.setLatLng = function(ll) {
   original_PlaceFormView_setLatLng.call(this, ll);
@@ -25,13 +33,39 @@ Shareabouts.PlaceFormView.prototype.unsetLatLng = function() {
   this.center = null;
   this.$('.drag-marker-instructions').removeClass('is-visuallyhidden');
   this.$('.approx-address, .drag-marker-warning').addClass('is-visuallyhidden');
+
+  // Restore the original setLocation function and location label.
+  Shareabouts.PlaceFormView.prototype.setLatLng = original_PlaceFormView_setLatLng;
+  Shareabouts.PlaceFormView.prototype.setLocation = original_PlaceFormView_setLocation;
+  this.location = null;
+  this.$('.location-receiver').html(this.options.placeConfig.unset_location_label);
+}
+
+// Set a location near City Hall:
+Shareabouts.PlaceFormView.prototype.setCityWideLatLng = function(latLng) {
+  const pt = turf.point([-71.10568553209306, 42.36710953619132]); // <- Cambridge City Hall.
+
+  // Offset city-wide ideas some random amount within 50 meters.
+  const offsetDist = Math.random() * 50;
+  const offsetDir = Math.random() * 360;
+  const randpt = turf.transformTranslate(pt, offsetDist, offsetDir, {units: 'meters'});
+
+  this.setLatLng({lng: randpt.geometry.coordinates[0], lat: randpt.geometry.coordinates[1]});
+
+  // Make it so that any actions that would normally alter the form's latlng
+  // (like moving the map) will have no effect.
+  Shareabouts.PlaceFormView.prototype.setLatLng = function() {};
+
+  // Update the reverse geocoded label too.
+  Shareabouts.PlaceFormView.prototype.setLocation = cityWide_PlaceFormView_setLocation;
+  this.setLocation();
 }
 
 Shareabouts.PlaceFormView.prototype.resetCityWide = function(isCityWide) {
   $('body').attr('data-city_wide', isCityWide);
 
   if (isCityWide == 'true') {
-    this.setLatLng({lng: -71.10568553209306, lat: 42.36710953619132}) // <- Cambridge City Hall.
+    this.setCityWideLatLng();
   } else {
     this.unsetLatLng();
   }
