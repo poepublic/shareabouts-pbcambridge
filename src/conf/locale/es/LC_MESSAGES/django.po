@@ -110,24 +110,6 @@ msgstr "Lo más {{ support_label_plural }}"
 msgid "Most {{ survey_label_plural }}"
 msgstr "Lo más {{ survey_label_plural }}"
 
-#: sa_web/jstemplates/place-survey-response.html:1
-msgid "Thanks for participating!"
-msgstr ""
-
-#: sa_web/jstemplates/unsupported-overlay.html:1
-msgid "Proceed Anyway"
-msgstr "Proceder de todas maneras"
-
-#: sa_web/jstemplates/unsupported-overlay.html:2
-msgid ""
-"You are using an unsupported browser. Please\n"
-"    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
-"    your experience."
-msgstr ""
-"Estás utilizando un navegador no permitido. Por favor\n"
-"<a href=\"http://browsehappy.com/\">actualiza tu navegador</a> para mejorar\n"
-"tu experiencia."
-
 #: sa_web/templates/base.html:84
 #, python-format
 msgid ""
