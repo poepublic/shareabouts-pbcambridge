@@ -8,14 +8,7 @@ except:
 from contextlib import closing
 from copy import deepcopy
 from django.conf import settings
-from django.utils.translation import ugettext as _
-
-
-def get_shareabouts_config(path_or_url):
-    if path_or_url.startswith('http://') or path_or_url.startswith('https://'):
-        return ShareaboutsRemoteConfig(path_or_url)
-    else:
-        return ShareaboutsLocalConfig(path_or_url)
+from django.utils.translation import gettext as _
 
 
 def apply_env_overrides(data, env):
@@ -61,8 +54,8 @@ def translate(data):
 
     # If it's an object, recurse
     if isinstance(data, dict):
-        return dict([(k, translate(v))
-                     for k, v in data.items()])
+        return {k: translate(v)
+                for k, v in data.items()}
 
     # If it's a list, recurse on each item
     elif isinstance(data, list):
@@ -86,12 +79,16 @@ def parse_msg(s):
         return s[2:-1]
 
 
-class _ShareaboutsConfig (object):
+class _ShareaboutsConfig:
     """
     Base class representing Shareabouts configuration options
     """
     raw = False
     apply_env = True
+
+    def __init__(self, translate=True, apply_env=True):
+        self.translate = translate
+        self.apply_env = apply_env
 
     @property
     def data(self):
@@ -102,7 +99,7 @@ class _ShareaboutsConfig (object):
             if self.apply_env:
                 self._data = apply_env_overrides(self._data, os.environ)
 
-            if not self.raw:
+            if self.translate:
                 self._data = translate(self._data)
 
         return self._data
@@ -121,7 +118,8 @@ class _ShareaboutsConfig (object):
 
 
 class ShareaboutsRemoteConfig (_ShareaboutsConfig):
-    def __init__(self, url):
+    def __init__(self, url, **kwargs):
+        super().__init__(**kwargs)
         self.url = url
 
     def static_url(self):
@@ -133,7 +131,8 @@ class ShareaboutsRemoteConfig (_ShareaboutsConfig):
 
 
 class ShareaboutsLocalConfig (_ShareaboutsConfig):
-    def __init__(self, path):
+    def __init__(self, path, **kwargs):
+        super().__init__(**kwargs)
         self.path = path
 
     def static_url(self):
@@ -142,3 +141,17 @@ class ShareaboutsLocalConfig (_ShareaboutsConfig):
     def config_file(self):
         config_filename = os.path.join(self.path, 'config.yml')
         return open(config_filename)
+
+
+def get_shareabouts_config(path_or_url: str | None = None, **kwargs) -> _ShareaboutsConfig:
+    if path_or_url is None:
+        path_or_url = settings.SHAREABOUTS.get('CONFIG')
+
+    if path_or_url.startswith('http://') or path_or_url.startswith('https://'):
+        config = ShareaboutsRemoteConfig(path_or_url, **kwargs)
+    else:
+        config = ShareaboutsLocalConfig(path_or_url, **kwargs)
+
+    config.update(settings.SHAREABOUTS.get('CONTEXT', {}))
+    return config
+

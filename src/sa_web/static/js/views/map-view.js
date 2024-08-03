@@ -167,7 +167,7 @@ var Shareabouts = Shareabouts || {};
       // Add the geolocation control link
       this.$('.leaflet-top.leaflet-right').append(
         '<div class="leaflet-control leaflet-bar">' +
-          '<a href="#" class="locate-me"></a>' +
+          '<a href="#" class="locate-me" role="button" title="Center on my location" aria-label="Center on my location"></a>' +
         '</div>'
       );
 
@@ -214,7 +214,9 @@ var Shareabouts = Shareabouts || {};
       control = L.Control.geocoder(options)
         .on('markgeocode', function(evt) {
           result = evt.geocode || evt;
-          this._map.fitBounds(result.bbox);
+          const zoom = this._map.getBoundsZoom(result.bbox);
+          const center = result.center;
+          this._map.setView(center, zoom);
           $(S).trigger('geocode', [evt]);
         })
         .addTo(this.map);
