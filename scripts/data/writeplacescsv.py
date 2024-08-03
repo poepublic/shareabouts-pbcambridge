@@ -60,6 +60,7 @@ def main(earliest, latest, outfile, timezone):
         ('Hidden', lambda f: not f['properties']['visible']),
 
         ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
+        ('User Token', 'user_token'),
         ('Email', 'private-email'),
         ('Already submitted personal info', 'private-completed_personal_info_survey'),
         ('Previous participant', 'private-previous_participant'),
