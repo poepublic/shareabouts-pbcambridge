@@ -1,0 +1,688 @@
+
+/* =Base Styles
+-------------------------------------------------------------- */
+
+/* Typography */
+body, select, input, textarea {
+  font-family: "Lato", Verdana, Segoe, sans-serif;
+}
+label { font-size: 1em; text-transform: none; color: #555; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", Tahoma, sans-serif;
+  font-weight: 700;
+  color:#ef4123;
+  font-weight: 300;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+h1, h4 {
+  color:#ef4123;
+  font-weight: 300;
+  font-size: 1.75em;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+li {
+  padding-bottom: 0;
+  margin-bottom: 0.75em;
+}
+
+p {
+  margin: 0 0 0.75em;
+}
+
+
+/* Buttons */
+.btn,
+.btn:visited,
+.btn:link {
+  background-color: #7226ff;
+  color: #fff;
+}
+.btn:hover, .button:hover, button:hover {
+  background-color: #1b194a;
+}
+.btn-primary, .btn-primary:visited, .btn-primary:link {
+  background-color: #7226ff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #1b194a;
+}
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:link {
+  background-color: #116faf;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #7226ff;
+  color: #fff;
+}
+
+/* Forms */
+label {
+}
+
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+  border: 0.25em solid #ddd;
+}
+input:focus,
+textarea:focus {
+  border: 0.25em solid #f93c04;
+  outline: 2px solid #f93c04;
+}
+
+.detail-text input[type=text],
+.detail-text input[type=text]:focus {
+  display: inline-block;
+  width: 10em;
+  height: 1.25em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.detail-text {
+  display: none;
+}
+
+input:checked + .detail-text {
+  display: inline;
+}
+
+
+/* =The Site Header
+-------------------------------------------------------------- */
+
+#site-header {
+  color: #fff;
+  background-color: #1b1949;
+}
+#site-title {
+  color: #fff;
+  font-size: 1.125em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1em;
+    color:#fff;
+  }
+
+#site-logo {
+  float: left;
+  height: 1.25em;
+  margin-bottom: 0.25em;
+}
+#nav-btn {
+  background-color: #1b1949;
+  color: #fff;
+  text-shadow: none;
+}
+.access a,
+.access a:visited,
+.access a:active,
+.access a:link {
+  color: #fff;
+  background-color: #7226ff;
+  border: 0;
+}
+.access a:hover {
+  background-color: #1b194a;
+  color: #fff;
+}
+#auth-nav-container {}
+a#sign-in-btn {
+  color: #7226ff;
+}
+a#sign-in-btn:hover {
+  color: #1b194a;
+}
+
+/* =Filter Menu (specifically on mobile)
+-------------------------------------------------------------- */
+
+.access .menu ul {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.access .menu ul .menu-item {
+  margin-bottom: 0;
+}
+
+
+/* =The Big Button to Add A New Point
+-------------------------------------------------------------- */
+
+#add-place-btn-container {
+  background-color: #fbfbf3;
+  border: 0;
+}
+a#add-place, .add-place-btn, .add-place-btn:visited, .add-place-btn:link {
+  background-color: #f93c04;
+  color: #fff;
+  transition: all 0.1s;
+}
+a#add-place:hover, .add-place-btn:hover {
+  background-color: #1b194a;
+  color: #fff;
+}
+
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #fbfbf3;
+  border-right: 1px solid #c3d7e5;
+}
+.geocode-address-label {
+  font-size: 0.75em;
+}
+input.geocode-address-field {
+  border-width: 0;
+  background-color: #fff;
+  color: #555;
+}
+#geocode-address-bar .error {
+  line-height: 1.75;
+  background-color: #F26161;
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error + form {
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error.is-hidden + form {
+  box-shadow: none;
+}
+.geocode-spinner {
+  background-color: #fff;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon,
+#powered-by a.shareabouts-logo,
+#powered-by a.shareabouts-logo:hover,
+#powered-by a.openplans-logo,
+#powered-by a.openplans-logo:hover,
+#powered-by a.poepublic-logo,
+#powered-by a.poepublic-logo:hover {
+  background-color: #fff;
+  color: #888;
+}
+
+
+/* =Map
+-------------------------------------------------------------- */
+#map-container {
+  background: #ccc;
+}
+
+#map {
+  background: #ccc;
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background-color: #fff;
+}
+.recent-points li {}
+.recent-points li:hover {
+  background: #eee;
+}
+.recent-points a {
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+.recent-points li:hover a,
+.recent-points a:hover {
+  color: #fff;
+  background-color: #7226ff;
+  border-color: #7226ff;
+}
+
+
+/* =Legend & Guidelines Chart
+-------------------------------------------------------------- */
+
+.legend {
+  background-color: #fbfbf3;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+}
+.legend li {
+  padding: 8px 0 2px 0 !important;
+}
+.legend img {
+  float: left;
+  position: relative;
+  margin-right: 8px;
+  margin-top: 1px;
+  z-index: 2;
+}
+.legend img + img {
+  margin-right: -21px;
+  right: 31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.color-info {
+  font-size: 0.85em;
+  background: #ddd;
+  color: #666;
+  margin: 0 0 -6px !important;
+  padding: 6px 4px 8px 0 !important;
+}
+.color-info img {
+  margin-top: -12px;
+}
+
+.guidelines-header {
+  clear: both;
+  padding-top: 0.75em;
+  border-top: 1px solid #ddd;
+}
+.guidelines-header img {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.guidelines-header img + img {
+  margin-right: -31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.eligibility-header {
+  text-transform: uppercase;
+  color: #777;
+}
+.eligible {
+  float: left;
+  width: 48%;
+}
+.non-eligible {
+  float: right;
+  width: 48%;
+}
+.muted {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+
+/* =Place Details
+-------------------------------------------------------------- */
+
+.place-items {
+  padding-bottom: 1.5em;
+}
+.place-items p {
+  margin-bottom: 0.5em !important;
+}
+.description {
+  font-size: 1.5em;
+}
+
+.place-gender-field-select-pair {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.place-gender-field-select-separator {
+  text-align: center;
+}
+
+/* Promotion: Voting & Sharing */
+.user-support label {
+  color: #fff;
+}
+:checked ~ .user-support-content {}
+.user-support:hover label {
+  background-color: #1b194a;
+}
+
+p.checkbox {
+  margin-bottom: 0.5em;
+  clear: both;
+}
+input[type=checkbox] {
+  margin-right: 0.25em;
+}
+p.checkbox + p.select {
+  margin-top: 1.5em;
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+.response-submitter .avatar {
+  /* Override the max-width, set on all img elements in default.css */
+  max-width: 3rem;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 22em) {
+  #site-tagline {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #site-title {
+    padding-top: 10px;
+  }
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1em;
+    color:#fff;
+    font-style: 300;
+  }
+
+  #site-title a:hover {}
+  #site-logo {
+    height: 4em;
+    margin: 0 0 0 -0.5em;
+  }
+  .access {
+    font-size: 0.75em;
+  }
+  .access li {
+    margin: 0;
+  }
+  .access a,
+  .access a:visited,
+  .access a:active,
+  .access a:link {
+    background-color: #1b1949;
+    color: #fff;
+    box-shadow: none;
+  }
+  .access a:hover {
+    background-color: #7226ff;
+    color: #fff;
+  }
+  .list-toggle-nav {
+    font-size: 0.75em;
+    float: left;
+  }
+  a.list-toggle-btn:visited,
+  a.list-toggle-btn:active,
+  a.list-toggle-btn:link {
+    background-color: #fff;
+    color: #1b194a;
+    text-shadow: none;
+    box-shadow: none;
+    border: 0;
+  }
+  a.list-toggle-btn:hover {
+    background-color: #7226ff;
+    color: #fff;
+  }
+  #add-place-btn-container {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  .access,
+  .list-toggle-nav {
+    font-size: 0.875em;
+  }
+}
+
+
+#current-filter-type {
+  position: absolute;
+  width: 100%;
+  margin-top: -0.3em;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+#current-filter-type.unfiltered { background: none; border: none; }
+
+.drag-marker-instructions { display: none; }
+.approx-address { display: none; }
+#centerpoint.newpin { display: none; }
+
+[data-city_wide="false"] .drag-marker-instructions { display: block; }
+[data-city_wide="false"] .approx-address { display: block; }
+[data-city_wide="false"] #centerpoint.newpin { display: inline; }
+
+/* ====================
+ * General or specific location
+ * ==================== */
+
+ .place-city_wide-field label {
+   display: block;
+   text-align: center;
+ }
+
+.place-city_wide-field .radio-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.place-city_wide-field .radio-group label {
+  margin: 0.25rem;
+}
+
+.radio-group input[name="city_wide"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  top: 0;
+}
+
+input[name="city_wide"] + .label-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.5rem;
+  width: 10rem;
+  height: 8rem;
+  background-position: center 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 3.8rem 3.6rem;
+  text-align: center;
+}
+
+input[name="city_wide"]:checked + .label-text {
+  background-color: #1b1949;
+}
+
+input[name="city_wide"][value="true"] + .label-text { background-image: url("/static/css/images/cityhall-light.png"); }
+input[name="city_wide"][value="false"] + .label-text { background-image: url("/static/css/images/location-light.png"); }
+
+input[name="city_wide"][value="true"]:checked + .label-text { background-image: url("/static/css/images/cityhall-dark.png"); }
+input[name="city_wide"][value="false"]:checked + .label-text { background-image: url("/static/css/images/location-dark.png"); }
+
+
+
+/* ====================
+ * Location type choice
+ * ==================== */
+
+.place-location_type-field .radio-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.place-location_type-field .radio-group label {
+  margin: 0.25rem;
+}
+
+.radio-group input[name="location_type"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  top: 0;
+}
+
+input[name="location_type"] + .label-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.5rem;
+  width: 10rem;
+  height: 8rem;
+  background-position: center 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 3rem 3.6rem;
+  text-align: center;
+}
+
+input[name="location_type"][value="arts_and_culture"] + .label-text { background-image: url("/static/css/images/markers/arts_and_culture.png"); }
+input[name="location_type"][value="community_resources"] + .label-text { background-image: url("/static/css/images/markers/community_resources.png"); }
+input[name="location_type"][value="environment_and_sustainability"] + .label-text { background-image: url("/static/css/images/markers/environment_and_sustainability.png"); }
+input[name="location_type"][value="parks_and_recreation"] + .label-text { background-image: url("/static/css/images/markers/parks_and_recreation.png"); }
+input[name="location_type"][value="transpo_streets_and_sidewalks"] + .label-text { background-image: url("/static/css/images/markers/transpo_streets_and_sidewalks.png"); }
+
+input[name="location_type"][value="arts_and_culture"]:checked + .label-text { background-color: #ffd614; }
+input[name="location_type"][value="community_resources"]:checked + .label-text { background-color: #aa3c1e; }
+input[name="location_type"][value="environment_and_sustainability"]:checked + .label-text { background-color: #55a504; }
+input[name="location_type"][value="parks_and_recreation"]:checked + .label-text { background-color: #fa5b13; }
+input[name="location_type"][value="transpo_streets_and_sidewalks"]:checked + .label-text { background-color: #8ea4b8; }
+
+.recent-points .avatar {
+  width: auto;
+}
+
+
+/* ==================================
+ * Personal information survey
+ * ==================================
+ */
+
+.place-private-completed_personal_info_survey-field .radio-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input[name="private-completed_personal_info_survey"]:checked + .label-text {
+  background-color: #1b1949;
+}
+
+[data-personal-info-complete="true"] .place-private-previous_participant-field { display: none; }
+[data-personal-info-complete="true"] .place-private-other_civic_participant-field { display: none; }
+[data-personal-info-complete="true"] .place-private-municipal_election_voter-field { display: none; }
+[data-personal-info-complete="true"] .place-private-age-field { display: none; }
+[data-personal-info-complete="true"] .place-private-gender-field { display: none; }
+[data-personal-info-complete="true"] .place-private-race-field { display: none; }
+[data-personal-info-complete="true"] .place-private-income-field { display: none; }
+[data-personal-info-complete="true"] .place-private-education-field { display: none; }
+
+ /* ==================================
+  * Social media login (Facebook only)
+  * ==================================
+  */
+
+.sign-in-menu-item {
+  width: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+  .sign-in-menu {
+    width: 9em;
+  }
+}
+
+
+/* ============
+ * Disable auth
+ * ============
+ */
+
+#auth-nav-container {
+  display: none;
+}
+.or-sign-in {
+  display: none;
+}
+
+
+/* =============
+ * Disable input
+ * =============
+ */
+
+/*div #reply {
+  display: none;
+}
+a.reply-link.btn.btn-small {
+  display: none;
+}
+
+.support .user-support:hover {
+  background-color: #7226ff;
+  color: #fff;
+  cursor: default;
+}
+.support .user-support:hover label {
+  background-color: transparent;
+  color: #fff;
+}
+*/
+
+
+/* ==========
+ * Static map
+ * ==========
+ * Make the legend taller, because we no longer show
+ * activity (static map data).
+ */
+
+/*@media only screen and (min-width: 60em) {
+  .legend.translate {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+  .legend.icons {
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+*/

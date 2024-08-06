@@ -1,0 +1,77 @@
+        <form id="place-form" class="place-form clearfix">
+
+          <fieldset>
+            <input type="hidden" name="visible" value="on">
+            <input type="hidden" name="user_token" value="{{{ user_token }}}">
+
+            {{# place_config.items }}
+
+            {{! Heading -- Separate each section by a heading }}
+
+            {{#is name 'city_wide'}}
+              <h4>{{#_}}Project Location{{/_}}</h4>
+            {{/is}}
+
+            {{#is name 'title'}}
+            <h4>{{#_}}Describe your idea{{/_}}</h4>
+            <p>
+              <strong>{{#_}}PB funding of $2,000,000 can be used to support
+              projects that benefit the public and are located within the City
+              of Cambridge. For more information about what kind of projects
+              are eligible for PB, please review the
+              <a href="https://pb.cambridgema.gov/faqs"
+              title="City of Cambridge Participatory Budgeting FAQ"
+              target="_blank">guidelines here</a>.{{/_}}</strong>
+            </p>
+            {{/is}}
+
+            {{#is name 'submitter_name'}}
+            <h4>{{#_}}Contact Information{{/_}}</h4>
+            <p>{{#_}}Please tell us how we can contact you about your idea.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'private-completed_personal_info_survey'}}
+            <h4>{{#_}}Optional Survey{{/_}}</h4>
+            <p>{{#_}}<strong>Please tell us a little more about yourself to
+            help us assess whether we are reaching the full diversity of our
+            community. This survey is optional.</strong>{{/_}} {{#_}}If you
+            submit more than one idea, please only complete the survey
+            once.{{/_}}</p>
+            {{/is}}
+
+            {{> form-field form_config=..}}
+
+            {{#is name 'city_wide'}}
+              <p class="drag-marker-instructions">
+                <span>{{#_}}Drag the map to a location for your idea.{{/_}}</span><br>
+                <small style="font-weight: normal;">Even if your idea pertains to multiple locations or the entire city, choose a particular place that you think of when thinking about the issue.</small>
+              </p>
+              <p class="approx-address">
+                <span class="address-label">{{#_}}Approximate location:{{/_}}</span>
+                <span class="location-receiver"></span>
+              </p>
+              <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to a location for your idea.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'heard_about_pb'}}
+            <p>{{#_}}After idea collection closes, volunteer residents will
+            work to research, assess, and prioritize PB project ideas to
+            determine which proposals will appear on the final ballot in March
+            for a public vote. <a href="http://pb.cambridgema.gov/volunteer2"
+            target="_blank">Click here to volunteer to be a PB
+            Delegate!</a>{{/_}}
+            {{/is}}
+
+            {{/ place_config.items }}
+          </fieldset>
+
+          <input name="save-place-btn" id="save-place-btn" type="submit" value="{{ place_config.submit_button_label }}" class="btn btn-primary submit-btn">
+
+          {{#is_authenticated}}
+            <p class="signed-in-as"><img src="{{ current_user "avatar_url" }}" class="avatar" /> {{ current_user "name" }} <a class="" href="/users/logout/">Log Out</a></p>
+          {{^}}
+          {{/is_authenticated}}
+
+          <div class="form-spinner"></div>
+
+        </form>

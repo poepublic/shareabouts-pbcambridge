@@ -36,7 +36,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code to the working directory
 COPY --from=staticlayer /app/src ./src
-ARG SHAREABOUTS_FLAVOR=defaultflavor
+ARG SHAREABOUTS_FLAVOR=cambridgefy26
 
 # Prepare the static files
 RUN python src/manage.py collectstatic
