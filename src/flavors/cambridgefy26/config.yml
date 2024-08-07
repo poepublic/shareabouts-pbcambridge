@@ -37,7 +37,7 @@ map:
 # Arts & Culture
 # Community Resources & Eduction (facilities)
 # Environment & Sustainability (tree or street-tree)
-# Parks & Recreation (playground or fountain)
+# Facilities, Parks & Recreation (playground or fountain)
 # Transportation, Streets & Sidewalks (street-sidewalk or biking or bike-crossing)
 
 place_types:
@@ -129,7 +129,7 @@ place_types:
           iconAnchor: [38, 90]
 
   parks_and_recreation:
-    label: _(Parks & Recreation)
+    label: _(Facilities, Parks & Recreation)
     rules:
       - condition: '"{{location_type}}" === "parks_and_recreation" && {{layer.focused}} === false && {{map.zoom}} < 14'
         style:
@@ -215,7 +215,7 @@ place:
   unset_location_label: _(Drag the map to a location for your idea.)
 
   items:
-    - prompt: _(Is your idea about a specific location or the entire city?)
+    - prompt: _(Is your idea for a specific location or the entire city?)
       name: city_wide
       sticky: false
       optional: false
@@ -247,7 +247,7 @@ place:
       optional: false
       attrs:
         - key: placeholder
-          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
+          value: _(What need does your idea address? Who does your idea benefit? Please describe specific and relevant details about your idea.)
         - key: maxlength
           value: 1000
         - key: required
@@ -262,7 +262,7 @@ place:
           value: community_resources
         - label: _(Environment & Sustainability)
           value: environment_and_sustainability
-        - label: _(Parks & Recreation)
+        - label: _(Facilities, Parks & Recreation)
           value: parks_and_recreation
         - label: _(Transportation, Streets & Sidewalks)
           value: transpo_streets_and_sidewalks
@@ -346,7 +346,7 @@ place:
         - label: _(Not sure 🤷)
           value: not-sure
 
-    - prompt: _(Have you submitted an idea, voted, or volunteered in any of the previous PB cycles?)
+    - prompt: _(Have you submitted an idea, voted, or volunteered in any of the previous Cambridge PB cycles?)
       name: private-previous_participant
       sticky: true
       optional: true
@@ -361,23 +361,23 @@ place:
         value: yes
       - label: _(I am not sure)
         value: not-sure
-    - prompt: _(Did you vote in the November 2, 2021 municipal election?)
-      name: private-municipal_election_voter
-      sticky: true
-      optional: true
-      type: radio
-      attrs:
-        - key: data-personal-info
-          value: true
-      options:
-        - label: _(No, I am not eligible to vote)
-          value: not-eligible
-        - label: _(No, I did not vote but am eligible to)
-          value: no
-        - label: _(Yes, I voted)
-          value: yes
-        - label: _(Prefer not to answer/unsure)
-          value: not-sure
+    # - prompt: _(Did you vote in the November 2, 2021 municipal election?)
+    #   name: private-municipal_election_voter
+    #   sticky: true
+    #   optional: true
+    #   type: radio
+    #   attrs:
+    #     - key: data-personal-info
+    #       value: true
+    #   options:
+    #     - label: _(No, I am not eligible to vote)
+    #       value: not-eligible
+    #     - label: _(No, I did not vote but am eligible to)
+    #       value: no
+    #     - label: _(Yes, I voted)
+    #       value: yes
+    #     - label: _(Prefer not to answer/unsure)
+    #       value: not-sure
     - prompt: _(In the past 12 months, have you worked with other people in your neighborhood to fix a problem or improve a condition in your community, not including work you may have done related to participatory budgeting?)
       name: private-other_civic_participant
       sticky: true
@@ -393,6 +393,45 @@ place:
           value: no
         - label: _(Prefer not to answer/unsure)
           value: not-sure
+    - prompt: _(Please select your neighborhood community in Cambridge)
+      type: select
+      name: private-neighborhood
+      sticky: true
+      optional: true
+      attrs:
+        - key: data-personal-info
+          value: true
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: East Cambridge
+          value: East Cambridge
+        - label: Area 2/MIT
+          value: Area 2/MIT
+        - label: Wellington-Harrington
+          value: Wellington-Harrington
+        - label: The Port
+          value: The Port
+        - label: Cambridgeport
+          value: Cambridgeport
+        - label: Mid-Cambridge
+          value: Mid-Cambridge
+        - label: Riverside
+          value: Riverside
+        - label: Baldwin
+          value: Baldwin
+        - label: Neighborhood Nine
+          value: Neighborhood Nine
+        - label: West Cambridge
+          value: West Cambridge
+        - label: North Cambridge
+          value: North Cambridge
+        - label: Cambridge Highlands
+          value: Cambridge Highlands
+        - label: Strawberry Hill
+          value: Strawberry Hill
+        - label: _(Prefer not to answer)
+          value: no-answer
     - prompt: _(Your age)
       type: select
       name: private-age
@@ -423,7 +462,7 @@ place:
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your gender)
-      type: gender-select
+      type: select
       name: private-gender
       sticky: true
       optional: true
@@ -431,17 +470,47 @@ place:
         - key: data-personal-info
           value: true
       options:
-        - label: _(Woman)
-          value: woman
-        - label: _(Man)
-          value: man
-        - label: _(Nonbinary/gender non-conforming)
+        - label: _(Cisgender Female/woman)
+          value: cisgender-female
+        - label: _(Cisgender Male/man)
+          value: cisgender-male
+        - label: _(Nonbinary/gender non-confirming)
           value: nonbinary
-        - label: _(Transgender – birth gender different from current gender)
-          value: transgender
-        - label: _(Cisgender – birth gender same as current gender)
-          value: cisgender
-        - label: _(Other gender identity)
+        - label: _(Transgender Female)
+          value: transgender-female
+        - label: _(Transgender Male)
+          value: transgender-male
+        - label: _(Other)
+          value: other
+          other: true
+        - label: _(Prefer not to answer)
+          value: no-answer
+    - prompt: _(Your preferred language)
+      type: select
+      name: private-language
+      sticky: true
+      optional: true
+      attrs:
+        - key: data-personal-info
+          value: true
+      options:
+        - label: _(English)
+          value: English
+        - label: _(Amharic)
+          value: Amharic
+        - label: _(Arabic)
+          value: Arabic
+        - label: _(Bangla)
+          value: Bangla
+        - label: _(Chinese)
+          value: Chinese
+        - label: _(Haitian Creole)
+          value: Haitian Creole
+        - label: _(Portuguese)
+          value: Portuguese
+        - label: _(Spanish)
+          value: Spanish
+        - label: _(Other)
           value: other
           other: true
         - label: _(Prefer not to answer)
@@ -455,7 +524,7 @@ place:
         - key: data-personal-info
           value: true
       options:
-        - label: _(Asian)
+        - label: _(Asian/East Indian)
           value: asian
         - label: _(Black or African American)
           value: black-or-african-american
@@ -476,58 +545,58 @@ place:
           other: true
         - label: _(Prefer not to answer)
           value: no-answer
-    - prompt: _(Annual Household Income)
-      type: select
-      attrs:
-        - key: data-personal-info
-          value: true
-      options:
-        - label: _(Please choose...)
-          value:
-        - label: _(Less than $25,000)
-          value: 024-or-less
-        - label: _($25,000 - $49,999)
-          value: 025to049
-        - label: _($50,000 - $74,999)
-          value: 050to074
-        - label: _($75,000 - $99,999)
-          value: 075to099
-        - label: _($100,000 - $124,999)
-          value: 100to124
-        - label: _($125,000 or more)
-          value: 125-or-more
-        - label: _(Prefer not to answer/unsure)
-          value: no-answer
-      name: private-income
-      sticky: true
-      optional: true
-    - prompt: _(What is your highest level of education?)
-      type: select
-      optional: true
-      name: private-education
-      sticky: true
-      attrs:
-        - key: data-personal-info
-          value: true
-      options:
-      - label: _(Please choose...)
-        value:
-      - label: _(Less than high school diploma)
-        value: less-than-highschool
-      - label: _(High school diploma, GED, or equivalent)
-        value: highschool
-      - label: _(Some college; no degree)
-        value: some-college
-      - label: _(Associate's degree or technical certificate)
-        value: associates
-      - label: _(Bachelor's degree)
-        value: bachelors
-      - label: _(Graduate, professional, or advanced studies; no degree)
-        value: some-graduate-school
-      - label: _(Graduate, professional, or advanced degree)
-        value: graduate-degree
-      - label: _(Prefer not to answer)
-        value: no-answer
+    # - prompt: _(Annual Household Income)
+    #   type: select
+    #   attrs:
+    #     - key: data-personal-info
+    #       value: true
+    #   options:
+    #     - label: _(Please choose...)
+    #       value:
+    #     - label: _(Less than $25,000)
+    #       value: 024-or-less
+    #     - label: _($25,000 - $49,999)
+    #       value: 025to049
+    #     - label: _($50,000 - $74,999)
+    #       value: 050to074
+    #     - label: _($75,000 - $99,999)
+    #       value: 075to099
+    #     - label: _($100,000 - $124,999)
+    #       value: 100to124
+    #     - label: _($125,000 or more)
+    #       value: 125-or-more
+    #     - label: _(Prefer not to answer/unsure)
+    #       value: no-answer
+    #   name: private-income
+    #   sticky: true
+    #   optional: true
+    # - prompt: _(What is your highest level of education?)
+    #   type: select
+    #   optional: true
+    #   name: private-education
+    #   sticky: true
+    #   attrs:
+    #     - key: data-personal-info
+    #       value: true
+    #   options:
+    #   - label: _(Please choose...)
+    #     value:
+    #   - label: _(Less than high school diploma)
+    #     value: less-than-highschool
+    #   - label: _(High school diploma, GED, or equivalent)
+    #     value: highschool
+    #   - label: _(Some college; no degree)
+    #     value: some-college
+    #   - label: _(Associate's degree or technical certificate)
+    #     value: associates
+    #   - label: _(Bachelor's degree)
+    #     value: bachelors
+    #   - label: _(Graduate, professional, or advanced studies; no degree)
+    #     value: some-graduate-school
+    #   - label: _(Graduate, professional, or advanced degree)
+    #     value: graduate-degree
+    #   - label: _(Prefer not to answer)
+    #     value: no-answer
 
 survey:
   submission_type: comments
@@ -589,7 +658,7 @@ pages:
       - title: _(Environment & Sustainability)
         url: /filter/environment_and_sustainability
         external: true
-      - title: _(Parks & Recreation)
+      - title: _(Facilities, Parks & Recreation)
         url: /filter/parks_and_recreation
         external: true
       - title: _(Transportation, Streets & Sidewalks)
