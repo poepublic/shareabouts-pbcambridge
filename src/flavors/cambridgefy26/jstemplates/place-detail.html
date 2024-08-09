@@ -10,16 +10,16 @@
   <h3>{{title}}</h3>
 
   <span class="place-submission-details">
-    {{#_}}
     <strong class="point-submitter">
-      {{#if submitter}}
-        <img src="{{ submitter.avatar_url }}" class="avatar" /> {{ submitter.name }}
-      {{^}}
-        <!-- TODO: FIXME: don't hardcode image URL -->
-        <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
-      {{/if}}
-    </strong> suggested this {{#is city_wide "true"}}city-wide {{/is}}{{place_type_label location_type }} idea{{#is city_wide "false"}} near {{>location-string .}}{{/is}}.
-    {{/_}}
+      <img src="/static/css/images/markers/{{ location_type }}.png" class="avatar" />
+      {{ submitter_name }}
+    </strong>
+
+    {{#is city_wide "true"}}
+      {{#_}}suggested this city-wide {{place_type_label location_type }} idea.{{/_}}
+    {{^}}
+      {{#_}}suggested this {{place_type_label location_type }} idea near {{>location-string .}}.{{/_}}
+    {{/is}}
 
     <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>
   </span>
@@ -27,29 +27,27 @@
 </header>
 
 <section class="place-items">
-  {{#_}}
-    {{#if name}}
-      {{!-- <div><small><strong>My project idea is&hellip;</strong></small></div> --}}
-      {{!-- <h6>My project idea is&hellip;</h6> --}}
-      {{!-- <p>{{name}}</p> --}}
-    {{/if}}
+  {{#if name}}
+    {{!-- <div><small><strong>My project idea is&hellip;</strong></small></div> --}}
+    {{!-- <h6>My project idea is&hellip;</h6> --}}
+    {{!-- <p>{{name}}</p> --}}
+  {{/if}}
 
-    {{#if description}}
-      <div><small><strong>What is your idea, and how does it improve Cambridge?</strong></small></div>
-      <p>{{description}}</p>
-    {{/if}}
+  {{#if description}}
+    <div><small><strong>{{#_}}What is your idea, and how does it improve Cambridge?{{/_}}</strong></small></div>
+    <p>{{description}}</p>
+  {{/if}}
 
-    {{#each attachments }}
-      <div class="place-item place-attachment-{{ name }}">
-        <img src="{{ file }}" class="place-value place-value-{{ name }}" alt="{{ name }}">
-      </div>
-    {{/each}}
+  {{#each attachments }}
+    <div class="place-item place-attachment-{{ name }}">
+      <img src="{{ file }}" class="place-value place-value-{{ name }}" alt="{{ name }}">
+    </div>
+  {{/each}}
 
 
-    {{^if survey_config}}
-      <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">View On Map</a>
-    {{/if}}
-  {{/_}}
+  {{^if survey_config}}
+    <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">{{#_}}View On Map{{/_}}</a>
+  {{/if}}
 </section>
 
 {{#survey_config}}
