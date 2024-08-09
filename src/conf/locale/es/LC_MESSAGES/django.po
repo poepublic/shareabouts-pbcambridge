@@ -1,126 +1,912 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Shareabouts Philly Bike Share\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 16:26-0400\n"
-"PO-Revision-Date: 2014-09-09 22:58+0000\n"
-"Last-Translator: Frank Hebbert <frank@openplans.org>\n"
-"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/"
-"shareabouts-philly-bike-share/language/es_MX/)\n"
-"Language: es_MX\n"
+"POT-Creation-Date: 2024-08-09 03:21-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: flavors/2014/templates/index.html:68
+#: src/flavors/2014/templates/index.html:68
+#: src/flavors/cambridge/templates/index.html:76
+#: src/flavors/cambridgefy18/templates/index.html:77
+#: src/flavors/cambridgefy19/templates/index.html:77
+#: src/flavors/cambridgefy20/templates/index.html:77
+#: src/flavors/cambridgefy21/templates/index.html:75
+#: src/flavors/cambridgefy22/templates/index.html:75
+#: src/flavors/cambridgefy23/templates/index.html:75
+#: src/flavors/cambridgefy24/templates/index.html:73
+#: src/flavors/cambridgefy25/templates/index.html:74
+#: src/flavors/cambridgefy26/templates/index.html:74
+#: src/flavors/defaultflavor/templates/index.html:52
+#: src/flavors/pblb/templates/index.html:62
 msgid "Powered by"
 msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:1
+#: src/flavors/cambridge/templates/index.html:55
+#: src/flavors/cambridgefy18/templates/index.html:55
+#: src/flavors/cambridgefy19/templates/index.html:55
+#: src/flavors/cambridgefy20/templates/index.html:55
+#: src/flavors/pblb/templates/index.html:49
+msgid "Culture and Community Facilities"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:56
+#: src/flavors/cambridgefy18/templates/index.html:56
+#: src/flavors/cambridgefy19/templates/index.html:56
+#: src/flavors/cambridgefy20/templates/index.html:56
+#: src/flavors/pblb/templates/index.html:50
+msgid "Education"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:57
+#: src/flavors/cambridgefy18/templates/index.html:57
+#: src/flavors/cambridgefy19/templates/index.html:57
+#: src/flavors/cambridgefy20/templates/index.html:57
+#: src/flavors/cambridgefy21/templates/index.html:55
+#: src/flavors/cambridgefy22/templates/index.html:55
+#: src/flavors/cambridgefy23/templates/index.html:55
+#: src/flavors/pblb/templates/index.html:51
+msgid "Environment"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:58
+#: src/flavors/cambridgefy18/templates/index.html:58
+#: src/flavors/cambridgefy19/templates/index.html:58
+#: src/flavors/cambridgefy20/templates/index.html:58
+#: src/flavors/pblb/templates/index.html:52
+msgid "Parks and Recreation"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:59
+#: src/flavors/cambridgefy18/templates/index.html:59
+#: src/flavors/cambridgefy19/templates/index.html:59
+#: src/flavors/cambridgefy20/templates/index.html:59
+#: src/flavors/pblb/templates/index.html:53
+msgid "Public Health and Safety"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:60
+#: src/flavors/cambridgefy18/templates/index.html:60
+#: src/flavors/cambridgefy19/templates/index.html:60
+#: src/flavors/cambridgefy20/templates/index.html:60
+#: src/flavors/pblb/templates/index.html:54
+msgid "Streets and Sidewalks"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:104
+#: src/flavors/cambridgefy18/templates/index.html:105
+#: src/flavors/cambridgefy19/templates/index.html:105
+#: src/flavors/cambridgefy20/templates/index.html:105
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:12
+#: src/flavors/pblb/templates/index.html:90
+msgid "Approximate location:"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:113
+#: src/flavors/cambridgefy18/templates/index.html:114
+#: src/flavors/cambridgefy19/templates/index.html:114
+#: src/flavors/cambridgefy20/templates/index.html:114
+#: src/flavors/pblb/templates/index.html:99
+msgid ""
+"<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
+"and will help us to assess whether these maps are reaching the full "
+"diversity of our community:"
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:114
+#: src/flavors/cambridgefy18/templates/index.html:115
+#: src/flavors/cambridgefy19/templates/index.html:115
+#: src/flavors/cambridgefy20/templates/index.html:115
+msgid ""
+"Note: City staff will review idea categories and make any revisions as "
+"needed."
+msgstr ""
+
+#: src/flavors/cambridge/templates/index.html:116
+#: src/flavors/cambridgefy18/templates/index.html:117
+#: src/flavors/cambridgefy19/templates/index.html:117
+#: src/flavors/cambridgefy20/templates/index.html:117
+#: src/flavors/pblb/templates/index.html:102
+msgid "Your Race/Ethnicity:"
+msgstr ""
+
+#: src/flavors/cambridgefy18/templates/index.html:61
+#: src/flavors/cambridgefy19/templates/index.html:61
+#: src/flavors/cambridgefy20/templates/index.html:61
+msgid "Transportation"
+msgstr ""
+
+#: src/flavors/cambridgefy21/templates/index.html:56
+#: src/flavors/cambridgefy22/templates/index.html:56
+#: src/flavors/cambridgefy23/templates/index.html:56
+msgid "Street Smarts"
+msgstr ""
+
+#: src/flavors/cambridgefy21/templates/index.html:57
+#: src/flavors/cambridgefy22/templates/index.html:57
+#: src/flavors/cambridgefy23/templates/index.html:57
+msgid "Community Resources"
+msgstr ""
+
+#: src/flavors/cambridgefy21/templates/index.html:58
+#: src/flavors/cambridgefy22/templates/index.html:58
+#: src/flavors/cambridgefy23/templates/index.html:58
+#: src/flavors/cambridgefy26/_config.translations.py:14
+#: src/flavors/cambridgefy26/_config.translations.py:39
+#: src/flavors/cambridgefy26/_config.translations.py:132
+msgid "Facilities, Parks & Recreation"
+msgstr ""
+
+#: src/flavors/cambridgefy21/templates/index.html:59
+#: src/flavors/cambridgefy22/templates/index.html:59
+#: src/flavors/cambridgefy23/templates/index.html:59
+msgid "Youth"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:6
+#: src/flavors/cambridgefy26/_config.translations.py:7
+msgid "City of Cambridge Participatory Budgeting"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:8
+msgid "Participatory Budgeting for Cambridge, MA"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:9
+msgid "How would YOU spend $1M?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:10
+msgid "Enter an address..."
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:11
+#: src/flavors/cambridgefy26/_config.translations.py:36
+#: src/flavors/cambridgefy26/_config.translations.py:129
+msgid "Arts & Culture"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:12
+#: src/flavors/cambridgefy26/_config.translations.py:37
+#: src/flavors/cambridgefy26/_config.translations.py:130
+msgid "Community Resources & Education"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:13
+#: src/flavors/cambridgefy26/_config.translations.py:38
+#: src/flavors/cambridgefy26/_config.translations.py:131
+msgid "Environment & Sustainability"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:15
+#: src/flavors/cambridgefy26/_config.translations.py:40
+#: src/flavors/cambridgefy26/_config.translations.py:133
+msgid "Transportation, Streets & Sidewalks"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:16
+msgid "idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:17
+msgid "ideas"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:18
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:16
+msgid "Submit an idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:19
+msgid "Show Ideas as a list"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:20
+msgid "Show on a map"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:21
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:14
+msgid "Describe your idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:22
+msgid "suggested"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:23
+msgid ""
+"Ideas must be for <strong>capital</strong> projects – Please see the "
+"guidelines here"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:24
+#: src/flavors/cambridgefy26/_config.translations.py:115
+#: src/flavors/cambridgefy26/_config.translations.py:126
+msgid "Someone"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:25
+msgid "Share my idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:26
+msgid "Multiple locations throughout the city"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:27
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:15
+msgid "Drag the map to a location for your idea."
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:28
+msgid "Is your idea for a specific location or the entire city?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:29
+msgid "A specific location"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:30
+msgid "City-wide"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:31
+msgid "Title of your idea?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:32
+msgid "Idea Title..."
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:33
+#: src/flavors/cambridgefy26/jstemplates/place-detail.html:2
+msgid "What is your idea, and how does it improve Cambridge?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:34
+msgid ""
+"What need does your idea address? Who does your idea benefit? Please "
+"describe specific and relevant details about your idea."
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:35
+msgid "Pick a category for your idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:41
+msgid "Your Name (required, will be shown on the map)"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:42
+msgid "Your Email (optional, will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:43
+msgid "Your Phone Number (optional, will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:44
+msgid ""
+"How did you hear about participatory budgeting (please choose all that "
+"apply...)?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:45
+msgid "City Council member"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:46
+msgid "City website"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:47
+msgid "City social media account"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:48
+msgid "Community group"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:49
+msgid "Email"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:50
+msgid "Event"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:51
+msgid "Newspaper/TV/radio"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:52
+msgid "PB Advertising (Resident mailing/flyer/lawn sign, etc.)"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:53
+msgid "School / Youth center"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:54
+msgid "Word of mouth"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:55
+#: src/flavors/cambridgefy26/_config.translations.py:88
+#: src/flavors/cambridgefy26/_config.translations.py:99
+#: src/flavors/cambridgefy26/_config.translations.py:110
+msgid "Other"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:56
+msgid ""
+"Have you completed this personal information survey already in this "
+"participatory budgeting cycle?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:57
+msgid "Yes ✅"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:58
+msgid "No ❌"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:59
+msgid "Not sure 🤷"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:60
+msgid ""
+"Have you submitted an idea, voted, or volunteered in any of the previous "
+"Cambridge PB cycles?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:61
+msgid "No I haven't"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:62
+msgid "Yes I have"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:63
+msgid "I am not sure"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:64
+msgid ""
+"In the past 12 months, have you worked with other people in your "
+"neighborhood to fix a problem or improve a condition in your community, not "
+"including work you may have done related to participatory budgeting?"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:65
+msgid "Yes, I have done that"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:66
+msgid "No, I have not done that"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:67
+msgid "Prefer not to answer/unsure"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:68
+msgid "Please select your neighborhood community in Cambridge"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:69
+#: src/flavors/cambridgefy26/_config.translations.py:72
+msgid "Please choose..."
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:70
+#: src/flavors/cambridgefy26/_config.translations.py:81
+#: src/flavors/cambridgefy26/_config.translations.py:89
+#: src/flavors/cambridgefy26/_config.translations.py:100
+#: src/flavors/cambridgefy26/_config.translations.py:111
+msgid "Prefer not to answer"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:71
+msgid "Your age"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:73
+msgid "Under 18"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:74
+msgid "18 to 24"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:75
+msgid "25 to 34"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:76
+msgid "35 to 44"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:77
+msgid "45 to 54"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:78
+msgid "55 to 64"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:79
+msgid "65 to 74"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:80
+msgid "75 and over"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:82
+msgid "Your gender"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:83
+msgid "Cisgender Female/woman"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:84
+msgid "Cisgender Male/man"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:85
+msgid "Nonbinary/gender non-confirming"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:86
+msgid "Transgender Female"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:87
+msgid "Transgender Male"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:90
+msgid "Your preferred language"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:91
+msgid "English"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:92
+msgid "Amharic"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:93
+msgid "Arabic"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:94
+msgid "Bangla"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:95
+msgid "Chinese"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:96
+msgid "Haitian Creole"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:97
+msgid "Portuguese"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:98
+msgid "Spanish"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:101
+msgid "Your Race/Ethnicity"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:102
+msgid "Asian/East Indian"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:103
+msgid "Black or African American"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:104
+msgid "Hawaiian or Pacific Islander"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:105
+msgid "Hispanic, Latinx"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:106
+msgid "Middle Eastern/North African"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:107
+msgid "Native American, Alaskan"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:108
+msgid "White, Caucasian"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:109
+msgid "Multi-racial, multi-ethnic background"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:112
+msgid "comment"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:113
+msgid "comments"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:114
+msgid "commented on"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:116
+#: src/flavors/cambridgefy26/_config.translations.py:117
+msgid "Leave a Comment"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:118
+#: src/flavors/cambridgefy26/_config.translations.py:119
+#: src/flavors/cambridgefy26/_config.translations.py:120
+msgid "Comment"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:121
+msgid "Your Name"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:122
+msgid "Support This!"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:123
+msgid "support"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:124
+msgid "supports"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:125
+msgid "supported"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:127
+msgid "Cambridge PB Home"
+msgstr ""
+
+#: src/flavors/cambridgefy26/_config.translations.py:128
+msgid "Overview"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:1
+msgid ""
+"<strong>{{ target.submitter_name }}</strong> {{action}} a <span "
+"class=\"place-type\">{{place.place_type_label}}</span> idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:2
+msgid ""
+"<strong>{{ target.submitter_name }}</strong> {{action}} an <span "
+"class=\"place-type\">{{place.place_type_label}}</span> idea"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:3
+msgid ""
+"A new <span class=\"place-type\">{{ place_type_label }} idea </span>from "
+"<strong>{{ source }}</strong> named <span class=\"place-name\">{{ name }}</"
+"span>"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/auth-nav.html:1
 msgid "Log Out"
-msgstr "Cerrar sesión"
+msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:2
+#: src/flavors/cambridgefy26/jstemplates/auth-nav.html:2
 msgid "Sign In"
-msgstr "Iniciar sesión"
+msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:3
+#: src/flavors/cambridgefy26/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
 msgstr ""
-"Sesión iniciada como </span> <span class=\"current-user\">{{ current_user "
-"\"name\" }}"
 
-#: sa_web/jstemplates/geocode-address.html:1
-msgid "Search"
-msgstr "Buscar"
+#: src/flavors/cambridgefy26/jstemplates/form-field-input.html:1
+msgid ""
+"Or sign in with <!-- <a class=\"auth-inline twitter-btn\" href=\"/users/"
+"login/twitter/\">Twitter</a> --> <a class=\"auth-inline facebook-btn\" "
+"href=\"/users/login/facebook/\">Facebook</a>"
+msgstr ""
 
-#: sa_web/jstemplates/place-detail-promotion-bar.html:1
+#: src/flavors/cambridgefy26/jstemplates/form-field.html:1
+#: src/sa_web/jstemplates/form-field-label.html:1
+msgid "optional"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:1
+msgid "Get More Involved"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:2
+msgid ""
+"Helping to spread the word about PB to make sure that people in all corners "
+"of Cambridge know about this initiative and can participate"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:3
+msgid "Helping with the voting process in March"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:4
+msgid ""
+"If you would like to volunteer to help out with the PB process in any way, "
+"please feel free to sign up <a href=\"http://cambridgema.nationbuilder.com/"
+"volunteer\">here</a>"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:5
+msgid "Providing translation services for meetings or outreach materials"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:6
+msgid "Submitting ideas in December"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:7
+msgid ""
+"There are many opportunities to get involved with the PB process, including:"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/involved.html:8
+msgid "Volunteering to serve as a Budget Delegate in January and February"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:1
+msgid ""
+"<strong>For more information on Participatory Budgeting (including on how to "
+"volunteer)</strong>,\n"
+"  please visit <a href=\"http://pb.cambridgema.gov\" "
+"target=\"_blank\">http://pb.cambridgema.gov</a> or contact\n"
+"  the City&apos;s Budget Office at <a href=\"mailto:pb@cambridgema."
+"gov\">pb@cambridgema.gov</a> or\n"
+"  <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:5
+msgid "And many others!"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
+msgid ""
+"Explore ideas from others in the community using the “List All Ideas” tab on "
+"the upper right of the page\n"
+"    or directly through the map."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:8
+msgid "Home Essentials for Newly Housed Residents"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:9
+msgid ""
+"If you have an idea for a project to improve Cambridge, please share it on "
+"the map!"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:10
+msgid ""
+"PB is a democratic process that gives Cambridge community members the power "
+"to <strong>decide how to spend $1,000,000</strong> of the City&apos;s FY26 "
+"Budget."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
+msgid "Participatory Budgeting in Cambridge"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
+msgid "Pollinator gardens"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:13
+msgid "STEAM Upgrades for Youth Centers"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:14
+msgid "Shaded seating areas on hot streets"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:15
+msgid "Sign up to stay informed about Participatory Budgeting in Cambridge!"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:17
+msgid ""
+"The City of Cambridge launched the 11<sup>th</sup> Cycle of PB and collected "
+"ideas from the community\n"
+"    about how to spend $1 million on projects to improve Cambridge. On the "
+"map, you can find all the submitted\n"
+"    ideas for PB11. From October 2024 through January 2025, volunteer PB "
+"Delegates will research all submitted\n"
+"    project ideas and develop the final proposals for the PB ballot. In "
+"March, 2025, all Cambridge residents age\n"
+"    12 and older, regardless of citizenship status, will be eligible to vote "
+"for their favorite projects and\n"
+"    decide how to spend $1 million of the City&apos;s Budget."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/pages/overview.html:23
+msgid "Winning projects from past PB cycles include:"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-detail.html:1
+msgid "View On Map"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-detail.html:3
+msgid "suggested this city-wide {{place_type_label location_type }} idea."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-detail.html:4
+msgid ""
+"suggested this {{place_type_label location_type }} idea near {{>location-"
+"string .}}."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:1
+msgid ""
+"<strong>Please tell us a little more about yourself to\n"
+"            help us assess whether we are reaching the full diversity of "
+"our\n"
+"            community. This survey is optional.</strong> If you\n"
+"            submit more than one idea, please only complete the survey\n"
+"            once."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:6
+msgid ""
+"After idea collection closes, volunteer residents will\n"
+"            work from October to February to research, assess, and "
+"prioritize\n"
+"            PB project ideas to determine which proposals will appear on "
+"the\n"
+"            final ballot in March for a public vote. <a\n"
+"            href=\"http://pb.cambridgema.gov/volunteer2\" "
+"target=\"_blank\">Click\n"
+"            here to volunteer to be a PB Delegate!</a>"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:13
+msgid "Contact Information"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:16
+msgid ""
+"It looks like you didn't set your location yet. Please drag the map to a "
+"location for your idea."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:17
+msgid "Optional Survey"
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:18
+msgid ""
+"PB funding of $1,000,000 can be used to support\n"
+"              projects that benefit the public and are located within the "
+"City\n"
+"              of Cambridge. For more information about what kind of "
+"projects\n"
+"              are eligible for PB, please review the\n"
+"              <a href=\"https://pb.cambridgema.gov/faqs\"\n"
+"              title=\"City of Cambridge Participatory Budgeting FAQ\"\n"
+"              target=\"_blank\">guidelines here</a>."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:25
+msgid "Please tell us how we can contact you about your idea."
+msgstr ""
+
+#: src/flavors/cambridgefy26/jstemplates/place-form.html:26
+msgid "Project Location"
+msgstr ""
+
+#: src/flavors/cambridgefy26/templates/index.html:6
+msgid "CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING"
+msgstr ""
+
+#: src/flavors/pblb/templates/index.html:100
+msgid ""
+"Note: Council district staff will review idea categories and make any "
+"revisions as needed."
+msgstr ""
+
+#: src/sa_web/jstemplates/form-field-file.html:1
+msgid "Sorry, your browser doesn't support file uploads."
+msgstr ""
+
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
 msgstr ""
 
-#: sa_web/jstemplates/place-detail-promotion-bar.html:2
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
 msgstr ""
 
-#: sa_web/jstemplates/place-detail-survey.html:1
-msgid ""
-"<strong class=\"response-submitter\">\n"
-"                    {{#if submitter}}\n"
-"                      <img src=\"{{ submitter.avatar_url }}\" class=\"avatar"
-"\" /> {{ submitter.name }}\n"
-"                    {{^}}\n"
-"                      <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"                      <img src=\"/static/css/images/user-50.png\" class="
-"\"avatar\" /> {{ submitter_name }}\n"
-"                    {{/if}}\n"
-"                  </strong>\n"
-"                  <span class=\"response-date\">\n"
-"                    around {{ pretty_created_datetime }}\n"
-"                  </span>\n"
-"                  "
-msgstr ""
-
-#: sa_web/jstemplates/place-form.html:1
-msgid "Drag the map to your location."
-msgstr "Arrastra el mapa hasta tu ubicación"
-
-#: sa_web/jstemplates/place-form.html:2
-msgid ""
-"It looks like you didn't set your location yet. Please drag the map to your "
-"location."
-msgstr ""
-"Parece que no has fijado tu ubicación todavía. Por favor arrastra el mapa "
-"hasta tu ubicación."
-
-#: sa_web/jstemplates/place-form.html:3
-msgid ""
-"Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
-"twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
-"login/facebook/\">Facebook</a>"
-msgstr ""
-"O inicia sesión con <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
-"twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
-"login/facebook/\">Facebook</a>"
-
-#: sa_web/jstemplates/place-form.html:4
-msgid "Sorry, your browser doesn't support file uploads."
-msgstr "Lo lamentamos, tu navegador no permite cargas de archivos."
-
-#: sa_web/jstemplates/place-form.html:5
-#: sa_web/jstemplates/place-survey-form.html:1
-msgid "optional"
-msgstr "opcional"
-
-#: sa_web/jstemplates/place-list.html:1
+#: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
-msgstr "Lo más reciente"
+msgstr ""
 
-#: sa_web/jstemplates/place-list.html:2
+#: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
-msgstr "Lo más {{ support_label_plural }}"
+msgstr ""
 
-#: sa_web/jstemplates/place-list.html:3
+#: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
-msgstr "Lo más {{ survey_label_plural }}"
+msgstr ""
 
-#: sa_web/templates/base.html:84
+#: src/sa_web/jstemplates/place-moderation-bar.html:1
+msgid ""
+"<span class=\"visibility-icon invisible-icon\">👁</span>\n"
+"      This {{ place_config.response_name }} is <strong>only visible to "
+"moderators</strong>."
+msgstr ""
+
+#: src/sa_web/jstemplates/place-moderation-bar.html:3
+msgid ""
+"<span class=\"visibility-icon visible-icon\">👁</span>\n"
+"      This {{ place_config.response_name }} is <strong>visible to everyone</"
+"strong>."
+msgstr ""
+
+#: src/sa_web/jstemplates/place-moderation-bar.html:5
+msgid "Make {{ place_config.response_name }} hidden"
+msgstr ""
+
+#: src/sa_web/jstemplates/place-moderation-bar.html:6
+msgid "Make {{ place_config.response_name }} visible"
+msgstr ""
+
+#: src/sa_web/jstemplates/place-survey-response.html:1
+msgid "Thanks for participating!"
+msgstr ""
+
+#: src/sa_web/templates/base.html:81
 #, python-format
 msgid ""
 "\n"
 "        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
 "        "
 msgstr ""
-"\n"
-"Ups, %(config.app.name)s necesita JavaScript para funcionar correctamente."
 
-#: sa_web/templates/base.html:89
+#: src/sa_web/templates/base.html:86
 #, python-format
 msgid ""
 "\n"
@@ -131,262 +917,13 @@ msgid ""
 "for simple instructions!\n"
 "        "
 msgstr ""
-"\n"
-"%(config.app.name)s está muy bien pero necesita algo llamado JavaScript para "
-"funcionar bien. Pero no tengas miedo, es muy fácil encenderlo. ¡Haz clic  <a "
-"href=\"http://enable-javascript.com/\" target=\"_blank\">aquí</a> para ver "
-"unas instrucciones sencillas!"
 
-#: sa_web/templates/base.html:103
+#: src/sa_web/templates/base.html:100
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
 msgstr ""
-"No podemos conectarnos al servidor en este momento. Espera con calma "
-"mientras restablecemos la comunicación."
 
-#: sa_web/templates/base.html:109
+#: src/sa_web/templates/base.html:106
 msgid "Close"
-msgstr "Cerrar"
-
-#, fuzzy
-#~| msgid ""
-#~| "<strong>\n"
-#~| "\n"
-#~| "        {{#if target.submitter}}\n"
-#~| "          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar"
-#~| "\" /> {{ target.submitter.name }}\n"
-#~| "        {{^}}\n"
-#~| "          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~| "          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /"
-#~| "> {{ target.submitter_name }}\n"
-#~| "        {{/if}}\n"
-#~| "        </strong>\n"
-#~| "\n"
-#~| "        {{#if is_place }}\n"
-#~| "          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~| "<span class=\"place-type\">{{ place.place_type_label }}</span>\n"
-#~| "          {{#if place.name }}\n"
-#~| "            named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~| "          {{^}}\n"
-#~| "            {{#if place.location }}\n"
-#~| "              at <span class=\"place-name\">{{>location-string place."
-#~| "location }}</span>\n"
-#~| "            {{/if }}\n"
-#~| "          {{/if }}\n"
-#~| "        {{else}}\n"
-#~| "          {{ action }}\n"
-#~| "\n"
-#~| "          {{#if place.name }}\n"
-#~| "            <span class=\"place-name\">{{ place.name }}</span>\n"
-#~| "          {{else}}\n"
-#~| "            a{{# place.type_starts_with_vowel }}n{{/ place."
-#~| "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~| "          {{/if }}\n"
-#~| "\n"
-#~| "        {{/if }}\n"
-#~| "        "
-#~ msgid ""
-#~ "<strong>\n"
-#~ "\n"
-#~ "        {{#if target.submitter}}\n"
-#~ "          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar"
-#~ "\" /> {{ target.submitter.name }}\n"
-#~ "        {{^}}\n"
-#~ "          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~ "          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-#~ "{{ target.submitter_name }}\n"
-#~ "        {{/if}}\n"
-#~ "        </strong>\n"
-#~ "\n"
-#~ "        {{#if is_place }}\n"
-#~ "          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~ "<span class=\"place-type\">{{ place.place_type_label }} idea </span>\n"
-#~ "          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-#~ "          {{#if place.name }}\n"
-#~ "            named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{^}}\n"
-#~ "            {{#if place.location }}\n"
-#~ "              at <span class=\"place-name\">{{>location-string place."
-#~ "location }}</span>\n"
-#~ "            {{/if }}\n"
-#~ "          {{/if }}\n"
-#~ "        {{else}}\n"
-#~ "          {{ action }}\n"
-#~ "\n"
-#~ "          {{#if place.name }}\n"
-#~ "            <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{else}}\n"
-#~ "            a{{# place.type_starts_with_vowel }}n{{/ place."
-#~ "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~ "          {{/if }}\n"
-#~ "          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-#~ "        {{/if }}\n"
-#~ "        "
-#~ msgstr ""
-#~ "<strong>\n"
-#~ "\n"
-#~ "        {{#if target.submitter}}\n"
-#~ "          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar"
-#~ "\" /> {{ target.submitter.name }}\n"
-#~ "        {{^}}\n"
-#~ "          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~ "          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-#~ "{{ target.submitter_name }}\n"
-#~ "        {{/if}}\n"
-#~ "        </strong>\n"
-#~ "\n"
-#~ "        {{#if is_place }}\n"
-#~ "          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~ "<span class=\"place-type\">{{ place.place_type_label }}</span>\n"
-#~ "          {{#if place.name }}\n"
-#~ "            named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{^}}\n"
-#~ "            {{#if place.location }}\n"
-#~ "              at <span class=\"place-name\">{{>location-string place."
-#~ "location }}</span>\n"
-#~ "            {{/if }}\n"
-#~ "          {{/if }}\n"
-#~ "        {{else}}\n"
-#~ "          {{ action }}\n"
-#~ "\n"
-#~ "          {{#if place.name }}\n"
-#~ "            <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{else}}\n"
-#~ "            a{{# place.type_starts_with_vowel }}n{{/ place."
-#~ "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~ "          {{/if }}\n"
-#~ "\n"
-#~ "        {{/if }}"
-
-#, fuzzy
-#~| msgid ""
-#~| "<strong>\n"
-#~| "\n"
-#~| "        {{#if target.submitter}}\n"
-#~| "          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar"
-#~| "\" /> {{ target.submitter.name }}\n"
-#~| "        {{^}}\n"
-#~| "          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~| "          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /"
-#~| "> {{ target.submitter_name }}\n"
-#~| "        {{/if}}\n"
-#~| "        </strong>\n"
-#~| "\n"
-#~| "        {{#if is_place }}\n"
-#~| "          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~| "<span class=\"place-type\">{{ place.place_type_label }}</span>\n"
-#~| "          {{#if place.name }}\n"
-#~| "            named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~| "          {{^}}\n"
-#~| "            {{#if place.location }}\n"
-#~| "              at <span class=\"place-name\">{{>location-string place."
-#~| "location }}</span>\n"
-#~| "            {{/if }}\n"
-#~| "          {{/if }}\n"
-#~| "        {{else}}\n"
-#~| "          {{ action }}\n"
-#~| "\n"
-#~| "          {{#if place.name }}\n"
-#~| "            <span class=\"place-name\">{{ place.name }}</span>\n"
-#~| "          {{else}}\n"
-#~| "            a{{# place.type_starts_with_vowel }}n{{/ place."
-#~| "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~| "          {{/if }}\n"
-#~| "\n"
-#~| "        {{/if }}\n"
-#~| "        "
-#~ msgid ""
-#~ "<strong>\n"
-#~ "\n"
-#~ "      {{#if target.submitter}}\n"
-#~ "        <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
-#~ "> {{ target.submitter.name }}\n"
-#~ "      {{^}}\n"
-#~ "        <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~ "        <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-#~ "{{ target.submitter_name }}\n"
-#~ "      {{/if}}\n"
-#~ "      </strong>\n"
-#~ "\n"
-#~ "      {{#if is_place }}\n"
-#~ "        {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~ "<span class=\"place-type\">{{ place.place_type_label }} idea </span>\n"
-#~ "        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-#~ "        {{#if place.name }}\n"
-#~ "          named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "        {{^}}\n"
-#~ "          {{#if place.location }}\n"
-#~ "            at <span class=\"place-name\">{{>location-string place."
-#~ "location }}</span>\n"
-#~ "          {{/if }}\n"
-#~ "        {{/if }}\n"
-#~ "      {{else}}\n"
-#~ "        {{ action }}\n"
-#~ "\n"
-#~ "        {{#if place.name }}\n"
-#~ "          <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "        {{else}}\n"
-#~ "          a{{# place.type_starts_with_vowel }}n{{/ place."
-#~ "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~ "        {{/if }}\n"
-#~ "        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-#~ "      {{/if }}\n"
-#~ "      "
-#~ msgstr ""
-#~ "<strong>\n"
-#~ "\n"
-#~ "        {{#if target.submitter}}\n"
-#~ "          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar"
-#~ "\" /> {{ target.submitter.name }}\n"
-#~ "        {{^}}\n"
-#~ "          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#~ "          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-#~ "{{ target.submitter_name }}\n"
-#~ "        {{/if}}\n"
-#~ "        </strong>\n"
-#~ "\n"
-#~ "        {{#if is_place }}\n"
-#~ "          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
-#~ "<span class=\"place-type\">{{ place.place_type_label }}</span>\n"
-#~ "          {{#if place.name }}\n"
-#~ "            named <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{^}}\n"
-#~ "            {{#if place.location }}\n"
-#~ "              at <span class=\"place-name\">{{>location-string place."
-#~ "location }}</span>\n"
-#~ "            {{/if }}\n"
-#~ "          {{/if }}\n"
-#~ "        {{else}}\n"
-#~ "          {{ action }}\n"
-#~ "\n"
-#~ "          {{#if place.name }}\n"
-#~ "            <span class=\"place-name\">{{ place.name }}</span>\n"
-#~ "          {{else}}\n"
-#~ "            a{{# place.type_starts_with_vowel }}n{{/ place."
-#~ "type_starts_with_vowel }} {{ place.place_type_label }}\n"
-#~ "          {{/if }}\n"
-#~ "\n"
-#~ "        {{/if }}"
-
-#~ msgid ""
-#~ "\n"
-#~ "    App Name is not officially supported in {{browser.name}}\n"
-#~ "    {{browser.version}}. Things may not work. Or they may, we're not "
-#~ "sure. If\n"
-#~ "    you want to be safe, we suggest using one of <a\n"
-#~ "    href=\"http://upgradeyourbrowser.net/\" target=\"_blank\">these</a> "
-#~ "instead.\n"
-#~ "    "
-#~ msgstr ""
-#~ "\n"
-#~ "Shareabouts is not officially supported in {{browser.name}}\n"
-#~ "    {{browser.version}}. Things may not work. Or they may, we're not "
-#~ "sure. If\n"
-#~ "    you want to be safe, we suggest using one of <a\n"
-#~ "    href=\"http://upgradeyourbrowser.net/\" target=\"_blank\">these</a> "
-#~ "instead.\n"
-#~ "    "
-
-#~ msgid "Close Button"
-#~ msgstr "Close"
+msgstr ""
