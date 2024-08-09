@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-09 03:21-0500\n"
+"POT-Creation-Date: 2024-08-09 03:37-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,13 +639,6 @@ msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
 msgstr ""
 
-#: src/flavors/cambridgefy26/jstemplates/form-field-input.html:1
-msgid ""
-"Or sign in with <!-- <a class=\"auth-inline twitter-btn\" href=\"/users/"
-"login/twitter/\">Twitter</a> --> <a class=\"auth-inline facebook-btn\" "
-"href=\"/users/login/facebook/\">Facebook</a>"
-msgstr ""
-
 #: src/flavors/cambridgefy26/jstemplates/form-field.html:1
 #: src/sa_web/jstemplates/form-field-label.html:1
 msgid "optional"
@@ -899,32 +892,12 @@ msgstr ""
 msgid "Thanks for participating!"
 msgstr ""
 
-#: src/sa_web/templates/base.html:81
-#, python-format
-msgid ""
-"\n"
-"        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
-"        "
-msgstr ""
-
-#: src/sa_web/templates/base.html:86
-#, python-format
-msgid ""
-"\n"
-"        %(config.app.name)s is great but it needs something called "
-"JavaScript to work\n"
-"        properly. But fear not, it's really easy to turn on. Click\n"
-"        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> "
-"for simple instructions!\n"
-"        "
-msgstr ""
-
-#: src/sa_web/templates/base.html:100
+#: src/sa_web/templates/base.html:96
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
 msgstr ""
 
-#: src/sa_web/templates/base.html:106
+#: src/sa_web/templates/base.html:102
 msgid "Close"
 msgstr ""
