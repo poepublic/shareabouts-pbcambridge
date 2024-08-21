@@ -336,7 +336,7 @@ place:
     - prompt: _(Have you completed this personal information survey already in this participatory budgeting cycle?)
       name: private-completed_personal_info_survey
       sticky: true
-      optional: true
+      optional: false
       type: radiogroup
       options:
         - label: _(Yes ✅)
