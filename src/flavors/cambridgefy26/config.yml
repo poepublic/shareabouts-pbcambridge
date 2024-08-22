@@ -639,6 +639,8 @@ pages:
   - title: _(Cambridge PB Home)
     external: true
     url: http://pb.cambridgema.gov/
+    link_attrs:
+      target: _blank
   - title: _(Overview)
     slug: overview
     name: overview
