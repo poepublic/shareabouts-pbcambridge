@@ -437,6 +437,10 @@ p.checkbox + p.select {
     background-color: #7226ff;
     color: #fff;
   }
+  .place-list .point-submitter .avatar {
+    width: 2.5em;
+    height: 3em;
+  }
   .list-toggle-nav {
     font-size: 0.75em;
     float: right;
