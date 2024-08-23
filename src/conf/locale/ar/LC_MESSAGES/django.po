@@ -12,12 +12,10 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: src/flavors/2014/templates/index.html:68
 #: src/flavors/cambridge/templates/index.html:76
@@ -33,7 +31,7 @@ msgstr ""
 #: src/flavors/defaultflavor/templates/index.html:52
 #: src/flavors/pblb/templates/index.html:62
 msgid "Powered by"
-msgstr ""
+msgstr "مدعوم بواسطة"
 
 #: src/flavors/cambridge/templates/index.html:55
 #: src/flavors/cambridgefy18/templates/index.html:55
@@ -41,7 +39,7 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:49
 msgid "Culture and Community Facilities"
-msgstr ""
+msgstr "مرافق الثقافة والمجتمع"
 
 #: src/flavors/cambridge/templates/index.html:56
 #: src/flavors/cambridgefy18/templates/index.html:56
@@ -49,7 +47,7 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:56
 #: src/flavors/pblb/templates/index.html:50
 msgid "Education"
-msgstr ""
+msgstr "التعليم"
 
 #: src/flavors/cambridge/templates/index.html:57
 #: src/flavors/cambridgefy18/templates/index.html:57
@@ -60,7 +58,7 @@ msgstr ""
 #: src/flavors/cambridgefy23/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:51
 msgid "Environment"
-msgstr ""
+msgstr "البيئة"
 
 #: src/flavors/cambridge/templates/index.html:58
 #: src/flavors/cambridgefy18/templates/index.html:58
@@ -68,7 +66,7 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:58
 #: src/flavors/pblb/templates/index.html:52
 msgid "Parks and Recreation"
-msgstr ""
+msgstr "الحدائق والترفيه"
 
 #: src/flavors/cambridge/templates/index.html:59
 #: src/flavors/cambridgefy18/templates/index.html:59
@@ -76,7 +74,7 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:59
 #: src/flavors/pblb/templates/index.html:53
 msgid "Public Health and Safety"
-msgstr ""
+msgstr "الصحة العامة والسلامة"
 
 #: src/flavors/cambridge/templates/index.html:60
 #: src/flavors/cambridgefy18/templates/index.html:60
@@ -84,7 +82,7 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:60
 #: src/flavors/pblb/templates/index.html:54
 msgid "Streets and Sidewalks"
-msgstr ""
+msgstr "الشوارع والأرصفة"
 
 #: src/flavors/cambridge/templates/index.html:104
 #: src/flavors/cambridgefy18/templates/index.html:105
@@ -93,7 +91,7 @@ msgstr ""
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:12
 #: src/flavors/pblb/templates/index.html:90
 msgid "Approximate location:"
-msgstr ""
+msgstr "الموقع التقريبي:"
 
 #: src/flavors/cambridge/templates/index.html:113
 #: src/flavors/cambridgefy18/templates/index.html:114
@@ -104,7 +102,7 @@ msgid ""
 "<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
 "and will help us to assess whether these maps are reaching the full "
 "diversity of our community:"
-msgstr ""
+msgstr "<h5>شكرًا لك!</h5> <p>الأسئلة التالية <strong>اختيارية</strong> وستساعدنا في تقييم ما إذا كانت هذه الخرائط تصل إلى التنوع الكامل لمجتمعنا:</p>"
 
 #: src/flavors/cambridge/templates/index.html:114
 #: src/flavors/cambridgefy18/templates/index.html:115
@@ -113,7 +111,7 @@ msgstr ""
 msgid ""
 "Note: City staff will review idea categories and make any revisions as "
 "needed."
-msgstr ""
+msgstr "ملاحظة: سوف يقوم موظفو المدينة بمراجعة فئات الأفكار وإجراء أي تعديلات حسب الحاجة."
 
 #: src/flavors/cambridge/templates/index.html:116
 #: src/flavors/cambridgefy18/templates/index.html:117
@@ -121,25 +119,25 @@ msgstr ""
 #: src/flavors/cambridgefy20/templates/index.html:117
 #: src/flavors/pblb/templates/index.html:102
 msgid "Your Race/Ethnicity:"
-msgstr ""
+msgstr "عرقك/إثنيتك:"
 
 #: src/flavors/cambridgefy18/templates/index.html:61
 #: src/flavors/cambridgefy19/templates/index.html:61
 #: src/flavors/cambridgefy20/templates/index.html:61
 msgid "Transportation"
-msgstr ""
+msgstr "المواصلات"
 
 #: src/flavors/cambridgefy21/templates/index.html:56
 #: src/flavors/cambridgefy22/templates/index.html:56
 #: src/flavors/cambridgefy23/templates/index.html:56
 msgid "Street Smarts"
-msgstr ""
+msgstr "ذكاء الشارع"
 
 #: src/flavors/cambridgefy21/templates/index.html:57
 #: src/flavors/cambridgefy22/templates/index.html:57
 #: src/flavors/cambridgefy23/templates/index.html:57
 msgid "Community Resources"
-msgstr ""
+msgstr "موارد المجتمع"
 
 #: src/flavors/cambridgefy21/templates/index.html:58
 #: src/flavors/cambridgefy22/templates/index.html:58
@@ -148,273 +146,273 @@ msgstr ""
 #: src/flavors/cambridgefy26/_config.translations.py:39
 #: src/flavors/cambridgefy26/_config.translations.py:132
 msgid "Facilities, Parks & Recreation"
-msgstr ""
+msgstr "المرافق والحدائق والترفيه"
 
 #: src/flavors/cambridgefy21/templates/index.html:59
 #: src/flavors/cambridgefy22/templates/index.html:59
 #: src/flavors/cambridgefy23/templates/index.html:59
 msgid "Youth"
-msgstr ""
+msgstr "الشباب"
 
 #: src/flavors/cambridgefy26/_config.translations.py:6
 #: src/flavors/cambridgefy26/_config.translations.py:7
 msgid "City of Cambridge Participatory Budgeting"
-msgstr ""
+msgstr "الميزانية التشاركية لمدينة Cambridge"
 
 #: src/flavors/cambridgefy26/_config.translations.py:8
 msgid "Participatory Budgeting for Cambridge, MA"
-msgstr ""
+msgstr "الميزانية التشاركية لمدينة Cambridge، MA"
 
 #: src/flavors/cambridgefy26/_config.translations.py:9
 msgid "How would YOU spend $1M?"
-msgstr ""
+msgstr "كيف تود أن تنفق مليون دولار؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:10
 msgid "Enter an address..."
-msgstr ""
+msgstr "أدخل عنوانًا..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:11
 #: src/flavors/cambridgefy26/_config.translations.py:36
 #: src/flavors/cambridgefy26/_config.translations.py:129
 msgid "Arts & Culture"
-msgstr ""
+msgstr "الفنون والثقافة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:12
 #: src/flavors/cambridgefy26/_config.translations.py:37
 #: src/flavors/cambridgefy26/_config.translations.py:130
 msgid "Community Resources & Education"
-msgstr ""
+msgstr "الموارد المجتمعية والتعليم"
 
 #: src/flavors/cambridgefy26/_config.translations.py:13
 #: src/flavors/cambridgefy26/_config.translations.py:38
 #: src/flavors/cambridgefy26/_config.translations.py:131
 msgid "Environment & Sustainability"
-msgstr ""
+msgstr "البيئة والاستدامة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:15
 #: src/flavors/cambridgefy26/_config.translations.py:40
 #: src/flavors/cambridgefy26/_config.translations.py:133
 msgid "Transportation, Streets & Sidewalks"
-msgstr ""
+msgstr "النقل والشوارع والأرصفة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:16
 msgid "idea"
-msgstr ""
+msgstr "فكرة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:17
 msgid "ideas"
-msgstr ""
+msgstr "أفكار"
 
 #: src/flavors/cambridgefy26/_config.translations.py:18
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:16
 msgid "Submit an idea"
-msgstr ""
+msgstr "أرسل فكرة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:19
 msgid "Show Ideas as a list"
-msgstr ""
+msgstr "عرض الأفكار كقائمة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:20
 msgid "Show on a map"
-msgstr ""
+msgstr "عرض على الخريطة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:21
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:14
 msgid "Describe your idea"
-msgstr ""
+msgstr "صف فكرتك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:22
 msgid "suggested"
-msgstr ""
+msgstr "مقترحة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:23
 msgid ""
 "Ideas must be for <strong>capital</strong> projects – Please see the "
 "guidelines here"
-msgstr ""
+msgstr "يجب أن تكون الأفكار مخصصة للمشاريع <strong>الرأسمالية</strong> - يرجى الاطلاع على الإرشادات هنا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:24
 #: src/flavors/cambridgefy26/_config.translations.py:115
 #: src/flavors/cambridgefy26/_config.translations.py:126
 msgid "Someone"
-msgstr ""
+msgstr "شخص ما"
 
 #: src/flavors/cambridgefy26/_config.translations.py:25
 msgid "Share my idea"
-msgstr ""
+msgstr "شارك فكرتي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:26
 msgid "Multiple locations throughout the city"
-msgstr ""
+msgstr "مواقع متعددة في جميع أنحاء المدينة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:27
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:15
 msgid "Drag the map to a location for your idea."
-msgstr ""
+msgstr "اسحب الخريطة إلى الموقع المناسب لفكرتك."
 
 #: src/flavors/cambridgefy26/_config.translations.py:28
 msgid "Is your idea for a specific location or the entire city?"
-msgstr ""
+msgstr "هل فكرتك لموقع محدد أم للمدينة بأكملها؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:29
 msgid "A specific location"
-msgstr ""
+msgstr "موقع محدد"
 
 #: src/flavors/cambridgefy26/_config.translations.py:30
 msgid "City-wide"
-msgstr ""
+msgstr "في جميع أنحاء المدينة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:31
 msgid "Title of your idea?"
-msgstr ""
+msgstr "ما هو عنوان فكرتك؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:32
 msgid "Idea Title..."
-msgstr ""
+msgstr "عنوان الفكرة..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:33
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:2
 msgid "What is your idea, and how does it improve Cambridge?"
-msgstr ""
+msgstr "ما هي فكرتك، وكيف تساهم في تحسين Cambridge؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:34
 msgid ""
 "What need does your idea address? Who does your idea benefit? Please "
 "describe specific and relevant details about your idea."
-msgstr ""
+msgstr "ما هي الحاجة التي تلبيها فكرتك؟ من يستفيد منها؟ يرجى وصف التفاصيل المحددة والملائمة لفكرتك."
 
 #: src/flavors/cambridgefy26/_config.translations.py:35
 msgid "Pick a category for your idea"
-msgstr ""
+msgstr "اختر فئة لفكرتك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:41
 msgid "Your Name (required, will be shown on the map)"
-msgstr ""
+msgstr "اسمك (مطلوب، سيتم عرضه على الخريطة)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:42
 msgid "Your Email (optional, will NOT be shown on the map)"
-msgstr ""
+msgstr "بريدك الإلكتروني (اختياري، لن يظهر على الخريطة)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:43
 msgid "Your Phone Number (optional, will NOT be shown on the map)"
-msgstr ""
+msgstr "رقم هاتفك (اختياري، لن يظهر على الخريطة)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:44
 msgid ""
 "How did you hear about participatory budgeting (please choose all that "
 "apply...)?"
-msgstr ""
+msgstr "كيف سمعت عن الميزانية التشاركية (يرجى اختيار كل ما ينطبق ...)؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:45
 msgid "City Council member"
-msgstr ""
+msgstr "عضو مجلس المدينة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:46
 msgid "City website"
-msgstr ""
+msgstr "موقع المدينة الإلكتروني"
 
 #: src/flavors/cambridgefy26/_config.translations.py:47
 msgid "City social media account"
-msgstr ""
+msgstr "حساب المدينة على مواقع التواصل الاجتماعي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:48
 msgid "Community group"
-msgstr ""
+msgstr "مجموعة مجتمعية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:49
 msgid "Email"
-msgstr ""
+msgstr "البريد الإلكتروني"
 
 #: src/flavors/cambridgefy26/_config.translations.py:50
 msgid "Event"
-msgstr ""
+msgstr "حدث"
 
 #: src/flavors/cambridgefy26/_config.translations.py:51
 msgid "Newspaper/TV/radio"
-msgstr ""
+msgstr "صحيفة/تلفزيون/راديو"
 
 #: src/flavors/cambridgefy26/_config.translations.py:52
 msgid "PB Advertising (Resident mailing/flyer/lawn sign, etc.)"
-msgstr ""
+msgstr "إعلان PB (البريد المقيم/منشور/لافتات الحديقة، وما إلى ذلك)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:53
 msgid "School / Youth center"
-msgstr ""
+msgstr "المدرسة / مركز الشباب"
 
 #: src/flavors/cambridgefy26/_config.translations.py:54
 msgid "Word of mouth"
-msgstr ""
+msgstr "كلام الناس"
 
 #: src/flavors/cambridgefy26/_config.translations.py:55
 #: src/flavors/cambridgefy26/_config.translations.py:88
 #: src/flavors/cambridgefy26/_config.translations.py:99
 #: src/flavors/cambridgefy26/_config.translations.py:110
 msgid "Other"
-msgstr ""
+msgstr "آخر"
 
 #: src/flavors/cambridgefy26/_config.translations.py:56
 msgid ""
 "Have you completed this personal information survey already in this "
 "participatory budgeting cycle?"
-msgstr ""
+msgstr "هل أكملت هذا الاستبيان الخاص بالمعلومات الشخصية بالفعل في دورة الميزانية التشاركية هذه؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:57
 msgid "Yes ✅"
-msgstr ""
+msgstr "نعم ✅"
 
 #: src/flavors/cambridgefy26/_config.translations.py:58
 msgid "No ❌"
-msgstr ""
+msgstr "لا ❌"
 
 #: src/flavors/cambridgefy26/_config.translations.py:59
 msgid "Not sure 🤷"
-msgstr ""
+msgstr "لست متأكدا 🤷"
 
 #: src/flavors/cambridgefy26/_config.translations.py:60
 msgid ""
 "Have you submitted an idea, voted, or volunteered in any of the previous "
 "Cambridge PB cycles?"
-msgstr ""
+msgstr "هل قدمت فكرة أو صوّتت أو تطوعت في أي من دورات Cambridge PB السابقة؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:61
 msgid "No I haven't"
-msgstr ""
+msgstr "لا لم افعل"
 
 #: src/flavors/cambridgefy26/_config.translations.py:62
 msgid "Yes I have"
-msgstr ""
+msgstr "نعم فعلت"
 
 #: src/flavors/cambridgefy26/_config.translations.py:63
 msgid "I am not sure"
-msgstr ""
+msgstr "لست متأكدا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:64
 msgid ""
 "In the past 12 months, have you worked with other people in your "
 "neighborhood to fix a problem or improve a condition in your community, not "
 "including work you may have done related to participatory budgeting?"
-msgstr ""
+msgstr "خلال الأشهر الاثني عشر الماضية، هل عملت مع أشخاص آخرين في منطقتك لإصلاح مشكلة أو تحسين حالة مجتمعك، دون تضمين العمل الذي ربما قمت به فيما يتعلق بالميزانية التشاركية؟"
 
 #: src/flavors/cambridgefy26/_config.translations.py:65
 msgid "Yes, I have done that"
-msgstr ""
+msgstr "نعم لقد فعلت ذلك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:66
 msgid "No, I have not done that"
-msgstr ""
+msgstr "لا لم افعل ذلك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:67
 msgid "Prefer not to answer/unsure"
-msgstr ""
+msgstr "أفضّل عدم الإجابة/غير متأكد"
 
 #: src/flavors/cambridgefy26/_config.translations.py:68
 msgid "Please select your neighborhood community in Cambridge"
-msgstr ""
+msgstr "الرجاء تحديد مجتمع الحي الخاص بك في Cambridge"
 
 #: src/flavors/cambridgefy26/_config.translations.py:69
 #: src/flavors/cambridgefy26/_config.translations.py:72
 msgid "Please choose..."
-msgstr ""
+msgstr "يرجى الاختيار..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:70
 #: src/flavors/cambridgefy26/_config.translations.py:81
@@ -422,265 +420,265 @@ msgstr ""
 #: src/flavors/cambridgefy26/_config.translations.py:100
 #: src/flavors/cambridgefy26/_config.translations.py:111
 msgid "Prefer not to answer"
-msgstr ""
+msgstr "أفضل عدم الإجابة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:71
 msgid "Your age"
-msgstr ""
+msgstr "كم عمرك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:73
 msgid "Under 18"
-msgstr ""
+msgstr "أقل من 18"
 
 #: src/flavors/cambridgefy26/_config.translations.py:74
 msgid "18 to 24"
-msgstr ""
+msgstr "من 18 إلى 24"
 
 #: src/flavors/cambridgefy26/_config.translations.py:75
 msgid "25 to 34"
-msgstr ""
+msgstr "من 25 إلى 34"
 
 #: src/flavors/cambridgefy26/_config.translations.py:76
 msgid "35 to 44"
-msgstr ""
+msgstr "من 35 إلى 44"
 
 #: src/flavors/cambridgefy26/_config.translations.py:77
 msgid "45 to 54"
-msgstr ""
+msgstr "من 45 إلى 54"
 
 #: src/flavors/cambridgefy26/_config.translations.py:78
 msgid "55 to 64"
-msgstr ""
+msgstr "من 55 إلى 64"
 
 #: src/flavors/cambridgefy26/_config.translations.py:79
 msgid "65 to 74"
-msgstr ""
+msgstr "من 65 إلى 74"
 
 #: src/flavors/cambridgefy26/_config.translations.py:80
 msgid "75 and over"
-msgstr ""
+msgstr "75 وما فوق"
 
 #: src/flavors/cambridgefy26/_config.translations.py:82
 msgid "Your gender"
-msgstr ""
+msgstr "جنسك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:83
 msgid "Cisgender Female/woman"
-msgstr ""
+msgstr "امرأة/أنثى متوافقة الجنس"
 
 #: src/flavors/cambridgefy26/_config.translations.py:84
 msgid "Cisgender Male/man"
-msgstr ""
+msgstr "رجل/ذكر متوافق الجنس"
 
 #: src/flavors/cambridgefy26/_config.translations.py:85
 msgid "Nonbinary/gender non-confirming"
-msgstr ""
+msgstr "غير ثنائي/غير مؤكد الجنس"
 
 #: src/flavors/cambridgefy26/_config.translations.py:86
 msgid "Transgender Female"
-msgstr ""
+msgstr "أنثى متحولة جنسيا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:87
 msgid "Transgender Male"
-msgstr ""
+msgstr "ذكر متحول جنسيا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:90
 msgid "Your preferred language"
-msgstr ""
+msgstr "اللغة المفضلة لديك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:91
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: src/flavors/cambridgefy26/_config.translations.py:92
 msgid "Amharic"
-msgstr ""
+msgstr "الأمهرية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:93
 msgid "Arabic"
-msgstr ""
+msgstr "العربية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:94
 msgid "Bangla"
-msgstr ""
+msgstr "البنغالية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:95
 msgid "Chinese"
-msgstr ""
+msgstr "الصينىة"
 
 #: src/flavors/cambridgefy26/_config.translations.py:96
 msgid "Haitian Creole"
-msgstr ""
+msgstr "الكريولية الهايتية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:97
 msgid "Portuguese"
-msgstr ""
+msgstr "البرتغالية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:98
 msgid "Spanish"
-msgstr ""
+msgstr "الإسبانية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:101
 msgid "Your Race/Ethnicity"
-msgstr ""
+msgstr "عرقك/إثنيتك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:102
 msgid "Asian/East Indian"
-msgstr ""
+msgstr "آسيوي / هندي شرقي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:103
 msgid "Black or African American"
-msgstr ""
+msgstr "أسود أو أمريكي من أصل أفريقي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:104
 msgid "Hawaiian or Pacific Islander"
-msgstr ""
+msgstr "من هاواي أو جزر المحيط الهادئ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:105
 msgid "Hispanic, Latinx"
-msgstr ""
+msgstr "إسباني، لاتيني"
 
 #: src/flavors/cambridgefy26/_config.translations.py:106
 msgid "Middle Eastern/North African"
-msgstr ""
+msgstr "من الشرق الأوسط/شمال أفريقيا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:107
 msgid "Native American, Alaskan"
-msgstr ""
+msgstr "أمريكي أصلي، ألاسكي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:108
 msgid "White, Caucasian"
-msgstr ""
+msgstr "أبيض، قوقازي"
 
 #: src/flavors/cambridgefy26/_config.translations.py:109
 msgid "Multi-racial, multi-ethnic background"
-msgstr ""
+msgstr "خلفية متعددة الأعراق والإثنيات"
 
 #: src/flavors/cambridgefy26/_config.translations.py:112
 msgid "comment"
-msgstr ""
+msgstr "تعليق"
 
 #: src/flavors/cambridgefy26/_config.translations.py:113
 msgid "comments"
-msgstr ""
+msgstr "تعليقات"
 
 #: src/flavors/cambridgefy26/_config.translations.py:114
 msgid "commented on"
-msgstr ""
+msgstr "علق على"
 
 #: src/flavors/cambridgefy26/_config.translations.py:116
 #: src/flavors/cambridgefy26/_config.translations.py:117
 msgid "Leave a Comment"
-msgstr ""
+msgstr "اترك تعليقا"
 
 #: src/flavors/cambridgefy26/_config.translations.py:118
 #: src/flavors/cambridgefy26/_config.translations.py:119
 #: src/flavors/cambridgefy26/_config.translations.py:120
 msgid "Comment"
-msgstr ""
+msgstr "تعليق"
 
 #: src/flavors/cambridgefy26/_config.translations.py:121
 msgid "Your Name"
-msgstr ""
+msgstr "ما اسمك"
 
 #: src/flavors/cambridgefy26/_config.translations.py:122
 msgid "Support This!"
-msgstr ""
+msgstr "أدعم هذا!"
 
 #: src/flavors/cambridgefy26/_config.translations.py:123
 msgid "support"
-msgstr ""
+msgstr "يدعم"
 
 #: src/flavors/cambridgefy26/_config.translations.py:124
 msgid "supports"
-msgstr ""
+msgstr "يدعمون"
 
 #: src/flavors/cambridgefy26/_config.translations.py:125
 msgid "supported"
-msgstr ""
+msgstr "مدعوم"
 
 #: src/flavors/cambridgefy26/_config.translations.py:127
 msgid "Cambridge PB Home"
-msgstr ""
+msgstr "Cambridge PB الرئيسية"
 
 #: src/flavors/cambridgefy26/_config.translations.py:128
 msgid "Overview"
-msgstr ""
+msgstr "ملخص"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:1
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} a <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr ""
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} <span class=\"place-type\">{{place.place_type_label}}</span> فكرة"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:2
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} an <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr ""
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} <span class=\"place-type\">{{place.place_type_label}}</span> فكرة"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:3
 msgid ""
 "A new <span class=\"place-type\">{{ place_type_label }} idea </span>from "
 "<strong>{{ source }}</strong> named <span class=\"place-name\">{{ name }}</"
 "span>"
-msgstr ""
+msgstr "فكرة <span class=\"place-type\">{{ place_type_label }} جديدة </span>من<strong>{{ source }}</strong> اسمه<span class=\"place-name\">{{ name }}</span>"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:1
 msgid "Log Out"
-msgstr ""
+msgstr "تسجيل الخروج"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:2
 msgid "Sign In"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
-msgstr ""
+msgstr "تم تسجيل الدخول باسم </span> <span class=\"current-user\"> {{ current_user \"name\" }}"
 
 #: src/flavors/cambridgefy26/jstemplates/form-field.html:1
 #: src/sa_web/jstemplates/form-field-label.html:1
 msgid "optional"
-msgstr ""
+msgstr "اختياري"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:1
 msgid "Get More Involved"
-msgstr ""
+msgstr "شارك أكثر"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:2
 msgid ""
 "Helping to spread the word about PB to make sure that people in all corners "
 "of Cambridge know about this initiative and can participate"
-msgstr ""
+msgstr "المساعدة في نشر الكلمة حول PB للتأكد من أن الأشخاص في جميع أنحاء Cambridge يعرفون عن هذه المبادرة ويمكنهم المشاركة"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:3
 msgid "Helping with the voting process in March"
-msgstr ""
+msgstr "المساعدة في عملية التصويت في شهر مارس"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:4
 msgid ""
 "If you would like to volunteer to help out with the PB process in any way, "
 "please feel free to sign up <a href=\"http://cambridgema.nationbuilder.com/"
 "volunteer\">here</a>"
-msgstr ""
+msgstr "إذا كنت ترغب في التطوع للمساعدة في عملية PB بأي شكل من الأشكال، فلا تتردد في التسجيل <a href=\"http://cambridgema.nationbuilder.com/volunteer\">هنا</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:5
 msgid "Providing translation services for meetings or outreach materials"
-msgstr ""
+msgstr "توفير خدمات الترجمة للاجتماعات أو المواد التوعوية"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:6
 msgid "Submitting ideas in December"
-msgstr ""
+msgstr "تقديم الأفكار في ديسمبر"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:7
 msgid ""
 "There are many opportunities to get involved with the PB process, including:"
-msgstr ""
+msgstr "هناك العديد من الفرص للمشاركة في عملية PB، بما في ذلك:"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:8
 msgid "Volunteering to serve as a Budget Delegate in January and February"
-msgstr ""
+msgstr "التطوع للعمل كمندوب للميزانية في شهري يناير وفبراير"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:1
 msgid ""
@@ -691,55 +689,55 @@ msgid ""
 "  the City&apos;s Budget Office at <a href=\"mailto:pb@cambridgema."
 "gov\">pb@cambridgema.gov</a> or\n"
 "  <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
-msgstr ""
+msgstr "<strong>لمزيد من المعلومات حول الميزانية التشاركية (بما في ذلك كيفية التطوع)</strong>، يرجى زيارة <a href=\"http://pb.cambridgema.gov\" target=\"_blank\">http://pb.cambridgema.gov</a> أو الاتصال بمكتب الميزانية في المدينة على <a href=\"mailto:pb@cambridgema.gov\">pb@cambridgema.gov</a> أو <a href=\"tel:(617) 349-4270\">4270-349-(617).</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:5
 msgid "And many others!"
-msgstr ""
+msgstr "وغيرها الكثير!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
 "Explore ideas from others in the community using the “List All Ideas” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
-msgstr ""
+msgstr "استكشف أفكار الآخرين في المجتمع باستخدام علامة التبويب \"قائمة جميع الأفكار\" في الجزء العلوي الأيمن من الصفحة أو مباشرة عبر الخريطة."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:8
 msgid "Home Essentials for Newly Housed Residents"
-msgstr ""
+msgstr "المستلزمات المنزلية الأساسية للمقيمين الجدد"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:9
 msgid ""
 "If you have an idea for a project to improve Cambridge, please share it on "
 "the map!"
-msgstr ""
+msgstr "إذا كانت لديك فكرة لمشروع لتحسين Cambridge، يرجى مشاركتها على الخريطة!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:10
 msgid ""
 "PB is a democratic process that gives Cambridge community members the power "
 "to <strong>decide how to spend $1,000,000</strong> of the City&apos;s FY26 "
 "Budget."
-msgstr ""
+msgstr "إن PB هي عملية ديمقراطية تمنح أعضاء مجتمع Cambridge السلطة لاتخاذ <strong>قرار بشأن كيفية إنفاق 1.000.000 دولار</strong> من ميزانية المدينة للسنة المالية 2026."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
 msgid "Participatory Budgeting in Cambridge"
-msgstr ""
+msgstr "الميزانية التشاركية في Cambridge"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"
-msgstr ""
+msgstr "حدائق الإلقاح"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:13
 msgid "STEAM Upgrades for Youth Centers"
-msgstr ""
+msgstr "ترقيات STEAM لمراكز الشباب"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:14
 msgid "Shaded seating areas on hot streets"
-msgstr ""
+msgstr "مناطق جلوس مظللة في الشوارع الحارة"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:15
 msgid "Sign up to stay informed about Participatory Budgeting in Cambridge!"
-msgstr ""
+msgstr "سجل الآن للبقاء على اطلاع حول الميزانية التشاركية في Cambridge!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:17
 msgid ""
@@ -754,25 +752,25 @@ msgid ""
 "    12 and older, regardless of citizenship status, will be eligible to vote "
 "for their favorite projects and\n"
 "    decide how to spend $1 million of the City&apos;s Budget."
-msgstr ""
+msgstr "أطلقت مدينة Cambridge الدورة الحادية عشرة<sup></sup> من PB وجمعت أفكارًا من المجتمع حول كيفية إنفاق مليون دولار على مشاريع لتحسين Cambridge. يمكنك العثور على جميع الأفكار المقدمة لـ PB11 على الخريطة. من أكتوبر 2024 إلى يناير 2025، سيبحث مندوبو PB المتطوعون في جميع أفكار المشاريع المقدمة ويطورون المقترحات النهائية للتصويت على PB. في مارس 2025، سيكون جميع سكان Cambridge الذين تبلغ أعمارهم 12 عامًا أو أكثر، بغض النظر عن حالة الجنسية، مؤهلين للتصويت على مشاريعهم المفضلة وتحديد كيفية إنفاق مليون دولار من ميزانية المدينة."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:23
 msgid "Winning projects from past PB cycles include:"
-msgstr ""
+msgstr "تشمل المشاريع الفائزة في دورات PB الماضية ما يلي:"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:1
 msgid "View On Map"
-msgstr ""
+msgstr "عرض على الخريطة"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:3
 msgid "suggested this city-wide {{place_type_label location_type }} idea."
-msgstr ""
+msgstr "اقترح هذه الفكرة على مستوى المدينة {{place_type_label location_type }}."
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:4
 msgid ""
 "suggested this {{place_type_label location_type }} idea near {{>location-"
 "string .}}."
-msgstr ""
+msgstr "اقترح فكرة {{place_type_label location_type }} هذه بالقرب من {{>location-string .}} ."
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:1
 msgid ""
@@ -782,7 +780,7 @@ msgid ""
 "            community. This survey is optional.</strong> If you\n"
 "            submit more than one idea, please only complete the survey\n"
 "            once."
-msgstr ""
+msgstr "<strong>يرجى إخبارنا بمزيد من التفاصيل عن نفسك لمساعدتنا في تقييم مدى تحقيقنا للتنوع الكامل في مجتمعنا. هذا الاستبيان اختياري.</strong> إذا أرسلت أكثر من فكرة، يرجى إكمال الاستبيان مرة واحدة فقط."
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:6
 msgid ""
@@ -795,21 +793,21 @@ msgid ""
 "            href=\"http://pb.cambridgema.gov/volunteer2\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr ""
+msgstr "بعد إغلاق جمع الأفكار، سيعمل المقيمون المتطوعون من أكتوبر إلى فبراير على البحث وتقييم وتحديد أولويات أفكار مشاريع PB لتحديد المقترحات التي ستظهر في الاقتراع النهائي في مارس للتصويت العام. انقر هنا للتطوع كمندوب PB!"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"
-msgstr ""
+msgstr "معلومات الاتصال"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:16
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to a "
 "location for your idea."
-msgstr ""
+msgstr "يبدو أنك لم تحدد موقعك بعد. يرجى سحب الخريطة إلى موقع يناسب فكرتك."
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:17
 msgid "Optional Survey"
-msgstr ""
+msgstr "الاستبيان الاختياري"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:18
 msgid ""
@@ -822,82 +820,83 @@ msgid ""
 "              <a href=\"https://pb.cambridgema.gov/faqs\"\n"
 "              title=\"City of Cambridge Participatory Budgeting FAQ\"\n"
 "              target=\"_blank\">guidelines here</a>."
-msgstr ""
+msgstr "يمكن استخدام تمويل PB بقيمة 1.000.000 دولار لدعم المشاريع التي تعود بالنفع على الجمهور وتقع داخل مدينة Cambridge. لمزيد من المعلومات حول نوع المشاريع المؤهلة للحصول على PB، يرجى مراجعة إرشادات الأسئلة الشائعة حول الميزانية التشاركية لمدينة Cambridge هنا."
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:25
 msgid "Please tell us how we can contact you about your idea."
-msgstr ""
+msgstr "من فضلك أخبرنا كيف يمكننا التواصل معك بخصوص فكرتك."
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:26
 msgid "Project Location"
-msgstr ""
+msgstr "موقع المشروع"
 
 #: src/flavors/cambridgefy26/templates/index.html:6
 msgid "CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING"
-msgstr ""
+msgstr "الميزانية التشاركية<br>في مدينة CAMBRIDGE"
 
 #: src/flavors/pblb/templates/index.html:100
 msgid ""
 "Note: Council district staff will review idea categories and make any "
 "revisions as needed."
-msgstr ""
+msgstr "ملاحظة: سوف يقوم موظفو منطقة المجلس بمراجعة فئات الأفكار وإجراء أي تعديلات حسب الحاجة."
 
 #: src/sa_web/jstemplates/form-field-file.html:1
 msgid "Sorry, your browser doesn't support file uploads."
-msgstr ""
+msgstr "عذراً، متصفحك لا يدعم تحميل الملفات."
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
-msgstr ""
+msgstr "أوصي بها على الفيسبوك"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
-msgstr ""
+msgstr "غرّد بهذا"
 
 #: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
-msgstr ""
+msgstr "الأحدث"
 
 #: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
-msgstr ""
+msgstr "معظم {{ support_label_plural }}"
 
 #: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
-msgstr ""
+msgstr "معظم {{ survey_label_plural }}"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:1
 msgid ""
 "<span class=\"visibility-icon invisible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>only visible to "
 "moderators</strong>."
-msgstr ""
+msgstr "<span class=\"visibility-icon invisible-icon\">👁</span> هذا {{ place_config.response_name }}​​ <strong>مرئي فقط للمشرفين</strong>."
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:3
 msgid ""
 "<span class=\"visibility-icon visible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>visible to everyone</"
 "strong>."
-msgstr ""
+msgstr "<span class=\"visibility-icon visible-icon\">👁</span> هذا {{ place_config.response_name }}​​ <strong>مرئي للجميع</strong>."
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:5
 msgid "Make {{ place_config.response_name }} hidden"
-msgstr ""
+msgstr "اجعل {{ place_config.response_name }} مخفيَا"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:6
 msgid "Make {{ place_config.response_name }} visible"
-msgstr ""
+msgstr "اجعل {{ place_config.response_name }} مرئيًا"
 
 #: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
-msgstr ""
+msgstr "شكرا لمشاركتك!"
 
 #: src/sa_web/templates/base.html:96
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
-msgstr ""
+msgstr "لا يمكننا الاتصال بالخادم في الوقت الحالي. انتظر قليلاً حتى نتمكن من إعادة الاتصال."
 
 #: src/sa_web/templates/base.html:102
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
+

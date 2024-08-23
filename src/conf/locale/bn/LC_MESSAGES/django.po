@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: src/flavors/defaultflavor/templates/index.html:52
 #: src/flavors/pblb/templates/index.html:62
 msgid "Powered by"
-msgstr "Distribuído por"
+msgstr "পাওয়ার্ড বাই"
 
 #: src/flavors/cambridge/templates/index.html:55
 #: src/flavors/cambridgefy18/templates/index.html:55
@@ -39,7 +39,7 @@ msgstr "Distribuído por"
 #: src/flavors/cambridgefy20/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:49
 msgid "Culture and Community Facilities"
-msgstr "Cultura e instalações comunitárias"
+msgstr "সাংস্কৃতিক ও সামাজিক সুযোগ-সুবিধা"
 
 #: src/flavors/cambridge/templates/index.html:56
 #: src/flavors/cambridgefy18/templates/index.html:56
@@ -47,7 +47,7 @@ msgstr "Cultura e instalações comunitárias"
 #: src/flavors/cambridgefy20/templates/index.html:56
 #: src/flavors/pblb/templates/index.html:50
 msgid "Education"
-msgstr "Educação"
+msgstr "শিক্ষা"
 
 #: src/flavors/cambridge/templates/index.html:57
 #: src/flavors/cambridgefy18/templates/index.html:57
@@ -58,7 +58,7 @@ msgstr "Educação"
 #: src/flavors/cambridgefy23/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:51
 msgid "Environment"
-msgstr "Meio ambiente"
+msgstr "পরিবেশ"
 
 #: src/flavors/cambridge/templates/index.html:58
 #: src/flavors/cambridgefy18/templates/index.html:58
@@ -66,7 +66,7 @@ msgstr "Meio ambiente"
 #: src/flavors/cambridgefy20/templates/index.html:58
 #: src/flavors/pblb/templates/index.html:52
 msgid "Parks and Recreation"
-msgstr "Parques e recreação"
+msgstr "পার্ক এবং বিনোদন"
 
 #: src/flavors/cambridge/templates/index.html:59
 #: src/flavors/cambridgefy18/templates/index.html:59
@@ -74,7 +74,7 @@ msgstr "Parques e recreação"
 #: src/flavors/cambridgefy20/templates/index.html:59
 #: src/flavors/pblb/templates/index.html:53
 msgid "Public Health and Safety"
-msgstr "Saúde e segurança pública"
+msgstr "জনস্বাস্থ্য ও নিরাপত্তা"
 
 #: src/flavors/cambridge/templates/index.html:60
 #: src/flavors/cambridgefy18/templates/index.html:60
@@ -82,7 +82,7 @@ msgstr "Saúde e segurança pública"
 #: src/flavors/cambridgefy20/templates/index.html:60
 #: src/flavors/pblb/templates/index.html:54
 msgid "Streets and Sidewalks"
-msgstr "Ruas e calçadas"
+msgstr "রাস্তা এবং ফুটপাথ"
 
 #: src/flavors/cambridge/templates/index.html:104
 #: src/flavors/cambridgefy18/templates/index.html:105
@@ -91,7 +91,7 @@ msgstr "Ruas e calçadas"
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:12
 #: src/flavors/pblb/templates/index.html:90
 msgid "Approximate location:"
-msgstr "Localização aproximada:"
+msgstr "আনুমানিক স্থান:"
 
 #: src/flavors/cambridge/templates/index.html:113
 #: src/flavors/cambridgefy18/templates/index.html:114
@@ -102,7 +102,7 @@ msgid ""
 "<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
 "and will help us to assess whether these maps are reaching the full "
 "diversity of our community:"
-msgstr "<h5>Obrigado!</h5> <p>As perguntas a seguir são <strong>opcionais</strong> e nos ajudarão a avaliar se esses mapas representam toda a diversidade de nossa comunidade:</p>"
+msgstr "<h5>ধন্যবাদ!</h5> <p>নিম্নলিখিত প্রশ্নগুলি <strong>ঐচ্ছিক</strong> এবং এই ম্যাপগুলো আমাদের কমিউনিটি সম্পূর্ণ বৈচিত্র্যে পৌঁছেছে কিনা তা মূল্যায়ন করতে আমাদের সাহায্য করবে:</p>"
 
 #: src/flavors/cambridge/templates/index.html:114
 #: src/flavors/cambridgefy18/templates/index.html:115
@@ -111,7 +111,7 @@ msgstr "<h5>Obrigado!</h5> <p>As perguntas a seguir são <strong>opcionais</stro
 msgid ""
 "Note: City staff will review idea categories and make any revisions as "
 "needed."
-msgstr "Observação: a equipe da cidade analisará as categorias de ideias e fará as revisões necessárias."
+msgstr "নোট: শহরের কর্মীরা আইডিয়ার শ্রেণীগুলি পর্যালোচনা করবেন এবং প্রয়োজনে যেকোন সংশোধন করবেন।"
 
 #: src/flavors/cambridge/templates/index.html:116
 #: src/flavors/cambridgefy18/templates/index.html:117
@@ -119,25 +119,25 @@ msgstr "Observação: a equipe da cidade analisará as categorias de ideias e fa
 #: src/flavors/cambridgefy20/templates/index.html:117
 #: src/flavors/pblb/templates/index.html:102
 msgid "Your Race/Ethnicity:"
-msgstr "Sua raça/etnia:"
+msgstr "আপনার জাতি/জাতিসত্তা:"
 
 #: src/flavors/cambridgefy18/templates/index.html:61
 #: src/flavors/cambridgefy19/templates/index.html:61
 #: src/flavors/cambridgefy20/templates/index.html:61
 msgid "Transportation"
-msgstr "Transporte"
+msgstr "পরিবহণ"
 
 #: src/flavors/cambridgefy21/templates/index.html:56
 #: src/flavors/cambridgefy22/templates/index.html:56
 #: src/flavors/cambridgefy23/templates/index.html:56
 msgid "Street Smarts"
-msgstr "Inteligência nas ruas"
+msgstr "স্ট্রিট স্মার্টস"
 
 #: src/flavors/cambridgefy21/templates/index.html:57
 #: src/flavors/cambridgefy22/templates/index.html:57
 #: src/flavors/cambridgefy23/templates/index.html:57
 msgid "Community Resources"
-msgstr "Recursos da comunidade"
+msgstr "কমিউনিটি রিসোর্স"
 
 #: src/flavors/cambridgefy21/templates/index.html:58
 #: src/flavors/cambridgefy22/templates/index.html:58
@@ -146,273 +146,273 @@ msgstr "Recursos da comunidade"
 #: src/flavors/cambridgefy26/_config.translations.py:39
 #: src/flavors/cambridgefy26/_config.translations.py:132
 msgid "Facilities, Parks & Recreation"
-msgstr "Instalações, parques e recreação"
+msgstr "সুবিধাসমূহ, পার্ক এবং বিনোদন"
 
 #: src/flavors/cambridgefy21/templates/index.html:59
 #: src/flavors/cambridgefy22/templates/index.html:59
 #: src/flavors/cambridgefy23/templates/index.html:59
 msgid "Youth"
-msgstr "Juventude"
+msgstr "যৌবন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:6
 #: src/flavors/cambridgefy26/_config.translations.py:7
 msgid "City of Cambridge Participatory Budgeting"
-msgstr "Orçamento participativo da Cidade de Cambridge"
+msgstr "Cambridge শহরের অংশগ্রহণমূলক বাজেট (PB)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:8
 msgid "Participatory Budgeting for Cambridge, MA"
-msgstr "Orçamento participativo para Cambridge, MA"
+msgstr "Cambridge, MA-এর জন্য অংশগ্রহণমূলক বাজেট"
 
 #: src/flavors/cambridgefy26/_config.translations.py:9
 msgid "How would YOU spend $1M?"
-msgstr "Como VOCÊ gastaria US$ 1 milhão?"
+msgstr "আপনি কিভাবে ১ মিলিয়ন ডলার খরচ করবেন?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:10
 msgid "Enter an address..."
-msgstr "Insira um endereço…"
+msgstr "একটি ঠিকানা লিখুন..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:11
 #: src/flavors/cambridgefy26/_config.translations.py:36
 #: src/flavors/cambridgefy26/_config.translations.py:129
 msgid "Arts & Culture"
-msgstr "Artes e cultura"
+msgstr "শিল্প ও সংস্কৃতি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:12
 #: src/flavors/cambridgefy26/_config.translations.py:37
 #: src/flavors/cambridgefy26/_config.translations.py:130
 msgid "Community Resources & Education"
-msgstr "Recursos comunitários e educação"
+msgstr "কমিউনিটি রিসোর্স এবং শিক্ষা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:13
 #: src/flavors/cambridgefy26/_config.translations.py:38
 #: src/flavors/cambridgefy26/_config.translations.py:131
 msgid "Environment & Sustainability"
-msgstr "Meio ambiente e sustentabilidade"
+msgstr "পরিবেশ ও স্থায়িত্ব"
 
 #: src/flavors/cambridgefy26/_config.translations.py:15
 #: src/flavors/cambridgefy26/_config.translations.py:40
 #: src/flavors/cambridgefy26/_config.translations.py:133
 msgid "Transportation, Streets & Sidewalks"
-msgstr "Transporte, ruas e calçadas"
+msgstr "পরিবহন, রাস্তা এবং ফুটপাথ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:16
 msgid "idea"
-msgstr "ideia"
+msgstr "আইডিয়া"
 
 #: src/flavors/cambridgefy26/_config.translations.py:17
 msgid "ideas"
-msgstr "ideias"
+msgstr "আইডিয়াগুলো"
 
 #: src/flavors/cambridgefy26/_config.translations.py:18
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:16
 msgid "Submit an idea"
-msgstr "Enviar uma ideia"
+msgstr "একটি আইডিয়া জমা দিন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:19
 msgid "Show Ideas as a list"
-msgstr "Mostrar ideias como uma lista"
+msgstr "আইডিয়াগুলিকে একটি তালিকা হিসেবে দেখান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:20
 msgid "Show on a map"
-msgstr "Mostrar em um mapa"
+msgstr "একটি ম্যাপে দেখান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:21
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:14
 msgid "Describe your idea"
-msgstr "Descreva sua ideia"
+msgstr "আপনার আইডিয়া বর্ণনা করুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:22
 msgid "suggested"
-msgstr "sugeriu"
+msgstr "প্রস্তাবিত"
 
 #: src/flavors/cambridgefy26/_config.translations.py:23
 msgid ""
 "Ideas must be for <strong>capital</strong> projects – Please see the "
 "guidelines here"
-msgstr "As ideias devem ser para projetos de <strong>capital</strong> – Consulte as diretrizes aqui"
+msgstr "আইডিয়া <strong>মূলধন</strong> প্রকল্পের জন্য হতে হবে - অনুগ্রহ করে এখানে নির্দেশিকা দেখুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:24
 #: src/flavors/cambridgefy26/_config.translations.py:115
 #: src/flavors/cambridgefy26/_config.translations.py:126
 msgid "Someone"
-msgstr "Alguém"
+msgstr "কেউ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:25
 msgid "Share my idea"
-msgstr "Compartilhar minha ideia"
+msgstr "আমার আইডিয়া শেয়ার করুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:26
 msgid "Multiple locations throughout the city"
-msgstr "Vários locais em toda a cidade"
+msgstr "শহর জুড়ে একাধিক স্থান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:27
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:15
 msgid "Drag the map to a location for your idea."
-msgstr "Arraste o mapa até um local para a sua ideia."
+msgstr "আপনার আইডিয়ার জন্য ম্যাপটিকে একটি স্থানে টেনে আনুন।"
 
 #: src/flavors/cambridgefy26/_config.translations.py:28
 msgid "Is your idea for a specific location or the entire city?"
-msgstr "Sua ideia é para um local específico ou para toda a cidade?"
+msgstr "আপনার আইডিয়া কি একটি নির্দিষ্ট স্থানের জন্য নাকি পুরো শহরের জন্য?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:29
 msgid "A specific location"
-msgstr "Um local específico"
+msgstr "একটি নির্দিষ্ট স্থান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:30
 msgid "City-wide"
-msgstr "Toda a cidade"
+msgstr "শহরজুড়ে"
 
 #: src/flavors/cambridgefy26/_config.translations.py:31
 msgid "Title of your idea?"
-msgstr "Título da sua ideia?"
+msgstr "আপনার আইডিয়ার শিরোনাম?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:32
 msgid "Idea Title..."
-msgstr "Título da ideia…"
+msgstr "আইডিয়া শিরোনাম..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:33
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:2
 msgid "What is your idea, and how does it improve Cambridge?"
-msgstr "Qual é a sua ideia e como ela melhora Cambridge?"
+msgstr "আপনার আইডিয়া কী, এবং কীভাবে এটি Cambridge এর উন্নতি করে?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:34
 msgid ""
 "What need does your idea address? Who does your idea benefit? Please "
 "describe specific and relevant details about your idea."
-msgstr "Que necessidade sua ideia atende? Quem sua ideia beneficia? Descreva detalhes específicos e relevantes sobre sua ideia."
+msgstr "আপনার আইডিয়াটি কীসের প্রয়োজনকে উদ্দেশ্য করে? আপনার আইডিয়া কার/কাদের উপকারে আসবে? অনুগ্রহ করে আপনার আইডিয়া সম্পর্কে নির্দিষ্ট এবং প্রাসঙ্গিক বিবরণ বর্ণনা করুন।"
 
 #: src/flavors/cambridgefy26/_config.translations.py:35
 msgid "Pick a category for your idea"
-msgstr "Escolha uma categoria para a sua ideia"
+msgstr "আপনার আইডিয়ার জন্য একটি শ্রেণী বেছে নিন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:41
 msgid "Your Name (required, will be shown on the map)"
-msgstr "Seu nome (obrigatório, será mostrado no mapa)"
+msgstr "আপনার নাম (এটি প্রয়োজনীয়, ম্যাপে দেখানো হবে)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:42
 msgid "Your Email (optional, will NOT be shown on the map)"
-msgstr "Seu e-mail (opcional, NÃO será mostrado no mapa)"
+msgstr "আপনার ইমেইল (এটি ঐচ্ছিক, ম্যাপে দেখানো হবে না)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:43
 msgid "Your Phone Number (optional, will NOT be shown on the map)"
-msgstr "Seu número de telefone (opcional, NÃO será mostrado no mapa)"
+msgstr "আপনার ফোন নম্বর (এটি ঐচ্ছিক, ম্যাপে দেখানো হবে না)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:44
 msgid ""
 "How did you hear about participatory budgeting (please choose all that "
 "apply...)?"
-msgstr "Como você ficou sabendo sobre o orçamento participativo (escolha todas as opções aplicáveis)?"
+msgstr "আপনি কীভাবে অংশগ্রহণমূলক বাজেট সম্পর্কে শুনেছেন (অনুগ্রহ করে প্রযোজ্য সবগুলি বেছে নিন...)?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:45
 msgid "City Council member"
-msgstr "Membro do Conselho Municipal"
+msgstr "সিটি কাউন্সিল সদস্য"
 
 #: src/flavors/cambridgefy26/_config.translations.py:46
 msgid "City website"
-msgstr "Site da cidade"
+msgstr "সিটি ওয়েবসাইট"
 
 #: src/flavors/cambridgefy26/_config.translations.py:47
 msgid "City social media account"
-msgstr "Conta de rede social da cidade"
+msgstr "সিটি সোশ্যাল মিডিয়া অ্যাকাউন্ট"
 
 #: src/flavors/cambridgefy26/_config.translations.py:48
 msgid "Community group"
-msgstr "Grupo comunitário"
+msgstr "কমিউনিটি গ্রুপ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:49
 msgid "Email"
-msgstr "E-mail"
+msgstr "ইমেইল"
 
 #: src/flavors/cambridgefy26/_config.translations.py:50
 msgid "Event"
-msgstr "Evento"
+msgstr "ইভেন্ট"
 
 #: src/flavors/cambridgefy26/_config.translations.py:51
 msgid "Newspaper/TV/radio"
-msgstr "Jornal/TV/rádio"
+msgstr "সংবাদপত্র/টিভি/রেডিও"
 
 #: src/flavors/cambridgefy26/_config.translations.py:52
 msgid "PB Advertising (Resident mailing/flyer/lawn sign, etc.)"
-msgstr "Anúncio do PB (correspondência/folheto/letreiro, etc.)"
+msgstr "PB বিজ্ঞাপন (আবাসিক মেইলিং/ফ্লায়ার/লন সাইন, ইত্যাদি)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:53
 msgid "School / Youth center"
-msgstr "Escola/Centro juvenil"
+msgstr "স্কুল/যুব কেন্দ্র"
 
 #: src/flavors/cambridgefy26/_config.translations.py:54
 msgid "Word of mouth"
-msgstr "Boca a boca"
+msgstr "মুখের কথা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:55
 #: src/flavors/cambridgefy26/_config.translations.py:88
 #: src/flavors/cambridgefy26/_config.translations.py:99
 #: src/flavors/cambridgefy26/_config.translations.py:110
 msgid "Other"
-msgstr "Outro"
+msgstr "অন্যান্য"
 
 #: src/flavors/cambridgefy26/_config.translations.py:56
 msgid ""
 "Have you completed this personal information survey already in this "
 "participatory budgeting cycle?"
-msgstr "Você já respondeu à esta pesquisa de informações pessoais neste ciclo de orçamento participativo?"
+msgstr "আপনি কি ইতিমধ্যে এই অংশগ্রহণমূলক বাজেট সাইকেলের মধ্যে এই ব্যক্তিগত তথ্য সার্ভেটি সম্পন্ন করেছেন?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:57
 msgid "Yes ✅"
-msgstr "Sim ✅"
+msgstr "হ্যাঁ ✅"
 
 #: src/flavors/cambridgefy26/_config.translations.py:58
 msgid "No ❌"
-msgstr "Não ❌"
+msgstr "না ❌"
 
 #: src/flavors/cambridgefy26/_config.translations.py:59
 msgid "Not sure 🤷"
-msgstr "Não tenho certeza 🤷"
+msgstr "নিশ্চিত নই 🤷"
 
 #: src/flavors/cambridgefy26/_config.translations.py:60
 msgid ""
 "Have you submitted an idea, voted, or volunteered in any of the previous "
 "Cambridge PB cycles?"
-msgstr "Você enviou uma ideia, votou ou se voluntariou em algum dos ciclos anteriores do orçamento participativo (PB) de Cambridge?"
+msgstr "আপনি কি পূর্ববর্তী Cambridge PB সাইকেলগুলির কোনওটিতে কোনও আইডিয়া জমা দিয়েছেন, ভোট দিয়েছেন বা স্বেচ্ছাসেবক হয়েছেন?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:61
 msgid "No I haven't"
-msgstr "Não, eu não fiz isso"
+msgstr "না আমি দেইনি/হইনি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:62
 msgid "Yes I have"
-msgstr "Sim, eu fiz isso"
+msgstr "হ্যাঁ আমি দিয়েছি/হয়েছি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:63
 msgid "I am not sure"
-msgstr "Não tenho certeza"
+msgstr "আমি নিশ্চিত নই"
 
 #: src/flavors/cambridgefy26/_config.translations.py:64
 msgid ""
 "In the past 12 months, have you worked with other people in your "
 "neighborhood to fix a problem or improve a condition in your community, not "
 "including work you may have done related to participatory budgeting?"
-msgstr "Nos últimos 12 meses, você trabalhou com outras pessoas em sua vizinhança para resolver um problema ou melhorar uma condição em sua comunidade, sem incluir o trabalho que você pode ter feito relacionado ao orçamento participativo?"
+msgstr "গত ১২ মাসে, আপনি কি আপনার কমিউনিটির কোনও সমস্যা সমাধান বা অবস্থার উন্নতির জন্য আপনার পাড়ার অন্যান্যদের সাথে কাজ করেছেন, অংশগ্রহণমূলক বাজেট সম্পর্কিত কাজগুলি ছাড়া?"
 
 #: src/flavors/cambridgefy26/_config.translations.py:65
 msgid "Yes, I have done that"
-msgstr "Sim, eu fiz isso"
+msgstr "হ্যাঁ, আমি সেটা করেছি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:66
 msgid "No, I have not done that"
-msgstr "Não, eu não fiz isso"
+msgstr "না, আমি সেটা করিনি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:67
 msgid "Prefer not to answer/unsure"
-msgstr "Prefiro não responder/não tenho certeza"
+msgstr "উত্তর না দেওয়া/অনিশ্চিত থাকা পছন্দ করুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:68
 msgid "Please select your neighborhood community in Cambridge"
-msgstr "Selecione a comunidade do seu bairro em Cambridge"
+msgstr "অনুগ্রহ করে Cambridge-এ আপনার আশেপাশের কমিউনিটি নির্বাচন করুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:69
 #: src/flavors/cambridgefy26/_config.translations.py:72
 msgid "Please choose..."
-msgstr "Escolha…"
+msgstr "অনুগ্রহ করে বেছে নিন..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:70
 #: src/flavors/cambridgefy26/_config.translations.py:81
@@ -420,265 +420,265 @@ msgstr "Escolha…"
 #: src/flavors/cambridgefy26/_config.translations.py:100
 #: src/flavors/cambridgefy26/_config.translations.py:111
 msgid "Prefer not to answer"
-msgstr "Prefiro não responder"
+msgstr "উত্তর দিতে ইচ্ছুক নই"
 
 #: src/flavors/cambridgefy26/_config.translations.py:71
 msgid "Your age"
-msgstr "Sua idade"
+msgstr "আপনার বয়স"
 
 #: src/flavors/cambridgefy26/_config.translations.py:73
 msgid "Under 18"
-msgstr "Menos de 18 anos"
+msgstr "১৮ এর নিচে"
 
 #: src/flavors/cambridgefy26/_config.translations.py:74
 msgid "18 to 24"
-msgstr "18 a 24"
+msgstr "১৮ থেকে ২৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:75
 msgid "25 to 34"
-msgstr "25 a 34"
+msgstr "২৫ থেকে ৩৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:76
 msgid "35 to 44"
-msgstr "35 a 44"
+msgstr "৩৫ থেকে ৪৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:77
 msgid "45 to 54"
-msgstr "45 a 54"
+msgstr "৪৫ থেকে ৫৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:78
 msgid "55 to 64"
-msgstr "55 até 64"
+msgstr "৫৫ থেকে ৬৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:79
 msgid "65 to 74"
-msgstr "65 até 74"
+msgstr "৬৫ থেকে ৭৪"
 
 #: src/flavors/cambridgefy26/_config.translations.py:80
 msgid "75 and over"
-msgstr "75 e mais"
+msgstr "৭৫ এবং এর বেশি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:82
 msgid "Your gender"
-msgstr "Seu gênero"
+msgstr "আপনার লিঙ্গ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:83
 msgid "Cisgender Female/woman"
-msgstr "Mulher cisgênero"
+msgstr "সিসজেন্ডার মেয়ে/নারী"
 
 #: src/flavors/cambridgefy26/_config.translations.py:84
 msgid "Cisgender Male/man"
-msgstr "Homem cisgênero"
+msgstr "সিসজেন্ডার ছেলে/পুরুষ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:85
 msgid "Nonbinary/gender non-confirming"
-msgstr "Pessoa não binária/gênero não conformista"
+msgstr "ননবাইনারি/লিঙ্গ অ-নিশ্চিতকরণ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:86
 msgid "Transgender Female"
-msgstr "Mulher trans"
+msgstr "ট্রান্সজেন্ডার মহিলা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:87
 msgid "Transgender Male"
-msgstr "Homem trans"
+msgstr "ট্রান্সজেন্ডার পুরুষ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:90
 msgid "Your preferred language"
-msgstr "Idioma de sua preferência"
+msgstr "আপনার পছন্দের ভাষা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:91
 msgid "English"
-msgstr "Inglês"
+msgstr "ইংরেজী"
 
 #: src/flavors/cambridgefy26/_config.translations.py:92
 msgid "Amharic"
-msgstr "Amárico"
+msgstr "আমহারিক"
 
 #: src/flavors/cambridgefy26/_config.translations.py:93
 msgid "Arabic"
-msgstr "Árabe"
+msgstr "আরবি"
 
 #: src/flavors/cambridgefy26/_config.translations.py:94
 msgid "Bangla"
-msgstr "Bengali"
+msgstr "বাংলা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:95
 msgid "Chinese"
-msgstr "Chinês"
+msgstr "চাইনিজ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:96
 msgid "Haitian Creole"
-msgstr "Crioulo haitiano"
+msgstr "হাইতিয়ান ক্রিওল"
 
 #: src/flavors/cambridgefy26/_config.translations.py:97
 msgid "Portuguese"
-msgstr "Português"
+msgstr "পর্তুগীজ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:98
 msgid "Spanish"
-msgstr "Espanhol"
+msgstr "স্প্যানিশ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:101
 msgid "Your Race/Ethnicity"
-msgstr "Sua raça/etnia"
+msgstr "আপনার জাতি/জাতিসত্ত্বা"
 
 #: src/flavors/cambridgefy26/_config.translations.py:102
 msgid "Asian/East Indian"
-msgstr "Asiático/indiano"
+msgstr "এশীয়/পূর্ব ভারতীয়"
 
 #: src/flavors/cambridgefy26/_config.translations.py:103
 msgid "Black or African American"
-msgstr "Negro(a) ou afro-americano(a)"
+msgstr "কৃষ্ণাঙ্গ বা আফ্রিকান আমেরিকান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:104
 msgid "Hawaiian or Pacific Islander"
-msgstr "Nativo(a) do Havaí ou das ilhas do Pacífico"
+msgstr "হাওয়াইয়ান বা প্রশান্ত মহাসাগরীয় দ্বীপবাসী"
 
 #: src/flavors/cambridgefy26/_config.translations.py:105
 msgid "Hispanic, Latinx"
-msgstr "Hispânico, Latinx"
+msgstr "হিস্পানিক, ল্যাটিনক্স"
 
 #: src/flavors/cambridgefy26/_config.translations.py:106
 msgid "Middle Eastern/North African"
-msgstr "Oriente Médio/Norte da África"
+msgstr "মধ্যপ্রাচ্য/উত্তর আফ্রিকান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:107
 msgid "Native American, Alaskan"
-msgstr "Nativo americano, alasquiano"
+msgstr "নেটিভ আমেরিকান, আলাস্কান"
 
 #: src/flavors/cambridgefy26/_config.translations.py:108
 msgid "White, Caucasian"
-msgstr "Branco, caucasiano"
+msgstr "শেতাঙ্গ, ককেশীয়"
 
 #: src/flavors/cambridgefy26/_config.translations.py:109
 msgid "Multi-racial, multi-ethnic background"
-msgstr "Origem multirracial e multiétnica"
+msgstr "বহু-জাতিগত, বহু-জাতিসত্ত্বার ব্যাকগ্রাউন্ড"
 
 #: src/flavors/cambridgefy26/_config.translations.py:112
 msgid "comment"
-msgstr "comentário"
+msgstr "মন্তব্য"
 
 #: src/flavors/cambridgefy26/_config.translations.py:113
 msgid "comments"
-msgstr "comentários"
+msgstr "মন্তব্যসমূহ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:114
 msgid "commented on"
-msgstr "comentou em"
+msgstr "মন্তব্য করা হয়েছে"
 
 #: src/flavors/cambridgefy26/_config.translations.py:116
 #: src/flavors/cambridgefy26/_config.translations.py:117
 msgid "Leave a Comment"
-msgstr "Deixe um comentário"
+msgstr "একটি মন্তব্য করুন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:118
 #: src/flavors/cambridgefy26/_config.translations.py:119
 #: src/flavors/cambridgefy26/_config.translations.py:120
 msgid "Comment"
-msgstr "Comentário"
+msgstr "মন্তব্য"
 
 #: src/flavors/cambridgefy26/_config.translations.py:121
 msgid "Your Name"
-msgstr "Seu nome"
+msgstr "আপনার নাম"
 
 #: src/flavors/cambridgefy26/_config.translations.py:122
 msgid "Support This!"
-msgstr "Apoie isso!"
+msgstr "এটাকে সাপোর্ট করুন!"
 
 #: src/flavors/cambridgefy26/_config.translations.py:123
 msgid "support"
-msgstr "apoio"
+msgstr "সাপোর্ট"
 
 #: src/flavors/cambridgefy26/_config.translations.py:124
 msgid "supports"
-msgstr "apoia"
+msgstr "সাপোর্ট করেন"
 
 #: src/flavors/cambridgefy26/_config.translations.py:125
 msgid "supported"
-msgstr "apoiado"
+msgstr "সমর্থিত"
 
 #: src/flavors/cambridgefy26/_config.translations.py:127
 msgid "Cambridge PB Home"
-msgstr "PB de Cambridge Início"
+msgstr "Cambridge PB Home"
 
 #: src/flavors/cambridgefy26/_config.translations.py:128
 msgid "Overview"
-msgstr "Visão geral"
+msgstr "ওভারভিউ"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:1
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} a <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} uma <span class=\"place-type\">{{place.place_type_label}}</span> ideia"
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} একটি<span class=\"place-type\">{{place.place_type_label}}</span> ধারণা"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:2
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} an <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} uma <span class=\"place-type\">{{place.place_type_label}}</span> ideia"
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} একটি<span class=\"place-type\">{{place.place_type_label}}</span> আইডিয়া"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:3
 msgid ""
 "A new <span class=\"place-type\">{{ place_type_label }} idea </span>from "
 "<strong>{{ source }}</strong> named <span class=\"place-name\">{{ name }}</"
 "span>"
-msgstr "Uma nova <span class=\"place-type\">{{ place_type_label }} ideia </span>de <strong>{{ source }}</strong> chamada <span class=\"place-name\">{{ name }}</span>"
+msgstr "একটি নতুন<span class=\"place-type\">{{ place_type_label }} আইডিয়া </span>থেকে<strong>{{ source }}</strong> নামকরণ<span class=\"place-name\">{{ name }}</span>"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:1
 msgid "Log Out"
-msgstr "Sair"
+msgstr "লগ আউট করুন"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:2
 msgid "Sign In"
-msgstr "Entrar"
+msgstr "সাইন ইন করুন"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
-msgstr "Entrou como </span> <span class=\"current-user\">{{ current_user \"name\" }}"
+msgstr "হিসাবে সাইন ইন করা হয়েছে</span> <span class=\"current-user\">{{ current_user \"name\" }}"
 
 #: src/flavors/cambridgefy26/jstemplates/form-field.html:1
 #: src/sa_web/jstemplates/form-field-label.html:1
 msgid "optional"
-msgstr "opcional"
+msgstr "ঐচ্ছিক"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:1
 msgid "Get More Involved"
-msgstr "Envolva-se mais"
+msgstr "আরও জড়িত হোন"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:2
 msgid ""
 "Helping to spread the word about PB to make sure that people in all corners "
 "of Cambridge know about this initiative and can participate"
-msgstr "Ajudar a divulgar o PB para garantir que as pessoas em todos os cantos de Cambridge conheçam essa iniciativa e possam participar"
+msgstr "Cambridge-এর সমস্ত কোণের মানুষ যাতে এই উদ্যোগ সম্পর্কে জানেন এবং অংশগ্রহণ করতে পারেন তা নিশ্চিত করতে PB সম্পর্কে প্রচার করতে সহায়তা করা হচ্ছে"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:3
 msgid "Helping with the voting process in March"
-msgstr "Ajudar com o processo de votação em março"
+msgstr "মার্চের ভোট প্রক্রিয়ায় সহায়তা করা"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:4
 msgid ""
 "If you would like to volunteer to help out with the PB process in any way, "
 "please feel free to sign up <a href=\"http://cambridgema.nationbuilder.com/"
 "volunteer\">here</a>"
-msgstr "Se você quiser se voluntariar para ajudar no processo do PB de alguma forma, sinta-se à vontade para se inscrever <a href=\"http://cambridgema.nationbuilder.com/volunteer\">aqui</a>"
+msgstr "আপনি যদি PB প্রক্রিয়ার সাথে যেকোনো উপায়ে সাহায্য করতে স্বেচ্ছাসেবক হতে চান, অনুগ্রহ করে <a href=\"http://cambridgema.nationbuilder.com/volunteer\">এখানে</a> সাইন আপ করুন"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:5
 msgid "Providing translation services for meetings or outreach materials"
-msgstr "Fornecer serviços de tradução para reuniões ou materiais de divulgação"
+msgstr "সভা বা প্রচার সামগ্রীর জন্য অনুবাদ পরিসেবা প্রদান করা"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:6
 msgid "Submitting ideas in December"
-msgstr "Enviar ideias em dezembro"
+msgstr "ডিসেম্বরে আইডিয়া জমা দেওয়া"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:7
 msgid ""
 "There are many opportunities to get involved with the PB process, including:"
-msgstr "Existem muitas oportunidades de se envolver com o processo do PB, incluindo:"
+msgstr "PB প্রক্রিয়ার সাথে জড়িত হওয়ার অনেক সুযোগ রয়েছে, যার মধ্যে রয়েছে:"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:8
 msgid "Volunteering to serve as a Budget Delegate in January and February"
-msgstr "Voluntariar-se para servir como Delegado de Orçamento em janeiro e fevereiro"
+msgstr "জানুয়ারি এবং ফেব্রুয়ারিতে বাজেট প্রতিনিধি হিসাবে কাজ করার জন্য স্বেচ্ছাসেবী"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:1
 msgid ""
@@ -689,55 +689,55 @@ msgid ""
 "  the City&apos;s Budget Office at <a href=\"mailto:pb@cambridgema."
 "gov\">pb@cambridgema.gov</a> or\n"
 "  <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
-msgstr "<strong>Para obter mais informações sobre o Orçamento Participativo (inclusive como ser voluntário)</strong>,\n visite <a href=\"http://pb.cambridgema.gov\" target=\"_blank\">http://pb.cambridgema.gov</a> ou entre em contato\n com o Escritório de Orçamento da Cidade em <a href=\"mailto:pb@cambridgema.gov\">pb@cambridgema.gov</a> ou\n <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
+msgstr "<strong>অংশগ্রহণমূলক বাজেট সম্পর্কে আরও তথ্যের জন্য (কীভাবে স্বেচ্ছাসেবক হতে হবে তা সহ)</strong> ,\n অনুগ্রহ করে <a href=\"http://pb.cambridgema.gov\" target=\"_blank\">http://pb.cambridgema.gov</a> ভিজিট করুন বা যোগাযোগ করুন\n শহরের বাজেট অফিসে <a href=\"mailto:pb@cambridgema.gov\">pb@cambridgema.gov</a> অথবা\n <a href=\"tel:(617) 349-4270\">(617) 349-4270 .</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:5
 msgid "And many others!"
-msgstr "E muitas outras!"
+msgstr "এবং আরো অনেক!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
 "Explore ideas from others in the community using the “List All Ideas” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
-msgstr "Veja as ideias das outras pessoas da comunidade pela guia “Listar todas as ideias” no canto superior direito da página\n ou diretamente no mapa."
+msgstr "পৃষ্ঠার উপরের ডানদিকে\n  বা সরাসরি ম্যাপের মাধ্যমে \"সমস্ত আইডিয়ার তালিকা\" ট্যাব ব্যবহার করে কমিউনিটির অন্যদের কাছ থেকে আইডিয়াগুলি অন্বেষণ করুন।"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:8
 msgid "Home Essentials for Newly Housed Residents"
-msgstr "Itens essenciais para residentes recém-alojados"
+msgstr "নতুন আবাসিক বাসিন্দাদের জন্য ঘরের প্রয়োজনীয় জিনিস"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:9
 msgid ""
 "If you have an idea for a project to improve Cambridge, please share it on "
 "the map!"
-msgstr "Se você tem uma ideia de projeto para melhorar Cambridge, compartilhe-a no mapa!"
+msgstr "Cambridge-এর উন্নতির জন্য আপনার কাছে কোনো প্রকল্পের আইডিয়া থাকলে, অনুগ্রহ করে তা ম্যাপে শেয়ার করুন!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:10
 msgid ""
 "PB is a democratic process that gives Cambridge community members the power "
 "to <strong>decide how to spend $1,000,000</strong> of the City&apos;s FY26 "
 "Budget."
-msgstr "O PB é um processo democrático que dá aos membros da comunidade de Cambridge o poder de <strong>decidir como gastar US $ 1.000.000</strong> do orçamento da cidade no ano fiscal de 2026."
+msgstr "PB হল একটি গণতান্ত্রিক প্রক্রিয়া যা Cambridge কমিউনিটির সদস্যদেরকে শহরের FY26 বাজেটের <strong>১ মিলিয়ন ডলার খরচ করার সিদ্ধান্ত নেওয়ার</strong> ক্ষমতা দেয়।"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
 msgid "Participatory Budgeting in Cambridge"
-msgstr "Orçamento participativo em Cambridge"
+msgstr "Cambridge-এ অংশগ্রহণমূলক বাজেট"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"
-msgstr "Jardins polinizadores"
+msgstr "পরাগায়ন উদ্যান"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:13
 msgid "STEAM Upgrades for Youth Centers"
-msgstr "Atualizações STEAM nos Centros juvenis"
+msgstr "যুব কেন্দ্রগুলির জন্য STEAM আপগ্রেড"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:14
 msgid "Shaded seating areas on hot streets"
-msgstr "Áreas de estar à sombra em ruas quentes"
+msgstr "উষ্ণ রাস্তায় ছায়াময় বসার জায়গা"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:15
 msgid "Sign up to stay informed about Participatory Budgeting in Cambridge!"
-msgstr "Inscreva-se para se manter informado sobre o Orçamento participativo em Cambridge!"
+msgstr "Cambridge অংশগ্রহণমূলক বাজেট সম্পর্কে অবগত থাকার জন্য সাইন আপ করুন!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:17
 msgid ""
@@ -752,25 +752,25 @@ msgid ""
 "    12 and older, regardless of citizenship status, will be eligible to vote "
 "for their favorite projects and\n"
 "    decide how to spend $1 million of the City&apos;s Budget."
-msgstr "A cidade de Cambridge lançou o<sup>11º</sup> Ciclo do PB e coletou ideias da comunidade\n de como gastar US$ 1 milhão em projetos para melhorar Cambridge. No mapa, você pode encontrar todas as ideias\n enviadas para o PB11. De outubro de 2024 a janeiro de 2025, os delegados voluntários do PB pesquisarão todas as ideias de projetos enviadas e desenvolverão as propostas finais para a votação do PB. Em março de 2025, todos os residentes de Cambridge com\n 12 anos ou mais, independentemente do status de cidadania, poderão votar em seus projetos favoritos e\n decidir como gastar US$ 1 milhão do orçamento da cidade."
+msgstr "Cambridge শহর PB-এর ১১ <sup>তম</sup> সাইকেল চালু করেছে এবং Cambridge এর উন্নতির জন্য প্রকল্পগুলিতে ১ মিলিয়ন ডলার খরচ করার বিষয়ে\n সম্প্রদায়ের কাছ থেকে ধারণা সংগ্রহ করেছে৷ ম্যাপে, আপনি PB11-এর জন্য জমা দেওয়া সমস্ত\n আইডিয়া খুঁজে পেতে পারেন। অক্টোবর ২০২৪ থেকে জানুয়ারী ২০২৫ পর্যন্ত, স্বেচ্ছাসেবক PB প্রতিনিধিরা জমা দেওয়া সমস্ত প্রকল্পের আইডিয়া নিয়ে গবেষণা করবেন এবং PB ব্যালটের জন্য চূড়ান্ত প্রস্তাবগুলি তৈরি করবেন। মার্চ, ২০২৫-এ, Cambridge-এর সমস্ত বাসিন্দারা ১২ বছর বা তার বেশি বয়সী, নাগরিকত্বের অবস্থান নির্বিশেষে, তাদের পছন্দের প্রকল্পগুলির জন্য ভোট দেওয়ার যোগ্য হবেন এবং শহরের বাজেটের ১ মিলিয়ন ডলার কীভাবে ব্যয় করবেন তা নির্ধারণ করবেন৷"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:23
 msgid "Winning projects from past PB cycles include:"
-msgstr "Os projetos vencedores de ciclos anteriores do PB incluem:"
+msgstr "অতীতের PB সাইকেলের বিজয়ী প্রকল্পগুলির মধ্যে রয়েছে:"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:1
 msgid "View On Map"
-msgstr "Ver no mapa"
+msgstr "ম্যাপে দেখুন"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:3
 msgid "suggested this city-wide {{place_type_label location_type }} idea."
-msgstr "sugeriu essa ideia {{place_type_label location_type }} para toda a cidade."
+msgstr "এই শহর জুড়ে প্রস্তাবিত{{place_type_label location_type }} আইডিয়া"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:4
 msgid ""
 "suggested this {{place_type_label location_type }} idea near {{>location-"
 "string .}}."
-msgstr "sugeriu essa ideia {{place_type_label location_type }} perto de {{>location-string .}}."
+msgstr "প্রস্তাব করা হয় এই {{place_type_label location_type }} আইডিয়া কাছাকাছি {{>location-string .}} ।"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:1
 msgid ""
@@ -780,7 +780,7 @@ msgid ""
 "            community. This survey is optional.</strong> If you\n"
 "            submit more than one idea, please only complete the survey\n"
 "            once."
-msgstr "<strong>Conte-nos um pouco mais sobre você para\n nos ajudar a avaliar se estamos alcançando toda a diversidade de nossa\n comunidade. Esta pesquisa é opcional.</strong> Se você\n enviar mais de uma ideia, responda à pesquisa\n apenas uma vez."
+msgstr "<strong>আমরা আমাদের কমিউনিটির সম্পূর্ণ বৈচিত্র্যে পৌঁছতে পারছি কিনা তা মূল্যায়ন করতে সাহায্য করার জন্য\n অনুগ্রহ করে আমাদেরকে আপনার সম্পর্কে আরও কিছু বলুন৷ এই সার্ভেটি ঐচ্ছিক।</strong> আপনি\n যদি একাধিক আইডিয়া জমা দেন, তাহলে অনুগ্রহ করে শুধুমাত্র একবার সার্ভে\n সম্পূর্ণ করুন।"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:6
 msgid ""
@@ -793,21 +793,21 @@ msgid ""
 "            href=\"http://pb.cambridgema.gov/volunteer2\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "Após o encerramento da coleta de ideias, os residentes voluntários trabalharão de outubro a fevereiro para pesquisar, avaliar e priorizar as ideias do projeto do PB para determinar quais propostas aparecerão na\n votação final em março para votação pública. <a\n href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\">Clique aqui para se voluntariar para ser um Delegado do PB!</a>"
+msgstr "আইডিয়া সংগ্রহ বন্ধ হয়ে যাওয়ার পরে, স্বেচ্ছাসেবক বাসিন্দারা অক্টোবর থেকে ফেব্রুয়ারি পর্যন্ত \nকাজ করবে গবেষণা, মূল্যায়ন এবং অগ্রাধিকার দিতে\n.........PB প্রকল্পের আইডিয়াগুলি নির্ধারণ করতে যে কোন আইডিয়াগুলি মার্চ মাসে \n..........চূড়ান্ত ব্যালটে উপস্থিত হবে তা নির্ধারণ করতে। <a\n........href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\"> PB প্রতিনিধি হতে স্বেচ্ছাসেবক হতে এখানে\n ক্লিক করুন!</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"
-msgstr "Informações para contato"
+msgstr "যোগাযোগের তথ্য"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:16
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to a "
 "location for your idea."
-msgstr "Parece que você ainda não definiu sua localização. Arraste o mapa até um local para a sua ideia."
+msgstr "দেখে মনে হচ্ছে আপনি এখনও আপনার অবস্থান সেট করেননি৷ আপনার আইডিয়ার জন্য ম্যাপটিকে একটি অবস্থানে টেনে আনুন।"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:17
 msgid "Optional Survey"
-msgstr "Pesquisa opcional"
+msgstr "ঐচ্ছিক সার্ভে"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:18
 msgid ""
@@ -820,83 +820,83 @@ msgid ""
 "              <a href=\"https://pb.cambridgema.gov/faqs\"\n"
 "              title=\"City of Cambridge Participatory Budgeting FAQ\"\n"
 "              target=\"_blank\">guidelines here</a>."
-msgstr "O financiamento do PB de US$ 1.000.000 pode ser usado para apoiar projetos que beneficiem o público e estejam localizados na cidade\n de Cambridge. Para obter mais informações sobre que tipo de projetos\n são elegíveis para o PB, consulte as\n              <a href=\"https://pb.cambridgema.gov/faqs\"\n              title=\"City of Cambridge Participatory Budgeting FAQ\"\n              target=\"_blank\">diretrizes aqui</a>."
+msgstr "১ মিলিয়ন ডলারের PB তহবিল ব্যবহার করা যেতে পারে\n সেইসব প্রকল্পগুলিকে সমর্থন করতে যা জনসাধারণের উপকার করে এবং Cambridge শহরের\n মধ্যে অবস্থিত। কোন ধরনের প্রকল্প PB-র জন্য যোগ্য সে সম্পর্কে আরও তথ্যের জন্য অনুগ্রহ করে এখানে n <a href=\"https://pb.cambridgema.gov/faqs\"\n শিরোনাম = \"সিটি অফ কেমব্রিজ পার্টিসিপেটরি বাজেটিং এফএকিউ\" \n নির্দেশিকা দেখুন।"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:25
 msgid "Please tell us how we can contact you about your idea."
-msgstr "Conte para nós como podemos entrar em contato com você sobre a sua ideia."
+msgstr "অনুগ্রহ করে আমাদের বলুন কিভাবে আমরা আপনার আইডিয়া সম্পর্কে আপনার সাথে যোগাযোগ করতে পারি।"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:26
 msgid "Project Location"
-msgstr "Localização do projeto"
+msgstr "প্রকল্পের অবস্থান"
 
 #: src/flavors/cambridgefy26/templates/index.html:6
 msgid "CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING"
-msgstr "ORÇAMENTO PARTICIPATIVO <br>DA CIDADE DE CAMBRIDGE"
+msgstr "CAMBRIDGE শহর<br> অংশগ্রহণমূলক বাজেট"
 
 #: src/flavors/pblb/templates/index.html:100
 msgid ""
 "Note: Council district staff will review idea categories and make any "
 "revisions as needed."
-msgstr "Observação: a equipe do distrito do conselho analisará as categorias de ideias e fará as revisões necessárias."
+msgstr "নোট: কাউন্সিল জেলা কর্মীরা আইডিয়া শ্রেণীগুলো পর্যালোচনা করবেন এবং প্রয়োজনে যেকোনো সংশোধন করবেন।"
 
 #: src/sa_web/jstemplates/form-field-file.html:1
 msgid "Sorry, your browser doesn't support file uploads."
-msgstr "Desculpe, seu navegador não suporta uploads de arquivos."
+msgstr "দুঃখিত, আপনার ব্রাউজার ফাইল আপলোড সাপোর্ট করে না।"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
-msgstr "Recomendar no Facebook"
+msgstr "ফেসবুকে রেকমেন্ড করুন"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
-msgstr "Tuitar isso"
+msgstr "এটি টুইট করুন"
 
 #: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
-msgstr "Mais recente"
+msgstr "অতি সাম্প্রতিক"
 
 #: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
-msgstr "Mais {{ support_label_plural }}"
+msgstr "অধিকাংশ{{ support_label_plural }}"
 
 #: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
-msgstr "Mais {{ survey_label_plural }}"
+msgstr "অধিকাংশ{{ survey_label_plural }}"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:1
 msgid ""
 "<span class=\"visibility-icon invisible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>only visible to "
 "moderators</strong>."
-msgstr "<span class=\"visibility-icon invisible-icon\">👁</span> \n Isso {{ place_config.response_name }} <strong>só é visível para os moderadores</strong>."
+msgstr "<span class=\"visibility-icon invisible-icon\">👁</span> \n এটি{{ place_config.response_name }} হল <strong>শুধুমাত্র মডারেটরদের কাছে দৃশ্যমান</strong>।"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:3
 msgid ""
 "<span class=\"visibility-icon visible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>visible to everyone</"
 "strong>."
-msgstr "<span class=\"visibility-icon visible-icon\">👁</span> \n Isso {{ place_config.response_name }} é <strong>visível para todos</strong>."
+msgstr "<span class=\"visibility-icon visible-icon\">👁</span> \n এটি{{ place_config.response_name }} হল <strong>সবার কাছে দৃশ্যমান</strong>।"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:5
 msgid "Make {{ place_config.response_name }} hidden"
-msgstr "Tornar {{ place_config.response_name }} oculto"
+msgstr "লুকিয়ে {{ place_config.response_name }} রাখুন"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:6
 msgid "Make {{ place_config.response_name }} visible"
-msgstr "Tornar {{ place_config.response_name }} visível"
+msgstr "দৃশ্যমান {{ place_config.response_name }} করুন"
 
 #: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
-msgstr "Obrigado por participar!"
+msgstr "অংশগ্রহণের জন্য ধন্যবাদ!"
 
 #: src/sa_web/templates/base.html:96
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
-msgstr "Não é possível conectar ao servidor no momento. Espere um pouco enquanto restabelecemos a comunicação."
+msgstr "আমরা এই মুহূর্তে সার্ভারের সাথে সংযোগ করতে পারছি না৷ যোগাযোগ পুনঃপ্রতিষ্ঠা করার সময় পর্যন্ত অপেক্ষা করুন।"
 
 #: src/sa_web/templates/base.html:102
 msgid "Close"
-msgstr "Fechar"
+msgstr "বন্ধ করুন"
 

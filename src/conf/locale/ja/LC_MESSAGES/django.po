@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt_BR\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: src/flavors/defaultflavor/templates/index.html:52
 #: src/flavors/pblb/templates/index.html:62
 msgid "Powered by"
-msgstr "Distribuído por"
+msgstr "提供"
 
 #: src/flavors/cambridge/templates/index.html:55
 #: src/flavors/cambridgefy18/templates/index.html:55
@@ -39,7 +39,7 @@ msgstr "Distribuído por"
 #: src/flavors/cambridgefy20/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:49
 msgid "Culture and Community Facilities"
-msgstr "Cultura e instalações comunitárias"
+msgstr "文化とコミュニティ施設"
 
 #: src/flavors/cambridge/templates/index.html:56
 #: src/flavors/cambridgefy18/templates/index.html:56
@@ -47,7 +47,7 @@ msgstr "Cultura e instalações comunitárias"
 #: src/flavors/cambridgefy20/templates/index.html:56
 #: src/flavors/pblb/templates/index.html:50
 msgid "Education"
-msgstr "Educação"
+msgstr "教育"
 
 #: src/flavors/cambridge/templates/index.html:57
 #: src/flavors/cambridgefy18/templates/index.html:57
@@ -58,7 +58,7 @@ msgstr "Educação"
 #: src/flavors/cambridgefy23/templates/index.html:55
 #: src/flavors/pblb/templates/index.html:51
 msgid "Environment"
-msgstr "Meio ambiente"
+msgstr "環境"
 
 #: src/flavors/cambridge/templates/index.html:58
 #: src/flavors/cambridgefy18/templates/index.html:58
@@ -66,7 +66,7 @@ msgstr "Meio ambiente"
 #: src/flavors/cambridgefy20/templates/index.html:58
 #: src/flavors/pblb/templates/index.html:52
 msgid "Parks and Recreation"
-msgstr "Parques e recreação"
+msgstr "公園・レクリエーション"
 
 #: src/flavors/cambridge/templates/index.html:59
 #: src/flavors/cambridgefy18/templates/index.html:59
@@ -74,7 +74,7 @@ msgstr "Parques e recreação"
 #: src/flavors/cambridgefy20/templates/index.html:59
 #: src/flavors/pblb/templates/index.html:53
 msgid "Public Health and Safety"
-msgstr "Saúde e segurança pública"
+msgstr "公衆衛生と安全"
 
 #: src/flavors/cambridge/templates/index.html:60
 #: src/flavors/cambridgefy18/templates/index.html:60
@@ -82,7 +82,7 @@ msgstr "Saúde e segurança pública"
 #: src/flavors/cambridgefy20/templates/index.html:60
 #: src/flavors/pblb/templates/index.html:54
 msgid "Streets and Sidewalks"
-msgstr "Ruas e calçadas"
+msgstr "道路と歩道"
 
 #: src/flavors/cambridge/templates/index.html:104
 #: src/flavors/cambridgefy18/templates/index.html:105
@@ -91,7 +91,7 @@ msgstr "Ruas e calçadas"
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:12
 #: src/flavors/pblb/templates/index.html:90
 msgid "Approximate location:"
-msgstr "Localização aproximada:"
+msgstr "おおよその場所："
 
 #: src/flavors/cambridge/templates/index.html:113
 #: src/flavors/cambridgefy18/templates/index.html:114
@@ -102,7 +102,7 @@ msgid ""
 "<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
 "and will help us to assess whether these maps are reaching the full "
 "diversity of our community:"
-msgstr "<h5>Obrigado!</h5> <p>As perguntas a seguir são <strong>opcionais</strong> e nos ajudarão a avaliar se esses mapas representam toda a diversidade de nossa comunidade:</p>"
+msgstr "<h5>ありがとうございます！</h5> <p>以下の質問は<strong>任意ですが</strong>、これらの地図が私たちの多様なコミュニティに完全に届いているかどうかを評価するのに役立ちます：</p>"
 
 #: src/flavors/cambridge/templates/index.html:114
 #: src/flavors/cambridgefy18/templates/index.html:115
@@ -111,7 +111,7 @@ msgstr "<h5>Obrigado!</h5> <p>As perguntas a seguir são <strong>opcionais</stro
 msgid ""
 "Note: City staff will review idea categories and make any revisions as "
 "needed."
-msgstr "Observação: a equipe da cidade analisará as categorias de ideias e fará as revisões necessárias."
+msgstr "注：市職員がアイデア・カテゴリーを検討し、必要に応じて修正します。"
 
 #: src/flavors/cambridge/templates/index.html:116
 #: src/flavors/cambridgefy18/templates/index.html:117
@@ -119,25 +119,25 @@ msgstr "Observação: a equipe da cidade analisará as categorias de ideias e fa
 #: src/flavors/cambridgefy20/templates/index.html:117
 #: src/flavors/pblb/templates/index.html:102
 msgid "Your Race/Ethnicity:"
-msgstr "Sua raça/etnia:"
+msgstr "あなたの人種/民族："
 
 #: src/flavors/cambridgefy18/templates/index.html:61
 #: src/flavors/cambridgefy19/templates/index.html:61
 #: src/flavors/cambridgefy20/templates/index.html:61
 msgid "Transportation"
-msgstr "Transporte"
+msgstr "交通"
 
 #: src/flavors/cambridgefy21/templates/index.html:56
 #: src/flavors/cambridgefy22/templates/index.html:56
 #: src/flavors/cambridgefy23/templates/index.html:56
 msgid "Street Smarts"
-msgstr "Inteligência nas ruas"
+msgstr "ストリート・スマート"
 
 #: src/flavors/cambridgefy21/templates/index.html:57
 #: src/flavors/cambridgefy22/templates/index.html:57
 #: src/flavors/cambridgefy23/templates/index.html:57
 msgid "Community Resources"
-msgstr "Recursos da comunidade"
+msgstr "地域資源"
 
 #: src/flavors/cambridgefy21/templates/index.html:58
 #: src/flavors/cambridgefy22/templates/index.html:58
@@ -146,273 +146,273 @@ msgstr "Recursos da comunidade"
 #: src/flavors/cambridgefy26/_config.translations.py:39
 #: src/flavors/cambridgefy26/_config.translations.py:132
 msgid "Facilities, Parks & Recreation"
-msgstr "Instalações, parques e recreação"
+msgstr "施設、公園・レクリエーション"
 
 #: src/flavors/cambridgefy21/templates/index.html:59
 #: src/flavors/cambridgefy22/templates/index.html:59
 #: src/flavors/cambridgefy23/templates/index.html:59
 msgid "Youth"
-msgstr "Juventude"
+msgstr "ユース"
 
 #: src/flavors/cambridgefy26/_config.translations.py:6
 #: src/flavors/cambridgefy26/_config.translations.py:7
 msgid "City of Cambridge Participatory Budgeting"
-msgstr "Orçamento participativo da Cidade de Cambridge"
+msgstr "ケンブリッジ市参加型予算編成"
 
 #: src/flavors/cambridgefy26/_config.translations.py:8
 msgid "Participatory Budgeting for Cambridge, MA"
-msgstr "Orçamento participativo para Cambridge, MA"
+msgstr "マサチューセッツ州ケンブリッジ市の参加型予算編成"
 
 #: src/flavors/cambridgefy26/_config.translations.py:9
 msgid "How would YOU spend $1M?"
-msgstr "Como VOCÊ gastaria US$ 1 milhão?"
+msgstr "あなたなら100万ドルをどう使いますか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:10
 msgid "Enter an address..."
-msgstr "Insira um endereço…"
+msgstr "住所を入力..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:11
 #: src/flavors/cambridgefy26/_config.translations.py:36
 #: src/flavors/cambridgefy26/_config.translations.py:129
 msgid "Arts & Culture"
-msgstr "Artes e cultura"
+msgstr "芸術と文化"
 
 #: src/flavors/cambridgefy26/_config.translations.py:12
 #: src/flavors/cambridgefy26/_config.translations.py:37
 #: src/flavors/cambridgefy26/_config.translations.py:130
 msgid "Community Resources & Education"
-msgstr "Recursos comunitários e educação"
+msgstr "地域資源と教育"
 
 #: src/flavors/cambridgefy26/_config.translations.py:13
 #: src/flavors/cambridgefy26/_config.translations.py:38
 #: src/flavors/cambridgefy26/_config.translations.py:131
 msgid "Environment & Sustainability"
-msgstr "Meio ambiente e sustentabilidade"
+msgstr "環境と持続可能性"
 
 #: src/flavors/cambridgefy26/_config.translations.py:15
 #: src/flavors/cambridgefy26/_config.translations.py:40
 #: src/flavors/cambridgefy26/_config.translations.py:133
 msgid "Transportation, Streets & Sidewalks"
-msgstr "Transporte, ruas e calçadas"
+msgstr "交通、道路、歩道"
 
 #: src/flavors/cambridgefy26/_config.translations.py:16
 msgid "idea"
-msgstr "ideia"
+msgstr "アイデア"
 
 #: src/flavors/cambridgefy26/_config.translations.py:17
 msgid "ideas"
-msgstr "ideias"
+msgstr "アイデア"
 
 #: src/flavors/cambridgefy26/_config.translations.py:18
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:16
 msgid "Submit an idea"
-msgstr "Enviar uma ideia"
+msgstr "アイデアを投稿する"
 
 #: src/flavors/cambridgefy26/_config.translations.py:19
 msgid "Show Ideas as a list"
-msgstr "Mostrar ideias como uma lista"
+msgstr "アイデアをリストで表示"
 
 #: src/flavors/cambridgefy26/_config.translations.py:20
 msgid "Show on a map"
-msgstr "Mostrar em um mapa"
+msgstr "地図で見る"
 
 #: src/flavors/cambridgefy26/_config.translations.py:21
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:14
 msgid "Describe your idea"
-msgstr "Descreva sua ideia"
+msgstr "アイデアを説明する"
 
 #: src/flavors/cambridgefy26/_config.translations.py:22
 msgid "suggested"
-msgstr "sugeriu"
+msgstr "提案された"
 
 #: src/flavors/cambridgefy26/_config.translations.py:23
 msgid ""
 "Ideas must be for <strong>capital</strong> projects – Please see the "
 "guidelines here"
-msgstr "As ideias devem ser para projetos de <strong>capital</strong> – Consulte as diretrizes aqui"
+msgstr "アイデアは<strong>主要</strong>プロジェクトに限ります -　ここからガイドラインをご覧ください"
 
 #: src/flavors/cambridgefy26/_config.translations.py:24
 #: src/flavors/cambridgefy26/_config.translations.py:115
 #: src/flavors/cambridgefy26/_config.translations.py:126
 msgid "Someone"
-msgstr "Alguém"
+msgstr "誰か"
 
 #: src/flavors/cambridgefy26/_config.translations.py:25
 msgid "Share my idea"
-msgstr "Compartilhar minha ideia"
+msgstr "アイデアを共有する"
 
 #: src/flavors/cambridgefy26/_config.translations.py:26
 msgid "Multiple locations throughout the city"
-msgstr "Vários locais em toda a cidade"
+msgstr "市内複数箇所"
 
 #: src/flavors/cambridgefy26/_config.translations.py:27
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:15
 msgid "Drag the map to a location for your idea."
-msgstr "Arraste o mapa até um local para a sua ideia."
+msgstr "地図をドラッグして、あなたのアイデアの場所に移動します。"
 
 #: src/flavors/cambridgefy26/_config.translations.py:28
 msgid "Is your idea for a specific location or the entire city?"
-msgstr "Sua ideia é para um local específico ou para toda a cidade?"
+msgstr "あなたのアイデアは特定の場所のためですか、それとも街全体ですか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:29
 msgid "A specific location"
-msgstr "Um local específico"
+msgstr "特定の場所"
 
 #: src/flavors/cambridgefy26/_config.translations.py:30
 msgid "City-wide"
-msgstr "Toda a cidade"
+msgstr "市内全域"
 
 #: src/flavors/cambridgefy26/_config.translations.py:31
 msgid "Title of your idea?"
-msgstr "Título da sua ideia?"
+msgstr "アイデアのタイトルは？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:32
 msgid "Idea Title..."
-msgstr "Título da ideia…"
+msgstr "アイデアタイトル..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:33
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:2
 msgid "What is your idea, and how does it improve Cambridge?"
-msgstr "Qual é a sua ideia e como ela melhora Cambridge?"
+msgstr "あなたのアイデアは何ですか、それがケンブリッジをどのように改善しますか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:34
 msgid ""
 "What need does your idea address? Who does your idea benefit? Please "
 "describe specific and relevant details about your idea."
-msgstr "Que necessidade sua ideia atende? Quem sua ideia beneficia? Descreva detalhes específicos e relevantes sobre sua ideia."
+msgstr "あなたのアイデアはどのようなニーズに応えるものですか？あなたのアイデアは誰のために役立ちますか？アイデアについて、具体的で関連する詳細を説明してください。"
 
 #: src/flavors/cambridgefy26/_config.translations.py:35
 msgid "Pick a category for your idea"
-msgstr "Escolha uma categoria para a sua ideia"
+msgstr "アイデアのカテゴリーを選ぶ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:41
 msgid "Your Name (required, will be shown on the map)"
-msgstr "Seu nome (obrigatório, será mostrado no mapa)"
+msgstr "お名前（必須、地図上に表示されます）"
 
 #: src/flavors/cambridgefy26/_config.translations.py:42
 msgid "Your Email (optional, will NOT be shown on the map)"
-msgstr "Seu e-mail (opcional, NÃO será mostrado no mapa)"
+msgstr "Eメール (任意、地図には表示されません)"
 
 #: src/flavors/cambridgefy26/_config.translations.py:43
 msgid "Your Phone Number (optional, will NOT be shown on the map)"
-msgstr "Seu número de telefone (opcional, NÃO será mostrado no mapa)"
+msgstr "電話番号（任意、地図には表示されません）"
 
 #: src/flavors/cambridgefy26/_config.translations.py:44
 msgid ""
 "How did you hear about participatory budgeting (please choose all that "
 "apply...)?"
-msgstr "Como você ficou sabendo sobre o orçamento participativo (escolha todas as opções aplicáveis)?"
+msgstr "参加型予算編成についてどうやって知りましたか（あてはまるものをすべて選んでください）？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:45
 msgid "City Council member"
-msgstr "Membro do Conselho Municipal"
+msgstr "市議会議員"
 
 #: src/flavors/cambridgefy26/_config.translations.py:46
 msgid "City website"
-msgstr "Site da cidade"
+msgstr "市のウェブサイト"
 
 #: src/flavors/cambridgefy26/_config.translations.py:47
 msgid "City social media account"
-msgstr "Conta de rede social da cidade"
+msgstr "市のソーシャルメディアアカウント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:48
 msgid "Community group"
-msgstr "Grupo comunitário"
+msgstr "コミュニティ・グループ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:49
 msgid "Email"
-msgstr "E-mail"
+msgstr "電子メール"
 
 #: src/flavors/cambridgefy26/_config.translations.py:50
 msgid "Event"
-msgstr "Evento"
+msgstr "イベント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:51
 msgid "Newspaper/TV/radio"
-msgstr "Jornal/TV/rádio"
+msgstr "新聞／テレビ／ラジオ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:52
 msgid "PB Advertising (Resident mailing/flyer/lawn sign, etc.)"
-msgstr "Anúncio do PB (correspondência/folheto/letreiro, etc.)"
+msgstr "PB広告（住民向け郵送物／チラシ／芝生看板など）"
 
 #: src/flavors/cambridgefy26/_config.translations.py:53
 msgid "School / Youth center"
-msgstr "Escola/Centro juvenil"
+msgstr "学校／青少年センター"
 
 #: src/flavors/cambridgefy26/_config.translations.py:54
 msgid "Word of mouth"
-msgstr "Boca a boca"
+msgstr "口コミ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:55
 #: src/flavors/cambridgefy26/_config.translations.py:88
 #: src/flavors/cambridgefy26/_config.translations.py:99
 #: src/flavors/cambridgefy26/_config.translations.py:110
 msgid "Other"
-msgstr "Outro"
+msgstr "その他"
 
 #: src/flavors/cambridgefy26/_config.translations.py:56
 msgid ""
 "Have you completed this personal information survey already in this "
 "participatory budgeting cycle?"
-msgstr "Você já respondeu à esta pesquisa de informações pessoais neste ciclo de orçamento participativo?"
+msgstr "この参加型予算編成サイクルで、この個人情報アンケートをすでに完了しましたか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:57
 msgid "Yes ✅"
-msgstr "Sim ✅"
+msgstr "はい✅"
 
 #: src/flavors/cambridgefy26/_config.translations.py:58
 msgid "No ❌"
-msgstr "Não ❌"
+msgstr "いいえ❌"
 
 #: src/flavors/cambridgefy26/_config.translations.py:59
 msgid "Not sure 🤷"
-msgstr "Não tenho certeza 🤷"
+msgstr "わかりません🤷"
 
 #: src/flavors/cambridgefy26/_config.translations.py:60
 msgid ""
 "Have you submitted an idea, voted, or volunteered in any of the previous "
 "Cambridge PB cycles?"
-msgstr "Você enviou uma ideia, votou ou se voluntariou em algum dos ciclos anteriores do orçamento participativo (PB) de Cambridge?"
+msgstr "過去のケンブリッジPBサイクルで、アイデアの提出、投票、ボランティアをしたことがありますか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:61
 msgid "No I haven't"
-msgstr "Não, eu não fiz isso"
+msgstr "いいえ、ありません"
 
 #: src/flavors/cambridgefy26/_config.translations.py:62
 msgid "Yes I have"
-msgstr "Sim, eu fiz isso"
+msgstr "はい、あります"
 
 #: src/flavors/cambridgefy26/_config.translations.py:63
 msgid "I am not sure"
-msgstr "Não tenho certeza"
+msgstr "よくわかりません"
 
 #: src/flavors/cambridgefy26/_config.translations.py:64
 msgid ""
 "In the past 12 months, have you worked with other people in your "
 "neighborhood to fix a problem or improve a condition in your community, not "
 "including work you may have done related to participatory budgeting?"
-msgstr "Nos últimos 12 meses, você trabalhou com outras pessoas em sua vizinhança para resolver um problema ou melhorar uma condição em sua comunidade, sem incluir o trabalho que você pode ter feito relacionado ao orçamento participativo?"
+msgstr "過去12ヶ月の間に、参加型予算編成に関連した活動を除き、地域の問題を解決したり、地域の状況を改善するために近所の人々と協力したことがありますか？"
 
 #: src/flavors/cambridgefy26/_config.translations.py:65
 msgid "Yes, I have done that"
-msgstr "Sim, eu fiz isso"
+msgstr "はい、あります"
 
 #: src/flavors/cambridgefy26/_config.translations.py:66
 msgid "No, I have not done that"
-msgstr "Não, eu não fiz isso"
+msgstr "いいえ、ありません"
 
 #: src/flavors/cambridgefy26/_config.translations.py:67
 msgid "Prefer not to answer/unsure"
-msgstr "Prefiro não responder/não tenho certeza"
+msgstr "答えたくない／わかりません"
 
 #: src/flavors/cambridgefy26/_config.translations.py:68
 msgid "Please select your neighborhood community in Cambridge"
-msgstr "Selecione a comunidade do seu bairro em Cambridge"
+msgstr "ケンブリッジの近隣コミュニティを選択してください"
 
 #: src/flavors/cambridgefy26/_config.translations.py:69
 #: src/flavors/cambridgefy26/_config.translations.py:72
 msgid "Please choose..."
-msgstr "Escolha…"
+msgstr "選択してください..."
 
 #: src/flavors/cambridgefy26/_config.translations.py:70
 #: src/flavors/cambridgefy26/_config.translations.py:81
@@ -420,265 +420,265 @@ msgstr "Escolha…"
 #: src/flavors/cambridgefy26/_config.translations.py:100
 #: src/flavors/cambridgefy26/_config.translations.py:111
 msgid "Prefer not to answer"
-msgstr "Prefiro não responder"
+msgstr "答えたくない"
 
 #: src/flavors/cambridgefy26/_config.translations.py:71
 msgid "Your age"
-msgstr "Sua idade"
+msgstr "あなたの年齢"
 
 #: src/flavors/cambridgefy26/_config.translations.py:73
 msgid "Under 18"
-msgstr "Menos de 18 anos"
+msgstr "18歳未満"
 
 #: src/flavors/cambridgefy26/_config.translations.py:74
 msgid "18 to 24"
-msgstr "18 a 24"
+msgstr "18歳から24歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:75
 msgid "25 to 34"
-msgstr "25 a 34"
+msgstr "25歳から34歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:76
 msgid "35 to 44"
-msgstr "35 a 44"
+msgstr "35歳から44歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:77
 msgid "45 to 54"
-msgstr "45 a 54"
+msgstr "45歳から54歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:78
 msgid "55 to 64"
-msgstr "55 até 64"
+msgstr "55歳から64歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:79
 msgid "65 to 74"
-msgstr "65 até 74"
+msgstr "65歳から74歳"
 
 #: src/flavors/cambridgefy26/_config.translations.py:80
 msgid "75 and over"
-msgstr "75 e mais"
+msgstr "75歳以上"
 
 #: src/flavors/cambridgefy26/_config.translations.py:82
 msgid "Your gender"
-msgstr "Seu gênero"
+msgstr "性別"
 
 #: src/flavors/cambridgefy26/_config.translations.py:83
 msgid "Cisgender Female/woman"
-msgstr "Mulher cisgênero"
+msgstr "シスジェンダー /女性"
 
 #: src/flavors/cambridgefy26/_config.translations.py:84
 msgid "Cisgender Male/man"
-msgstr "Homem cisgênero"
+msgstr "シスジェンダー /男性"
 
 #: src/flavors/cambridgefy26/_config.translations.py:85
 msgid "Nonbinary/gender non-confirming"
-msgstr "Pessoa não binária/gênero não conformista"
+msgstr "ノンバイナリー／性別不確認"
 
 #: src/flavors/cambridgefy26/_config.translations.py:86
 msgid "Transgender Female"
-msgstr "Mulher trans"
+msgstr "トランスジェンダー 女性"
 
 #: src/flavors/cambridgefy26/_config.translations.py:87
 msgid "Transgender Male"
-msgstr "Homem trans"
+msgstr "トランスジェンダー 男性"
 
 #: src/flavors/cambridgefy26/_config.translations.py:90
 msgid "Your preferred language"
-msgstr "Idioma de sua preferência"
+msgstr "ご希望の言語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:91
 msgid "English"
-msgstr "Inglês"
+msgstr "英語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:92
 msgid "Amharic"
-msgstr "Amárico"
+msgstr "アムハラ語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:93
 msgid "Arabic"
-msgstr "Árabe"
+msgstr "アラビア語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:94
 msgid "Bangla"
-msgstr "Bengali"
+msgstr "バングラ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:95
 msgid "Chinese"
-msgstr "Chinês"
+msgstr "中国語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:96
 msgid "Haitian Creole"
-msgstr "Crioulo haitiano"
+msgstr "ハイチ・クレオール"
 
 #: src/flavors/cambridgefy26/_config.translations.py:97
 msgid "Portuguese"
-msgstr "Português"
+msgstr "ポルトガル語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:98
 msgid "Spanish"
-msgstr "Espanhol"
+msgstr "スペイン語"
 
 #: src/flavors/cambridgefy26/_config.translations.py:101
 msgid "Your Race/Ethnicity"
-msgstr "Sua raça/etnia"
+msgstr "人種／民族"
 
 #: src/flavors/cambridgefy26/_config.translations.py:102
 msgid "Asian/East Indian"
-msgstr "Asiático/indiano"
+msgstr "アジア人/東インド人"
 
 #: src/flavors/cambridgefy26/_config.translations.py:103
 msgid "Black or African American"
-msgstr "Negro(a) ou afro-americano(a)"
+msgstr "黒人またはアフリカ系アメリカ人"
 
 #: src/flavors/cambridgefy26/_config.translations.py:104
 msgid "Hawaiian or Pacific Islander"
-msgstr "Nativo(a) do Havaí ou das ilhas do Pacífico"
+msgstr "ハワイアンまたは太平洋諸島民"
 
 #: src/flavors/cambridgefy26/_config.translations.py:105
 msgid "Hispanic, Latinx"
-msgstr "Hispânico, Latinx"
+msgstr "ヒスパニック、ラテン系"
 
 #: src/flavors/cambridgefy26/_config.translations.py:106
 msgid "Middle Eastern/North African"
-msgstr "Oriente Médio/Norte da África"
+msgstr "中東/北アフリカ"
 
 #: src/flavors/cambridgefy26/_config.translations.py:107
 msgid "Native American, Alaskan"
-msgstr "Nativo americano, alasquiano"
+msgstr "アメリカ原住民、アラスカ人"
 
 #: src/flavors/cambridgefy26/_config.translations.py:108
 msgid "White, Caucasian"
-msgstr "Branco, caucasiano"
+msgstr "白人"
 
 #: src/flavors/cambridgefy26/_config.translations.py:109
 msgid "Multi-racial, multi-ethnic background"
-msgstr "Origem multirracial e multiétnica"
+msgstr "多民族、多民族のバックグラウンド"
 
 #: src/flavors/cambridgefy26/_config.translations.py:112
 msgid "comment"
-msgstr "comentário"
+msgstr "コメント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:113
 msgid "comments"
-msgstr "comentários"
+msgstr "コメント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:114
 msgid "commented on"
-msgstr "comentou em"
+msgstr "コメント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:116
 #: src/flavors/cambridgefy26/_config.translations.py:117
 msgid "Leave a Comment"
-msgstr "Deixe um comentário"
+msgstr "コメントを残す"
 
 #: src/flavors/cambridgefy26/_config.translations.py:118
 #: src/flavors/cambridgefy26/_config.translations.py:119
 #: src/flavors/cambridgefy26/_config.translations.py:120
 msgid "Comment"
-msgstr "Comentário"
+msgstr "コメント"
 
 #: src/flavors/cambridgefy26/_config.translations.py:121
 msgid "Your Name"
-msgstr "Seu nome"
+msgstr "お名前"
 
 #: src/flavors/cambridgefy26/_config.translations.py:122
 msgid "Support This!"
-msgstr "Apoie isso!"
+msgstr "これをサポートしてください！"
 
 #: src/flavors/cambridgefy26/_config.translations.py:123
 msgid "support"
-msgstr "apoio"
+msgstr "サポート"
 
 #: src/flavors/cambridgefy26/_config.translations.py:124
 msgid "supports"
-msgstr "apoia"
+msgstr "サポート"
 
 #: src/flavors/cambridgefy26/_config.translations.py:125
 msgid "supported"
-msgstr "apoiado"
+msgstr "対応"
 
 #: src/flavors/cambridgefy26/_config.translations.py:127
 msgid "Cambridge PB Home"
-msgstr "PB de Cambridge Início"
+msgstr "ケンブリッジPBホーム"
 
 #: src/flavors/cambridgefy26/_config.translations.py:128
 msgid "Overview"
-msgstr "Visão geral"
+msgstr "概要"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:1
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} a <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} uma <span class=\"place-type\">{{place.place_type_label}}</span> ideia"
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}}<span class=\"place-type\">{{place.place_type_label}}</span>アイデア"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:2
 msgid ""
 "<strong>{{ target.submitter_name }}</strong> {{action}} an <span "
 "class=\"place-type\">{{place.place_type_label}}</span> idea"
-msgstr "<strong>{{ target.submitter_name }}</strong>{{action}} uma <span class=\"place-type\">{{place.place_type_label}}</span> ideia"
+msgstr "<strong>{{ target.submitter_name }}</strong>{{action}}<span class=\"place-type\">{{place.place_type_label}}</span>アイデア"
 
 #: src/flavors/cambridgefy26/jstemplates/activity-list-item.html:3
 msgid ""
 "A new <span class=\"place-type\">{{ place_type_label }} idea </span>from "
 "<strong>{{ source }}</strong> named <span class=\"place-name\">{{ name }}</"
 "span>"
-msgstr "Uma nova <span class=\"place-type\">{{ place_type_label }} ideia </span>de <strong>{{ source }}</strong> chamada <span class=\"place-name\">{{ name }}</span>"
+msgstr "<span class=\"place-name\">{{ name }}</span>という名前の、<strong>{{ source }}</strong>からの新しい<span class=\"place-type\">{{ place_type_label }}</span>アイデア。"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:1
 msgid "Log Out"
-msgstr "Sair"
+msgstr "ログアウト"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:2
 msgid "Sign In"
-msgstr "Entrar"
+msgstr "サインイン"
 
 #: src/flavors/cambridgefy26/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
-msgstr "Entrou como </span> <span class=\"current-user\">{{ current_user \"name\" }}"
+msgstr "{{ current_user \"name\" }}としてサインイン</span> <span class=\"current-user\">"
 
 #: src/flavors/cambridgefy26/jstemplates/form-field.html:1
 #: src/sa_web/jstemplates/form-field-label.html:1
 msgid "optional"
-msgstr "opcional"
+msgstr "任意"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:1
 msgid "Get More Involved"
-msgstr "Envolva-se mais"
+msgstr "もっと参加する"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:2
 msgid ""
 "Helping to spread the word about PB to make sure that people in all corners "
 "of Cambridge know about this initiative and can participate"
-msgstr "Ajudar a divulgar o PB para garantir que as pessoas em todos os cantos de Cambridge conheçam essa iniciativa e possam participar"
+msgstr "ケンブリッジのあらゆる地域の人々がこの取り組みについて知り、参加できるよう、PBについての情報を広める手助けをする"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:3
 msgid "Helping with the voting process in March"
-msgstr "Ajudar com o processo de votação em março"
+msgstr "3月の投票のお手伝い"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:4
 msgid ""
 "If you would like to volunteer to help out with the PB process in any way, "
 "please feel free to sign up <a href=\"http://cambridgema.nationbuilder.com/"
 "volunteer\">here</a>"
-msgstr "Se você quiser se voluntariar para ajudar no processo do PB de alguma forma, sinta-se à vontade para se inscrever <a href=\"http://cambridgema.nationbuilder.com/volunteer\">aqui</a>"
+msgstr "ボランティアとしてPBプロセスをお手伝いいただける方は、<a href=\"http://cambridgema.nationbuilder.com/volunteer\">こちらから</a>お気軽にお申し込みください。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:5
 msgid "Providing translation services for meetings or outreach materials"
-msgstr "Fornecer serviços de tradução para reuniões ou materiais de divulgação"
+msgstr "会議またはアウトリーチ資料の翻訳サービスの提供"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:6
 msgid "Submitting ideas in December"
-msgstr "Enviar ideias em dezembro"
+msgstr "12月にアイデアを提出"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:7
 msgid ""
 "There are many opportunities to get involved with the PB process, including:"
-msgstr "Existem muitas oportunidades de se envolver com o processo do PB, incluindo:"
+msgstr "PBプロセスには、以下を含み、関与する多くの機会があります："
 
 #: src/flavors/cambridgefy26/jstemplates/pages/involved.html:8
 msgid "Volunteering to serve as a Budget Delegate in January and February"
-msgstr "Voluntariar-se para servir como Delegado de Orçamento em janeiro e fevereiro"
+msgstr "1月と2月に予算代議員としてボランティアする"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:1
 msgid ""
@@ -689,55 +689,55 @@ msgid ""
 "  the City&apos;s Budget Office at <a href=\"mailto:pb@cambridgema."
 "gov\">pb@cambridgema.gov</a> or\n"
 "  <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
-msgstr "<strong>Para obter mais informações sobre o Orçamento Participativo (inclusive como ser voluntário)</strong>,\n visite <a href=\"http://pb.cambridgema.gov\" target=\"_blank\">http://pb.cambridgema.gov</a> ou entre em contato\n com o Escritório de Orçamento da Cidade em <a href=\"mailto:pb@cambridgema.gov\">pb@cambridgema.gov</a> ou\n <a href=\"tel:(617) 349-4270\">(617) 349-4270.</a>"
+msgstr "<strong>参加型予算編成の詳細（ボランティア活動の方法を含む）については</strong>、\n<a href=\"http://pb.cambridgema.gov\" target=\"_blank\">http://pb.cambridgema.gov</a>を参照するか、市の予算事務局<a href=\"mailto:pb@cambridgema.gov\">（pb@cambridgema.gov</a>または(617) 349-4270）までお問い合わせください<a href=\"tel:(617) 349-4270\">。</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:5
 msgid "And many others!"
-msgstr "E muitas outras!"
+msgstr "ほかにもいろいろあります！"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
 "Explore ideas from others in the community using the “List All Ideas” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
-msgstr "Veja as ideias das outras pessoas da comunidade pela guia “Listar todas as ideias” no canto superior direito da página\n ou diretamente no mapa."
+msgstr "ページ右上の 「アイデアをすべてリスト」のタブを使うか、地図から直接、コミュニティ内の他の人のアイデアを調べることができます。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:8
 msgid "Home Essentials for Newly Housed Residents"
-msgstr "Itens essenciais para residentes recém-alojados"
+msgstr "新入居者のための住まいの必需品"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:9
 msgid ""
 "If you have an idea for a project to improve Cambridge, please share it on "
 "the map!"
-msgstr "Se você tem uma ideia de projeto para melhorar Cambridge, compartilhe-a no mapa!"
+msgstr "ケンブリッジを改善するプロジェクトのアイデアがあれば、ぜひマップ上で共有してください！"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:10
 msgid ""
 "PB is a democratic process that gives Cambridge community members the power "
 "to <strong>decide how to spend $1,000,000</strong> of the City&apos;s FY26 "
 "Budget."
-msgstr "O PB é um processo democrático que dá aos membros da comunidade de Cambridge o poder de <strong>decidir como gastar US $ 1.000.000</strong> do orçamento da cidade no ano fiscal de 2026."
+msgstr "PBは民主的なプロセスで、ケンブリッジの地域住民に、市の26年度予算<strong>100万ドルの使い道を決定する</strong>権限を与えています。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
 msgid "Participatory Budgeting in Cambridge"
-msgstr "Orçamento participativo em Cambridge"
+msgstr "ケンブリッジの参加型予算編成"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"
-msgstr "Jardins polinizadores"
+msgstr "ポリネーター・ガーデン"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:13
 msgid "STEAM Upgrades for Youth Centers"
-msgstr "Atualizações STEAM nos Centros juvenis"
+msgstr "青少年センターのSTEAMアップグレード"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:14
 msgid "Shaded seating areas on hot streets"
-msgstr "Áreas de estar à sombra em ruas quentes"
+msgstr "暑い通りにおかれた日陰の座席エリア"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:15
 msgid "Sign up to stay informed about Participatory Budgeting in Cambridge!"
-msgstr "Inscreva-se para se manter informado sobre o Orçamento participativo em Cambridge!"
+msgstr "ケンブリッジの参加型予算編成の最新情報にお申込みください！"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:17
 msgid ""
@@ -752,25 +752,25 @@ msgid ""
 "    12 and older, regardless of citizenship status, will be eligible to vote "
 "for their favorite projects and\n"
 "    decide how to spend $1 million of the City&apos;s Budget."
-msgstr "A cidade de Cambridge lançou o<sup>11º</sup> Ciclo do PB e coletou ideias da comunidade\n de como gastar US$ 1 milhão em projetos para melhorar Cambridge. No mapa, você pode encontrar todas as ideias\n enviadas para o PB11. De outubro de 2024 a janeiro de 2025, os delegados voluntários do PB pesquisarão todas as ideias de projetos enviadas e desenvolverão as propostas finais para a votação do PB. Em março de 2025, todos os residentes de Cambridge com\n 12 anos ou mais, independentemente do status de cidadania, poderão votar em seus projetos favoritos e\n decidir como gastar US$ 1 milhão do orçamento da cidade."
+msgstr "ケンブリッジ市は、PB<sup>第11</sup>サイクルを開始し、ケンブリッジを改善するためのプロジェクトに100万ドルを使う方法について、コミュニティからアイデアを集めました。地図上で、PB11に提出されたすべてのアイデアを見つけることができます。2024年10月から2025年1月にかけて、ボランティアのPB代議員が、提出されたすべてのプロジェクト案を調査し、PB投票用の最終案を作成します。2025年3月に、12歳以上のケンブリッジ市民は、市民権の有無にかかわらず、自分の好きなプロジェクトに投票し、市の予算100万ドルの使い道を決めることができます。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:23
 msgid "Winning projects from past PB cycles include:"
-msgstr "Os projetos vencedores de ciclos anteriores do PB incluem:"
+msgstr "過去のPBサイクルで選択されたプロジェクトは以下を含みます："
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:1
 msgid "View On Map"
-msgstr "Ver no mapa"
+msgstr "地図で見る"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:3
 msgid "suggested this city-wide {{place_type_label location_type }} idea."
-msgstr "sugeriu essa ideia {{place_type_label location_type }} para toda a cidade."
+msgstr "この街全体の{{place_type_label location_type }} 提案例。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-detail.html:4
 msgid ""
 "suggested this {{place_type_label location_type }} idea near {{>location-"
 "string .}}."
-msgstr "sugeriu essa ideia {{place_type_label location_type }} perto de {{>location-string .}}."
+msgstr "{{>location-string .}} の近くで、この{{place_type_label location_type }} アイデアを提案。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:1
 msgid ""
@@ -780,7 +780,7 @@ msgid ""
 "            community. This survey is optional.</strong> If you\n"
 "            submit more than one idea, please only complete the survey\n"
 "            once."
-msgstr "<strong>Conte-nos um pouco mais sobre você para\n nos ajudar a avaliar se estamos alcançando toda a diversidade de nossa\n comunidade. Esta pesquisa é opcional.</strong> Se você\n enviar mais de uma ideia, responda à pesquisa\n apenas uma vez."
+msgstr "<strong>コミュニティの多様性に達しているかどうかを評価するために、あなた自身についてもう少し教えてください。このアンケートは任意です。</strong>複数のアイデアを提出する場合、アンケートに答えるのは1回だけにしてください。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:6
 msgid ""
@@ -793,21 +793,21 @@ msgid ""
 "            href=\"http://pb.cambridgema.gov/volunteer2\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "Após o encerramento da coleta de ideias, os residentes voluntários trabalharão de outubro a fevereiro para pesquisar, avaliar e priorizar as ideias do projeto do PB para determinar quais propostas aparecerão na\n votação final em março para votação pública. <a\n href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\">Clique aqui para se voluntariar para ser um Delegado do PB!</a>"
+msgstr "アイデア収集が終了した後、住民ボランティアは10月から2月にかけて、PBプロジェクトのアイデアの調査、評価、優先順位付けを行い、3月に行われる一般投票の最終投票にどの提案を掲載するかを決定します。 <a href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\">PB代議員にボランティアするにはここをクリック！</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"
-msgstr "Informações para contato"
+msgstr "連絡先"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:16
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to a "
 "location for your idea."
-msgstr "Parece que você ainda não definiu sua localização. Arraste o mapa até um local para a sua ideia."
+msgstr "まだ場所が設定されていないようです。地図をドラッグして、あなたのアイデアに関する場所に移動してください。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:17
 msgid "Optional Survey"
-msgstr "Pesquisa opcional"
+msgstr "任意のアンケート"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:18
 msgid ""
@@ -820,83 +820,83 @@ msgid ""
 "              <a href=\"https://pb.cambridgema.gov/faqs\"\n"
 "              title=\"City of Cambridge Participatory Budgeting FAQ\"\n"
 "              target=\"_blank\">guidelines here</a>."
-msgstr "O financiamento do PB de US$ 1.000.000 pode ser usado para apoiar projetos que beneficiem o público e estejam localizados na cidade\n de Cambridge. Para obter mais informações sobre que tipo de projetos\n são elegíveis para o PB, consulte as\n              <a href=\"https://pb.cambridgema.gov/faqs\"\n              title=\"City of Cambridge Participatory Budgeting FAQ\"\n              target=\"_blank\">diretrizes aqui</a>."
+msgstr "100万ドルのPB資金は、ケンブリッジ市内に位置し、市民のためになるプロジェクトを支援するために使用されます。どのようなプロジェクトがPBの対象となるかについては、<a href=\"https://pb.cambridgema.gov/faqs\"\n              title=\"City of Cambridge Participatory Budgeting FAQ\"\n              target=\"_blank\">ここからガイドライン</a>をご覧ください。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:25
 msgid "Please tell us how we can contact you about your idea."
-msgstr "Conte para nós como podemos entrar em contato com você sobre a sua ideia."
+msgstr "アイデアに関してお聞きするために連絡方法を教えてください。"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:26
 msgid "Project Location"
-msgstr "Localização do projeto"
+msgstr "プロジェクト所在地"
 
 #: src/flavors/cambridgefy26/templates/index.html:6
 msgid "CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING"
-msgstr "ORÇAMENTO PARTICIPATIVO <br>DA CIDADE DE CAMBRIDGE"
+msgstr "ケンブリッジ市<br>参加型予算編成"
 
 #: src/flavors/pblb/templates/index.html:100
 msgid ""
 "Note: Council district staff will review idea categories and make any "
 "revisions as needed."
-msgstr "Observação: a equipe do distrito do conselho analisará as categorias de ideias e fará as revisões necessárias."
+msgstr "注：審議会地区担当者がアイデアのカテゴリーを検討し、必要に応じて修正します。"
 
 #: src/sa_web/jstemplates/form-field-file.html:1
 msgid "Sorry, your browser doesn't support file uploads."
-msgstr "Desculpe, seu navegador não suporta uploads de arquivos."
+msgstr "残念ですが、お使いのブラウザはファイルのアップロードをサポートしていません。"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
-msgstr "Recomendar no Facebook"
+msgstr "フェイスブックで薦める"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
-msgstr "Tuitar isso"
+msgstr "ツイートする"
 
 #: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
-msgstr "Mais recente"
+msgstr "最新情報"
 
 #: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
-msgstr "Mais {{ support_label_plural }}"
+msgstr "ほとんどの場合{{ support_label_plural }}"
 
 #: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
-msgstr "Mais {{ survey_label_plural }}"
+msgstr "ほとんどの場合{{ survey_label_plural }}"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:1
 msgid ""
 "<span class=\"visibility-icon invisible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>only visible to "
 "moderators</strong>."
-msgstr "<span class=\"visibility-icon invisible-icon\">👁</span> \n Isso {{ place_config.response_name }} <strong>só é visível para os moderadores</strong>."
+msgstr "<span class=\"visibility-icon invisible-icon\">👁</span> この{{ place_config.response_name }} は<strong>議長のみ閲覧可能です</strong>。"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:3
 msgid ""
 "<span class=\"visibility-icon visible-icon\">👁</span>\n"
 "      This {{ place_config.response_name }} is <strong>visible to everyone</"
 "strong>."
-msgstr "<span class=\"visibility-icon visible-icon\">👁</span> \n Isso {{ place_config.response_name }} é <strong>visível para todos</strong>."
+msgstr "<span class=\"visibility-icon visible-icon\">👁</span> この{{ place_config.response_name }} は<strong>だれでもご覧になれます</strong>。"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:5
 msgid "Make {{ place_config.response_name }} hidden"
-msgstr "Tornar {{ place_config.response_name }} oculto"
+msgstr "{{ place_config.response_name }} を非表示にする"
 
 #: src/sa_web/jstemplates/place-moderation-bar.html:6
 msgid "Make {{ place_config.response_name }} visible"
-msgstr "Tornar {{ place_config.response_name }} visível"
+msgstr "{{ place_config.response_name }}を表示する"
 
 #: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
-msgstr "Obrigado por participar!"
+msgstr "ご参加いただきありがとうございます！"
 
 #: src/sa_web/templates/base.html:96
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
-msgstr "Não é possível conectar ao servidor no momento. Espere um pouco enquanto restabelecemos a comunicação."
+msgstr "現在サーバーに接続できません。通信が再開されるまで、しばらくお待ちください。"
 
 #: src/sa_web/templates/base.html:102
 msgid "Close"
-msgstr "Fechar"
+msgstr "閉じる"
 
