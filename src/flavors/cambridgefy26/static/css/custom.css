@@ -615,6 +615,8 @@ input[name="private-completed_personal_info_survey"]:checked + .label-text {
 [data-personal-info-complete="true"] .place-private-race-field { display: none; }
 [data-personal-info-complete="true"] .place-private-income-field { display: none; }
 [data-personal-info-complete="true"] .place-private-education-field { display: none; }
+[data-personal-info-complete="true"] .place-private-neighborhood-field { display: none; }
+[data-personal-info-complete="true"] .place-private-language-field { display: none; }
 
  /* ==================================
   * Social media login (Facebook only)
