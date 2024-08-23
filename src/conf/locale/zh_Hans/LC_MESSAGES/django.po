@@ -697,7 +697,7 @@ msgstr "还有更多！"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
-"Explore ideas from others in the community using the “List All Ideas” tab on "
+"Explore ideas from others in the community using the “Show Ideas as a List” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
 msgstr "使用页面右上角的“列出所有想法”选项卡或直接通过地图探索社区中其他人的想法。"

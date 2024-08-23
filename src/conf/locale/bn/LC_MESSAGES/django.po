@@ -697,7 +697,7 @@ msgstr "এবং আরো অনেক!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
-"Explore ideas from others in the community using the “List All Ideas” tab on "
+"Explore ideas from others in the community using the “Show Ideas as a List” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
 msgstr "পৃষ্ঠার উপরের ডানদিকে\n  বা সরাসরি ম্যাপের মাধ্যমে \"সমস্ত আইডিয়ার তালিকা\" ট্যাব ব্যবহার করে কমিউনিটির অন্যদের কাছ থেকে আইডিয়াগুলি অন্বেষণ করুন।"

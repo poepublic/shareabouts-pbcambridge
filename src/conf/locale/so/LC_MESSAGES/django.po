@@ -697,7 +697,7 @@ msgstr "Iyo qaar kale oo badan!"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
-"Explore ideas from others in the community using the “List All Ideas” tab on "
+"Explore ideas from others in the community using the “Show Ideas as a List” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
 msgstr "Baadh fikradaha dadka kale ee bulshada addoo isticmaalaya \"Liis garee Dhammaan Fikradaha\" taabo dhanka midigta sare ee bogga ama si toos ah iyada oo loo marayo khariidada."

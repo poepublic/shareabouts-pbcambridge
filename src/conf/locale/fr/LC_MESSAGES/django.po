@@ -697,7 +697,7 @@ msgstr "Et bien d'autres encore !"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:6
 msgid ""
-"Explore ideas from others in the community using the “List All Ideas” tab on "
+"Explore ideas from others in the community using the “Show Ideas as a List” tab on "
 "the upper right of the page\n"
 "    or directly through the map."
 msgstr "Explorez les idées des autres membres de la communauté en utilisant l'onglet \"Liste de toutes les idées\" en haut à droite de la page ou directement sur la carte."
