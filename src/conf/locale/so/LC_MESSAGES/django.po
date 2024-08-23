@@ -790,10 +790,10 @@ msgid ""
 "            PB project ideas to determine which proposals will appear on "
 "the\n"
 "            final ballot in March for a public vote. <a\n"
-"            href=\"http://pb.cambridgema.gov/volunteer2\" "
+"            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "Kadib marka la xidho ra'yi ururinta, deganayaasha iskaa wax u qabso ah ayaa shaqayn doona laga bilaabo Oktoobar ilaa Febraayo si ay u baadhaan, u qiimeeyaan, oo ay mudnaanta u siiyaan fikradaha mashruuca PB si loo go'aamiyo soo jeedinta ka soo bixi doonta warqadda ugu dambaysa ee March ee codbixinta dadweynaha.<            href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\"> Riix halkan si aad ugu tabarucdo inaad noqoto Waftiga PB!"
+msgstr "Kadib marka la xidho ra'yi ururinta, deganayaasha iskaa wax u qabso ah ayaa shaqayn doona laga bilaabo Oktoobar ilaa Febraayo si ay u baadhaan, u qiimeeyaan, oo ay mudnaanta u siiyaan fikradaha mashruuca PB si loo go'aamiyo soo jeedinta ka soo bixi doonta warqadda ugu dambaysa ee March ee codbixinta dadweynaha.<            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" target=\"_blank\"> Riix halkan si aad ugu tabarucdo inaad noqoto Waftiga PB!"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"

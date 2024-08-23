@@ -790,10 +790,10 @@ msgid ""
 "            PB project ideas to determine which proposals will appear on "
 "the\n"
 "            final ballot in March for a public vote. <a\n"
-"            href=\"http://pb.cambridgema.gov/volunteer2\" "
+"            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "創意想法收集結束後，志工居民將在 10 月至 2 月期間進行研究、評估和確定 PB 專案創意想法的優先順序，以確定哪些提案將出現在 3 月的最終投票中進行公投。<a\nhref=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\">點擊\n此處自願成為 PB 代表！</a>"
+msgstr "創意想法收集結束後，志工居民將在 10 月至 2 月期間進行研究、評估和確定 PB 專案創意想法的優先順序，以確定哪些提案將出現在 3 月的最終投票中進行公投。<a\nhref=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" target=\"_blank\">點擊\n此處自願成為 PB 代表！</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"

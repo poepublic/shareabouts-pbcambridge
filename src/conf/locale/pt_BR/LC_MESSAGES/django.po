@@ -790,10 +790,10 @@ msgid ""
 "            PB project ideas to determine which proposals will appear on "
 "the\n"
 "            final ballot in March for a public vote. <a\n"
-"            href=\"http://pb.cambridgema.gov/volunteer2\" "
+"            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "Após o encerramento da coleta de ideias, os residentes voluntários trabalharão de outubro a fevereiro para pesquisar, avaliar e priorizar as ideias do projeto do PB para determinar quais propostas aparecerão na\n votação final em março para votação pública. <a\n href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\">Clique aqui para se voluntariar para ser um Delegado do PB!</a>"
+msgstr "Após o encerramento da coleta de ideias, os residentes voluntários trabalharão de outubro a fevereiro para pesquisar, avaliar e priorizar as ideias do projeto do PB para determinar quais propostas aparecerão na\n votação final em março para votação pública. <a\n href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" target=\"_blank\">Clique aqui para se voluntariar para ser um Delegado do PB!</a>"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"

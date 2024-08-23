@@ -790,10 +790,10 @@ msgid ""
 "            PB project ideas to determine which proposals will appear on "
 "the\n"
 "            final ballot in March for a public vote. <a\n"
-"            href=\"http://pb.cambridgema.gov/volunteer2\" "
+"            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" "
 "target=\"_blank\">Click\n"
 "            here to volunteer to be a PB Delegate!</a>"
-msgstr "विचार संग्रहण का कार्य बंद होने के बाद, स्वयंसेवी निवासी अक्टूबर से फरवरी तक PB परियोजना विचारों पर शोध, मूल्यांकन और प्राथमिकता देने के लिए काम करेंगे, ताकि यह निर्धारित किया जा सके कि कौन से प्रस्ताव मार्च में सार्वजनिक मतदान के लिए अंतिम मतपत्र पर आएंगे।<a\n            href=\"http://pb.cambridgema.gov/volunteer2\" target=\"_blank\"> पीबी प्रतिनिधि बनने के लिए स्वयंसेवक बनने हेतु यहां क्लिक करें!"
+msgstr "विचार संग्रहण का कार्य बंद होने के बाद, स्वयंसेवी निवासी अक्टूबर से फरवरी तक PB परियोजना विचारों पर शोध, मूल्यांकन और प्राथमिकता देने के लिए काम करेंगे, ताकि यह निर्धारित किया जा सके कि कौन से प्रस्ताव मार्च में सार्वजनिक मतदान के लिए अंतिम मतपत्र पर आएंगे।<a\n            href=\"https://www.cambridgema.gov/participatorybudgeting/Volunteer\" target=\"_blank\"> पीबी प्रतिनिधि बनने के लिए स्वयंसेवक बनने हेतु यहां क्लिक करें!"
 
 #: src/flavors/cambridgefy26/jstemplates/place-form.html:13
 msgid "Contact Information"
