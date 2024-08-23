@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB የ Cambridge የማህበረሰብ አባላትን ከከተማው የFY26 በጀት <strong>1,000,000 ዶላር እንዴት ማውጣት እንዳለባቸው የመወሰን</strong> ስልጣን የሚሰጥ ዲሞክራሲያዊ ሂደት ነው።"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "በ Cambridge ውስጥ አሳታፊ በጀት"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "በ Cambridge ውስጥ አሳታፊ በጀት (PB)"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

@@ -720,8 +720,8 @@ msgid ""
 msgstr "PBは民主的なプロセスで、ケンブリッジの地域住民に、市の26年度予算<strong>100万ドルの使い道を決定する</strong>権限を与えています。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "ケンブリッジの参加型予算編成"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "ケンブリッジの参加型予算編成 (PB)"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

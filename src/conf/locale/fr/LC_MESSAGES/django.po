@@ -720,8 +720,8 @@ msgid ""
 msgstr "Le PB est un processus démocratique qui donne aux membres de la communauté de Cambridge le pouvoir de <strong>décider comment dépenser 1 000 000 $</strong> du budget de la ville pour l'année fiscale 26."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "Budget participatif à Cambridge"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "Budget participatif (PB) à Cambridge"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

@@ -721,7 +721,7 @@ msgid ""
 msgstr ""
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
+msgid "Participatory Budgeting (PB) in Cambridge"
 msgstr ""
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12

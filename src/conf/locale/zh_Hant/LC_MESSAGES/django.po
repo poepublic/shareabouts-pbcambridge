@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB 是一個民主程序，賦予 Cambridge 社區成員<strong>決定如何使用該市 2026 財政年度預算中 100 萬美元</strong>的權力。"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "Cambridge 的 Participatory Budgetin（參與式預算）"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "Cambridge 的 Participatory Budgeting (PB)（參與式預算）"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

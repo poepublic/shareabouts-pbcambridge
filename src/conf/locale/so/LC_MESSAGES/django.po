@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB waa nidaam dimuqraadi ah oo siiya xubnaha bulshada Cambridge awood ay <strong>ku go'aansadaan sida loo isticmaalo $1,000,000</strong> ee Miisaaniyadda FY26 ee Magaalada."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "Miisaaniyada ka qaybqaadashada ee Cambridge"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "Miisaaniyada ka qaybqaadashada (PB) ee Cambridge"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

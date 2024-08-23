@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB se yon pwosesis demokratik ki bay manm kominote Cambridge yo pouvwa pou <strong>yo deside ki jan pou depanse $1,000,000</strong> nan Bidjè Ane Fiska 2026 Vil la."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "Bidjè Patisipatif nan Cambridge"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "Bidjè Patisipatif (PB) nan Cambridge"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

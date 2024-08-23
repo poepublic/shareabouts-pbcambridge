@@ -720,7 +720,7 @@ msgid ""
 msgstr "Los Presupuestos Participativos son un proceso democrático que da a los miembros de la comunidad de Cambridge el poder de <strong>decidir cómo gastar un millón de dólares</strong> del Presupuesto de la Ciudad para el año fiscal 26."
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
+msgid "Participatory Budgeting (PB) in Cambridge"
 msgstr "Presupuestos Participativos De Cambridge"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12

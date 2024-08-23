@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB হল একটি গণতান্ত্রিক প্রক্রিয়া যা Cambridge কমিউনিটির সদস্যদেরকে শহরের FY26 বাজেটের <strong>১ মিলিয়ন ডলার খরচ করার সিদ্ধান্ত নেওয়ার</strong> ক্ষমতা দেয়।"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "Cambridge-এ অংশগ্রহণমূলক বাজেট"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "Cambridge-এ অংশগ্রহণমূলক বাজেট (PB)"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"

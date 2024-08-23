@@ -720,8 +720,8 @@ msgid ""
 msgstr "PB एक लोकतांत्रिक प्रक्रिया है जो कैम्ब्रिज समुदाय के सदस्यों को यह निर्णय लेने की शक्ति देती है कि शहर के FY26 के बजट में से <strong>$1,000,000 को कैसे खर्च किया जाए।</strong>"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:11
-msgid "Participatory Budgeting in Cambridge"
-msgstr "कैम्ब्रिज में सहभागी बजट"
+msgid "Participatory Budgeting (PB) in Cambridge"
+msgstr "कैम्ब्रिज में सहभागी बजट (PB)"
 
 #: src/flavors/cambridgefy26/jstemplates/pages/overview.html:12
 msgid "Pollinator gardens"
