@@ -667,6 +667,34 @@ pages:
         url: /filter/transpo_streets_and_sidewalks
         external: true
 
+languages:
+  - code: am
+    label: አማርኛ
+  - code: ar
+    label: العربية
+  - code: bn
+    label: বাংলা
+  - code: en
+    label: English
+  - code: es
+    label: Español
+  - code: fr
+    label: Français
+  - code: hi
+    label: हिन्दी
+  - code: ht
+    label: Kreyòl Ayisyen
+  - code: ja
+    label: 日本語
+  - code: pt-br
+    label: Português
+  - code: so
+    label: Soomaali
+  - code: zh-hans
+    label: 简体中文
+  - code: zh-hant
+    label: 繁體中文
+
 notifications:
   on_new_place: true
   submitter_email_field: "private-email"

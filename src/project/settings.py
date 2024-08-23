@@ -45,7 +45,22 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LANGUAGES = (
+  ('am', 'አማርኛ'),
+  ('ar', 'العربية'),
+  ('bn', 'বাংলা'),
+  ('en', 'English'),
+  ('es', 'Español'),
+  ('fr', 'Français'),
+  ('hi', 'हिन्दी'),
+  ('ht', 'Kreyòl Ayisyen'),
+  ('ja', '日本語'),
+  ('pt-br', 'Português'),
+  ('so', 'Soomaali'),
+  ('zh-hans', '简体中文'),
+  ('zh-hant', '繁體中文'),
+)
 
 SITE_ID = 1
 
