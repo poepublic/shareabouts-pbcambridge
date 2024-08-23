@@ -439,7 +439,7 @@ p.checkbox + p.select {
   }
   .list-toggle-nav {
     font-size: 0.75em;
-    float: left;
+    float: right;
   }
   a.list-toggle-btn:visited,
   a.list-toggle-btn:active,
