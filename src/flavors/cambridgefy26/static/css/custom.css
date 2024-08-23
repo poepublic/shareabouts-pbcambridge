@@ -386,6 +386,11 @@ p.checkbox + p.select {
   margin-top: 1.5em;
 }
 
+.point-submitter .avatar {
+  width: 3.25em;
+  height: 3.9em
+}
+
 /* =Comments
 -------------------------------------------------------------- */
 .response-submitter .avatar {
