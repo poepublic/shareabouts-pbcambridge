@@ -470,6 +470,8 @@ place:
         - key: data-personal-info
           value: true
       options:
+        - label: _(Please choose...)
+          value:
         - label: _(Cisgender Female/woman)
           value: cisgender-female
         - label: _(Cisgender Male/man)
@@ -494,6 +496,8 @@ place:
         - key: data-personal-info
           value: true
       options:
+        - label: _(Please choose...)
+          value:
         - label: _(English)
           value: English
         - label: _(Amharic)
