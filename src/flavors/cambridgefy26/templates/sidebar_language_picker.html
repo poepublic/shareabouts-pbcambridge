@@ -1,0 +1,33 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<nav class="sidebar-language-picker">
+  <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+
+    <label for="language-picker-select">{% trans "Your preferred language" %}</label>
+    <select name="language" id="language-picker-select" class="form-control">
+      {% comment %} {% get_language_info for LANGUAGE_CODE as current_language %} {% endcomment %}
+      {% for language in config.languages %}
+        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>{{ language.label }}</option>
+      {% endfor %}
+    </select>
+
+    {% comment %} <ul class="menu">
+      {% get_language_info for LANGUAGE_CODE as current_language %}
+      {% for language in config.languages %}
+        <li class="menu-item">
+          {% if language.code != current_language.code %}
+            <button type="submit" name="language" value="{{ language.code }}" class="{{ language.code }} btn btn-block">{{ language.label }}</button>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul> {% endcomment %}
+  </form>
+
+  <script>
+    document.getElementById('language-picker-select').onchange = function() {
+      this.form.submit();
+    };
+  </script>
+</nav> <!-- .sidebar-language-picker -->
