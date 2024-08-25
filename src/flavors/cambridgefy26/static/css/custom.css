@@ -93,10 +93,12 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week],
+select,
 textarea {
   border: 0.25em solid #ddd;
 }
 input:focus,
+select:focus,
 textarea:focus {
   border: 0.25em solid var(--pb-deep-orange);
   outline: 2px solid var(--pb-deep-orange);
