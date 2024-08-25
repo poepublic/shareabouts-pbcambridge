@@ -4,6 +4,7 @@ import logging
 import os
 import time
 import hashlib
+import threading
 
 from sa_util.api import make_auth_root, make_resource_uri, ShareaboutsApi
 from sa_util.config import get_shareabouts_config
@@ -96,6 +97,19 @@ def apply_language(viewfunc):
         )
         return response
     return view_wrapper
+
+
+def threaded(func):
+    """
+    Decorator that multithreads the target function
+    with the given parameters. Returns the thread
+    created for the function
+    """
+    def wrapper(*args, **kwargs):
+        thread = threading.Thread(target=func, args=args, kwargs=kwargs)
+        thread.start()
+        return thread
+    return wrapper
 
 
 @ensure_csrf_cookie
@@ -258,20 +272,35 @@ def send_place_created_notifications(request, response):
     #     username=...,
     #     use_tls=...)
 
+    return send_email(
+        subject,
+        body,
+        from_email,
+        [recipient_email],
+        bcc_list,
+        html_body=html_body,
+    )
+
+
+@threaded
+def send_email(subject, body, from_email, to, bcc, html_body=None):
     # NOTE: Django's send_mail function is not able to handle BCC lists, so we
     # must construct the multipart message manually.
+
+    start_time = now()
+    log.info(f'Starting to send email in thread with ID {threading.get_ident()} at {start_time}')
     msg = EmailMultiAlternatives(
         subject,
         body,
         from_email,
-        to=[recipient_email],
-        bcc=bcc_list)#,
-        # connection=connection)
+        to=to,
+        bcc=bcc)
 
     if html_body:
         msg.attach_alternative(html_body, 'text/html')
 
     msg.send()
+    log.info(f'Finished sending email in thread with ID {threading.get_ident()} after {now() - start_time} seconds')
     return msg
 
 
