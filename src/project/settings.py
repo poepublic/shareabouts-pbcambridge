@@ -192,6 +192,7 @@ INSTALLED_APPS = (
     # Project apps
     'sa_web',
     'sa_login',
+    'sa_admin',
     'proxy',
 )
 

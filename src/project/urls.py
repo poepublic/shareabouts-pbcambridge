@@ -19,7 +19,7 @@ urlpatterns = [
     path('.well-known/pki-validation/22694D944F9C631CF18B43DD25CCAE02.txt', well_known_pki_validation),
     path('choose-language', csrf_exempt(set_language), name='set_language'),
     path('login/', include('sa_login.urls')),
-    path('admin/', admin.site.urls),
+    path('admin/', include('sa_admin.urls')),
     path('', include('sa_web.urls')),
 ]
 

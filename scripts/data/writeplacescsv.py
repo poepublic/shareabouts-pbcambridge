@@ -5,7 +5,7 @@ Required python-dateutil
 
 Sample run:
 
-    foreman run python writeplacescsv.py --latest '2023-09-25 23:59:59' > ideas-before-2023-09-26.csv
+    dotenv python writeplacescsv.py --earliest '2024-09-04' --latest '2024-09-11' > ideas-between-2024-09-04-and-2024-09-11.csv
 """
 
 import click
@@ -33,7 +33,7 @@ def main(earliest, latest, outfile, timezone):
 
     # Update the DATASET_URL with the root URL of the dataset. There are a few ways
     # you can find the root URL.
-    DATASET_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2025'
+    DATASET_URL = 'https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy2026'
 
     IDEAS_URL = DATASET_URL + '/places?include_private=True&include_invisible=True'
     TZ = pytz.timezone(timezone)
@@ -62,12 +62,15 @@ def main(earliest, latest, outfile, timezone):
         ('Submitter', lambda f: f['properties'].get('submitter_name') or f['properties']['submitter']['name']),
         ('User Token', 'user_token'),
         ('Email', 'private-email'),
+        ('Phone #', 'private-phone'),
         ('Already submitted personal info', 'private-completed_personal_info_survey'),
         ('Previous participant', 'private-previous_participant'),
         ('Civically involved', 'private-other_civic_participant'),
-        ('Municipal election voter', 'private-municipal_election_voter'),
+        # ('Municipal election voter', 'private-municipal_election_voter'),
         ('Heard about PB from...', lambda f: ', '.join(f['properties'].get('heard_about_pb')) if isinstance(f['properties'].get('heard_about_pb'), list) else f['properties'].get('heard_about_pb')),
         ('Other-source detail', 'heard_about_pb-other-detail'),
+        # ('ZIP', 'private-zip'),
+        ('Neighborhood', 'private-neighborhood'),
         ('Age', 'private-age'),
         ('Cis/Transgender', 'private-gender-alignment'),
         ('Gender', (
@@ -76,11 +79,11 @@ def main(earliest, latest, outfile, timezone):
             else gender
         )),
         ('Other-gender detail', 'private-gender-other-detail'),
+        ('Language', 'private-language'),
+        ('Other-language detail', 'private-language-other-detail'),
         ('Race', lambda f: ', '.join(f['properties'].get('private-race')) if isinstance(f['properties'].get('private-race'), list) else f['properties'].get('private-race')),
-        ('Education', 'private-education'),
-        ('Household income', 'private-income'),
-        ('ZIP', 'private-zip'),
-        ('Phone #', 'private-phone'),
+        # ('Education', 'private-education'),
+        # ('Household income', 'private-income'),
 
     ])
 

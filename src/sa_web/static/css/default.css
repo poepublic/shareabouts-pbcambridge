@@ -1503,8 +1503,9 @@ a.shareabouts-logo:hover {
   .activity-enabled #map-container:dir(ltr) {
     right: 18em; /* width of #ticker */
   }
-  .activity-enabled #map-container:dir(rtl) {
-    left: 18em; /* width of #ticker */
+  .content-visible .activity-enabled #map-container:dir(rtl) {
+    /*left: 18em; /* width of #ticker */
+    right: 0;
   }
 
   /* List View */
