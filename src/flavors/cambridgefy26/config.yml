@@ -194,8 +194,8 @@ activity:
 
 place:
   adding_supported:
-    from: '2023-09-11 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2023-10-10 00:00 -0400'  # and ends early-November.
+    from: '2024-08-26 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2024-10-02 00:00 -0400'  # and ends early-November.
   editors: cambridge-staff
   moderators: cambridge-staff
   response_name: _(idea)
@@ -605,8 +605,8 @@ place:
 survey:
   submission_type: comments
   adding_supported:
-    from: '2023-09-11 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2023-10-10 00:00 -0400'  # and ends early-November.
+    from: '2024-08-26 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2024-10-02 00:00 -0400'  # and ends early-November.
 
   # Response config
   show_responses: true
@@ -631,8 +631,8 @@ survey:
 support:
   submission_type: support
   adding_supported:
-    from: '2023-09-11 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2023-10-10 00:00 -0400'  # and ends early-November.
+    from: '2024-08-26 00:00 -0400'   # Daylight savings begins mid-March
+    until: '2024-10-02 00:00 -0400'  # and ends early-November.
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
