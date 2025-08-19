@@ -655,9 +655,6 @@ pages:
       - title: All
         external: true
         url: /filter/all
-      - title: _(Youth)
-        url: /filter/youth
-        external: true
       - title: _(Community Resources)
         url: /filter/community_resources
         external: true
@@ -669,6 +666,9 @@ pages:
         external: true
       - title: _(Transportation, Streets & Sidewalks)
         url: /filter/transpo_streets_and_sidewalks
+        external: true
+      - title: _(Youth)
+        url: /filter/youth
         external: true
 
 languages:
