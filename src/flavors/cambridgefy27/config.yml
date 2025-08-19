@@ -34,44 +34,15 @@ map:
         attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
 
 
-# Arts & Culture
-# Community Resources & Eduction (facilities)
-# Environment & Sustainability (tree or street-tree)
+# Community Resources (facilities)
+# Environment (tree or street-tree)
 # Facilities, Parks & Recreation (playground or fountain)
 # Transportation, Streets & Sidewalks (street-sidewalk or biking or bike-crossing)
+# Youth (youth)
 
 place_types:
-  arts_and_culture:
-    label: _(Arts & Culture)
-    rules:
-      - condition: '"{{location_type}}" === "arts_and_culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        style:
-          fillColor: '#ffd614'
-          fillOpacity: 1
-          radius: 6
-          color: 'black'
-          opacity: 1
-          weight: 2
-      - condition: '"{{location_type}}" === "arts_and_culture" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
-        icon:
-          iconUrl: /static/css/images/markers/arts_and_culture.png
-          iconSize: [25, 30]
-          iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "arts_and_culture" && {{layer.focused}} === false && {{map.zoom}} >= 17'
-        icon:
-          iconUrl: /static/css/images/markers/arts_and_culture.png
-          iconSize: [40, 48]
-          iconAnchor: [20, 48]
-      - condition: '"{{location_type}}" === "arts_and_culture" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/arts_and_culture.png
-          shadowUrl: /static/css/images/markers/marker-shadow.png
-          iconSize: [75, 90]
-          shadowSize: [41, 41]
-          iconAnchor: [38, 90]
-
   community_resources:
-    label: _(Community Resources & Education)
+    label: _(Community Resources)
     rules:
       - condition: '"{{location_type}}" === "community_resources" && {{layer.focused}} === false && {{map.zoom}} < 14'
         style:
@@ -100,7 +71,7 @@ place_types:
           iconAnchor: [38, 90]
 
   environment_and_sustainability:
-    label: _(Environment & Sustainability)
+    label: _(Environment)
     rules:
       - condition: '"{{location_type}}" === "environment_and_sustainability" && {{layer.focused}} === false && {{map.zoom}} < 14'
         style:
@@ -186,6 +157,35 @@ place_types:
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
 
+  youth:
+    label: _(Youth)
+    rules:
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        style:
+          fillColor: '#ffd614'
+          fillOpacity: 1
+          radius: 6
+          color: 'black'
+          opacity: 1
+          weight: 2
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/youth.png
+          shadowUrl: /static/css/images/markers/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
   enabled: true
@@ -256,11 +256,11 @@ place:
       name: location_type
       type: radiogroup
       options:
-        - label: _(Arts & Culture)
-          value: arts_and_culture
-        - label: _(Community Resources & Education)
+        - label: _(Youth)
+          value: youth
+        - label: _(Community Resources)
           value: community_resources
-        - label: _(Environment & Sustainability)
+        - label: _(Environment)
           value: environment_and_sustainability
         - label: _(Facilities, Parks & Recreation)
           value: parks_and_recreation
@@ -655,13 +655,13 @@ pages:
       - title: All
         external: true
         url: /filter/all
-      - title: _(Arts & Culture)
-        url: /filter/arts_and_culture
+      - title: _(Youth)
+        url: /filter/youth
         external: true
-      - title: _(Community Resources & Education)
+      - title: _(Community Resources)
         url: /filter/community_resources
         external: true
-      - title: _(Environment & Sustainability)
+      - title: _(Environment)
         url: /filter/environment_and_sustainability
         external: true
       - title: _(Facilities, Parks & Recreation)
