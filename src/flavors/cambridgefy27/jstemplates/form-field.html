@@ -1,12 +1,6 @@
 
   <div class="field {{ type }}-field {{ default submission_type 'place' }}-{{ name }}-field">
-    {{#is_authenticated}}
-      {{^is_submitter_name}}
-        <label class="field-label {{ type }}-field-label" for="{{ default submission_type 'place' }}-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
-      {{/is_submitter_name}}
-    {{^}}
-      <label class="field-label {{ type }}-field-label" for="{{ default submission_type 'place' }}-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
-    {{/is_authenticated}}
+    <label class="field-label {{ type }}-field-label" for="{{ default submission_type 'place' }}-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
 
     {{#is type 'gender-select'}}
       {{> form-field-gender-input form_config=form_config }}
@@ -50,6 +44,7 @@
                        value="{{value}}"
                        name={{../../../name}}
                        {{#each ../../../attrs}} {{ key }}="{{ value }}"{{/each}}
+                       {{#each ../attrs}} {{ key }}="{{ value }}"{{/each}}
                        {{#unless ../../../optional}}required data-group-required{{/unless}}>
                 {{label}}{{#if other}}<span class="detail-text">:
                   <input type="text" name="{{../../../../name}}-{{value}}-detail" value="{{get_value ../../../../.. ../../../../name}}">
