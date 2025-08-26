@@ -202,8 +202,8 @@ place:
   response_plural_name: _(ideas)
   # Labels for the buttons that toggle the map and list views
   add_button_label: _(Submit an idea)
-  show_list_button_label: _(Show Ideas as a list)
-  show_map_button_label: _(Show on a map)
+  show_list_button_label: _(List All Ideas)
+  show_map_button_label: _(Map All Ideas)
   title: _(Describe your idea)
   action_text: _(suggested)
   help_text: _(Ideas must be for <strong>capital</strong> projects – Please see the guidelines here)
