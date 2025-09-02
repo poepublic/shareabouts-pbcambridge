@@ -78,6 +78,10 @@ p {
 }
 
 /* Forms */
+fieldset {
+  padding: 0;
+}
+
 label {
 }
 
@@ -121,6 +125,10 @@ textarea:focus {
 
 input:checked ~ .detail-text {
   display: inline;
+}
+
+.after-idea-collection {
+  margin-bottom: 2rem;
 }
 
 
@@ -673,7 +681,8 @@ input[name="location_type"][value="transpo_streets_and_sidewalks"]:checked + .la
   color: inherit;
 }
 
-.place-private-submission_venue-field :checked + .label-text {
+.place-private-submission_venue-field :checked + .label-text,
+.place-private-personal_characteristics-field :checked + .label-text {
   background-color: inherit;
   color: inherit;
 }
