@@ -318,9 +318,15 @@ place:
       optional: true
       sticky: true
       options:
-        - label: _(I am a student)
-          value: student
-        - label: _(I am a long-time Cambridge resident)
+        - label: _(I am a student in Cambridge (elementary, middle, or high school))
+          value: pre_university_student
+        - label: _(I am a university student in Cambridge)
+          value: university_student
+        - label: _(I work/go to school in Cambridge, but do not live in Cambridge)
+          value: non_resident
+        - label: _(I recently moved to Cambridge (0-2 years ago))
+          value: recent_resident
+        - label: _(I have lived in Cambridge for more than 5 years)
           value: long_time_resident
         - label: _(I know a lot about how the City of Cambridge works)
           value: city_knowledge
