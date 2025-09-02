@@ -297,6 +297,8 @@ place:
     - prompt: _(Where are you submitting this idea from?)
       type: radiogroup
       name: private-submission_venue
+      required: false
+      optional: true
       options:
         - label: _(Community Event)
           value: community_event
@@ -312,6 +314,8 @@ place:
     - prompt: _(Check any of the following that apply to you:)
       type: checkboxgroup
       name: private-personal_characteristics
+      required: false
+      optional: true
       sticky: true
       options:
         - label: _(I am a student)
