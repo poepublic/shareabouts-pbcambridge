@@ -1,0 +1,8 @@
+Thank you for sharing a Participatory Budgeting idea to improve Cambridge!
+
+Here is what you suggested: {{ place.properties.title }}
+
+You can see people's comments on your idea at {{site_root}}place/{{ place.id }}.
+
+Click below to sign up to stay informed about Participatory Budgeting in Cambridge!
+https://visitor.r20.constantcontact.com/manage/optin?v=001HT_4jDa_Q_yk-2wMAUEBvBrAgr_GPne0Vwr8iJhQPAja2k80KqgeGk990z_FwJ-R99SRU8yVAGkZ0Yi_bsjuOhFj36u8im8pkCe8ZRtErE9A8uO4DqVoDaPLG8n0hJmxKCMiOwlwITeCyPTery-JlWGpkOM5TUg-
