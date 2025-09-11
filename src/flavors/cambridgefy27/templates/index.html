@@ -6,6 +6,13 @@
 <a href="http://cambridgema.nationbuilder.com/" target="_blank">{% blocktrans %}CITY OF CAMBRIDGE <br>PARTICIPATORY BUDGETING{% endblocktrans %}</a>
 {% endblock %}
 
+{% block app_icons %}
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+{% endblock %}
 
 {% block meta %}
   {% if place %}
