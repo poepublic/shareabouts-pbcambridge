@@ -44,11 +44,20 @@ var Shareabouts = Shareabouts || {};
       // The metadata will be reset to page 1 if a new action has been added.
       // We need to cache the current page information so that when we will
       // fetch to correct page when we scroll to the next break.
-      options.complete = _.bind(function() {
-        // The total length may have changed, so don't overwrite it!
-        meta.length = this.collection.metadata.length;
-        this.collection.metadata = meta;
-        this.fetching = false;
+      options.complete = _.bind(function(response) {
+        if (response && response.status === 200) {
+          // The total length may have changed, so don't overwrite it!
+          meta.length = this.collection.metadata.length;
+          this.collection.metadata = meta;
+          this.fetching = false;
+          this.interval = this.options.interval;
+        } else {
+          // If something went wrong, back off a bit. Over time, if things
+          // keep going wrong, we'll back off more and more to the point where
+          // we effectively stop trying altogether.
+          this.fetching = false;
+          this.interval *= 2;
+        }
 
         // After a check for activity has completed, no matter the result,
         // schedule another.
