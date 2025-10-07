@@ -269,6 +269,26 @@ place:
       attrs:
         - key: required
           value: true
+
+    - name: private-need_category_20251007014711
+      type: hidden
+    - name: private-need_subcategory_20251007014711
+      type: hidden
+    - name: private-need_category_reason_20251007014711
+      type: hidden
+    - name: private-need_category_20251007022409
+      type: hidden
+    - name: private-need_subcategory_20251007022409
+      type: hidden
+    - name: private-need_category_reason_20251007022409
+      type: hidden
+    - name: private-need_category_20251007023829
+      type: hidden
+    - name: private-need_subcategory_20251007023829
+      type: hidden
+    - name: private-need_category_reason_20251007023829
+      type: hidden
+
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
       name: submitter_name
