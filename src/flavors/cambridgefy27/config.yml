@@ -288,6 +288,12 @@ place:
       type: hidden
     - name: private-need_category_reason_20251007023829
       type: hidden
+    - name: private-need_category_20251010102800
+      type: hidden
+    - name: private-need_subcategory_20251010102800
+      type: hidden
+    - name: private-need_category_reason_20251010102800
+      type: hidden
 
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
