@@ -1,0 +1,50 @@
+<div class="clearfix">
+
+<h1>
+  <div class="overview-logo-wrapper"><img src="/static/css/images/pb-logo.png" alt="PB Cambridge Logo" class="overview-logo"></div>
+  {{#_}}Participatory Budgeting (PB) in Cambridge{{/_}}
+</h1>
+
+<p>{{#_}}PB is a democratic process where Cambridge community members can directly decide how to spend $500,000 of the City&apos;s budget in the next fiscal year (FY28).{{/_}}</p>
+
+{{#can_add_places}}
+  <p><strong>{{#_}}How would you spend $500,000 to improve the City of Cambridge? Share your idea on the map!{{/_}}</strong>
+    {{#_}}You can explore ideas from others in the community using the “List All Ideas” tab on the upper right hand of the page or by selecting the points on the map.{{/_}}</p>
+
+  {{#_}}
+  <p>To be eligible for PB funding, projects MUST:</p>
+
+  <ul>
+    <li>Benefit the public.</li>
+    <li>Demonstrate need, impact, and feasibility.</li>
+    <li>To be feasible, projects must meet the following criteria:
+      <ul>
+        <li>Cost $500,000 or less.</li>
+        <li>Be a capital project on city-owned property OR an operating project lasting up to three years.</li>
+        <li>Be consistent with existing City policies.</li>
+        <li>Be implemented with the City of Cambridge.</li>
+        <li>Be implemented after July 1, 2027 (the start of the next fiscal year).</li>
+      </ul>
+    </li>
+  </ul>
+  {{/_}}
+{{^}}
+  <p>{{#_}}The City of Cambridge launched the 13<sup>th</sup> Cycle of PB and collected ideas from the community
+    about how to spend $500,000 on projects to improve Cambridge. On the map, you can find all the submitted
+    ideas for PB13. From October 2026 through January 2027, volunteer PB Delegates will research all submitted
+    project ideas and develop the final proposals for the PB ballot. In March, 2027, all Cambridge residents age
+    12 and older, regardless of citizenship status, will be eligible to vote for their favorite projects and
+    decide how to spend $500,000 of the City&apos;s Budget.{{/_}}</p>
+{{/can_add_places}}
+
+<p>{{#_}}<strong>For more information on Participatory Budgeting and how to get more involved (like volunteering), please visit <a href="https://pb.cambridgema.gov" target="_blank">pb.cambridgema.gov</a> or contact the City&apos;s Budget Office at <a href="mailto:pb@cambridgema.gov">pb@cambridgema.gov</a> or <a href="tel:(617) 349-4270">(617) 349-4270.</a>{{/_}}</p>
+
+<p style="text-align: center">
+  <a target="_blank" href="https://visitor.r20.constantcontact.com/manage/optin?v=001HT_4jDa_Q_yk-2wMAUEBvBrAgr_GPne0Vwr8iJhQPAja2k80KqgeGk990z_FwJ-R99SRU8yVAGkZ0Yi_bsjuOhFj36u8im8pkCe8ZRtErE9A8uO4DqVoDaPLG8n0hJmxKCMiOwlwITeCyPTery-JlWGpkOM5TUg-">{{#_}}Sign up to stay informed about Participatory Budgeting in Cambridge!{{/_}}</a>
+</p>
+
+{{#can_add_places}}
+  <p style="text-align: center">
+    <a href="/place/new" data-internal class="btn btn-block btn-primary btn-large"><span>{{#_}}Submit an idea{{/_}}</span></a>
+  </p>
+{{/can_add_places}}
