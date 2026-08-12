@@ -344,9 +344,7 @@ survey:
 
 support:
   submission_type: support
-  adding_supported:
-    from: '2024-08-26 00:00 -0400'   # Daylight savings begins mid-March
-    until: '2024-10-02 00:00 -0400'  # and ends early-November.
+  adding_supported: false
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
