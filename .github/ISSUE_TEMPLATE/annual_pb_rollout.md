@@ -19,8 +19,7 @@ labels: ['deployment', 'annual-cycle']
 - [ ] **Create New Flavor Directory**
   - [ ] Copy previous cycle's flavor: `cp -r src/flavors/cambridgefy<PREV> src/flavors/cambridgefy<NEW>`
   - [ ] Update `config.yml` (dates, categories, survey questions, district bounds, text copy)
-  - [ ] Update `_config.translations.py` with any new strings
-  - [ ] Compile gettext translation messages: `python src/manage.py compilemessages`
+  - [ ] Compile gettext translation messages: `python src/manage.py flavormessages`
   - [ ] Update any revised static assets (logos, seals, boundaries) in `src/flavors/cambridgefy<NEW>/static/`
 - [ ] **Update Dockerfile Build Flavor**
   - [ ] Update `ARG SHAREABOUTS_FLAVOR=cambridgefy<NEW>` in `Dockerfile`

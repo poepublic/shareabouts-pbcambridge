@@ -62,11 +62,9 @@ This runbook documents the annual process for configuring, provisioning, deployi
      - Update `app.tagline`, `app.meta_description`, and timeline dates.
      - Verify `place_types` categories, colors, and marker icon definitions.
      - Review submission form fields in `place.items` and post-submission surveys.
-   - In `src/flavors/cambridgefy<NEW>/_config.translations.py`:
-     - Update translatable strings for the new cycle.
    - Recompile gettext translation catalogs:
      ```bash
-     python src/manage.py compilemessages
+     python src/manage.py flavormessages
      ```
    - Update UI assets (logos, seals, boundaries) in `src/flavors/cambridgefy<NEW>/static/` if updated by the City.
 
