@@ -6,6 +6,17 @@ This runbook documents the annual process for configuring, provisioning, deployi
 
 ---
 
+## Infrastructure & Deployment Architecture
+
+Google Cloud Build triggers automatically build the Docker image and deploy to Google Cloud Run:
+
+| Environment | Connected Git Branch | Cloud Run Service Name | GCP Region | Live URL |
+| :--- | :--- | :--- | :--- | :--- |
+| **Staging** | `main` (`^main$`) | `shareabouts-pbcambridge-stg` | `us-central1` | `https://shareabouts-pbcambridge-stg-1045183798776.us-central1.run.app` |
+| **Production** | `prod` (`^prod$`) | `shareabouts-pbcambridge-prod` | `us-east4` | `https://shareabouts-pbcambridge-prod-1045183798776.us-east4.run.app` / `pb.cambridgema.gov` |
+
+---
+
 ## Rollout Overview
 
 ```
@@ -22,13 +33,15 @@ This runbook documents the annual process for configuring, provisioning, deployi
                │
                ▼
   3. STAGING DEPLOYMENT & REVIEW
-     ├─ Push to staging branch & deploy to Cloud Run
+     ├─ Push to main branch (triggers Cloud Build -> Staging in us-central1)
+     ├─ Update staging environment variables via gcloud
      ├─ Execute staging verification checklist
      └─ City review & stakeholder sign-off
                │
                ▼
   4. PRODUCTION LAUNCH
-     ├─ Merge to prod branch & update Cloud Run production service
+     ├─ Merge main to prod branch (triggers Cloud Build -> Prod in us-east4)
+     ├─ Update prod environment variables via gcloud (--region=us-east4)
      └─ Live smoke test & analytics verification
                │
                ▼
@@ -62,9 +75,11 @@ This runbook documents the annual process for configuring, provisioning, deployi
      - Update `app.tagline`, `app.meta_description`, and timeline dates.
      - Verify `place_types` categories, colors, and marker icon definitions.
      - Review submission form fields in `place.items` and post-submission surveys.
+   - In `src/flavors/cambridgefy<NEW>/_config.translations.py`:
+     - Update translatable strings for the new cycle.
    - Recompile gettext translation catalogs:
      ```bash
-     python src/manage.py flavormessages
+     python src/manage.py compilemessages
      ```
    - Update UI assets (logos, seals, boundaries) in `src/flavors/cambridgefy<NEW>/static/` if updated by the City.
 
@@ -75,7 +90,7 @@ This runbook documents the annual process for configuring, provisioning, deployi
      ```
 
 4. **Verify Local Build**
-   - Start the local dev server or build the container to ensure static assets and translations compile cleanly.
+   - Start the local dev server or build the container locally to ensure static assets and translations compile cleanly.
 
 ---
 
@@ -88,7 +103,7 @@ This runbook documents the annual process for configuring, provisioning, deployi
      - **Slug / Name**: `pb-fy20XX` (e.g., `pb-fy2028`)
      - **Submission Sets**: Enable `places`, `comments`, `support`, and `surveys`.
      - **Moderators & Permissions**: Set moderator group to `cambridge-staff`.
-     - **CORS / Allowed Origins**: Add staging and production origins (e.g., `pb.cambridgema.gov`, `shareabouts-pbcambridge-stg.a.run.app`, `shareabouts-pbcambridge-prod.a.run.app`, `localhost:8000`).
+     - **CORS / Allowed Origins**: Add staging and production origins (`pb.cambridgema.gov`, `shareabouts-pbcambridge-stg-1045183798776.us-central1.run.app`, `shareabouts-pbcambridge-prod-1045183798776.us-east4.run.app`, `localhost:8000`).
 2. **Generate API Key & Record Dataset URL**
    - Generate a new API Key for the dataset.
    - Note the dataset root URL: `https://shareaboutsapi.poepublic.com/api/v2/cambridge/datasets/pb-fy20XX`
@@ -111,11 +126,10 @@ This runbook documents the annual process for configuring, provisioning, deployi
 ### 3. Staging Deployment & Verification
 
 1. **Deploy to Staging**
-   - Push code to the `staging` branch to trigger the Cloud Build pipeline:
+   - Push code to the `main` branch (this triggers the Cloud Build staging trigger automatically):
      ```bash
-     git checkout -B staging
-     git merge main
-     git push origin staging
+     git checkout main
+     git push origin main
      ```
    - Update Cloud Run staging environment variables:
      ```bash
@@ -135,24 +149,24 @@ This runbook documents the annual process for configuring, provisioning, deployi
    - [ ] **Admin & Moderation**: Log in as `cambridge-staff` to verify moderation dashboard and hidden/private views.
 
 3. **City Review**
-   - Share staging URL with City of Cambridge PB coordinators for final review and sign-off.
+   - Share staging URL (`https://shareabouts-pbcambridge-stg-1045183798776.us-central1.run.app`) with City of Cambridge PB coordinators for final review and sign-off.
 
 ---
 
 ### 4. Production Launch
 
 1. **Deploy to Production**
-   - Merge `main` into `prod` and push:
+   - Merge `main` into `prod` and push (this triggers the Cloud Build production trigger automatically):
      ```bash
      git checkout prod
      git merge main
      git push origin prod
      ```
-   - Update Cloud Run production environment variables:
+   - Update Cloud Run production environment variables (**Note**: production is in `us-east4`):
      ```bash
      gcloud run services update shareabouts-pbcambridge-prod \
        --env-vars-file=<(cat .env.gcp-prod | python3 env2yml.py) \
-       --region=us-central1
+       --region=us-east4
      ```
 
 2. **Production Smoke Test**
@@ -173,7 +187,7 @@ This runbook documents the annual process for configuring, provisioning, deployi
      # In .env.gcp-prod set SHAREABOUTS__PLACE__ADDING_SUPPORTED="False"
      gcloud run services update shareabouts-pbcambridge-prod \
        --env-vars-file=<(cat .env.gcp-prod | python3 env2yml.py) \
-       --region=us-central1
+       --region=us-east4
      ```
 
 2. **Export Ideas Data for City Staff**

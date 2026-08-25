@@ -19,7 +19,8 @@ labels: ['deployment', 'annual-cycle']
 - [ ] **Create New Flavor Directory**
   - [ ] Copy previous cycle's flavor: `cp -r src/flavors/cambridgefy<PREV> src/flavors/cambridgefy<NEW>`
   - [ ] Update `config.yml` (dates, categories, survey questions, district bounds, text copy)
-  - [ ] Compile gettext translation messages: `python src/manage.py flavormessages`
+  - [ ] Update `_config.translations.py` with any new strings
+  - [ ] Compile gettext translation messages: `python src/manage.py compilemessages`
   - [ ] Update any revised static assets (logos, seals, boundaries) in `src/flavors/cambridgefy<NEW>/static/`
 - [ ] **Update Dockerfile Build Flavor**
   - [ ] Update `ARG SHAREABOUTS_FLAVOR=cambridgefy<NEW>` in `Dockerfile`
@@ -48,11 +49,10 @@ labels: ['deployment', 'annual-cycle']
 ## 3. Staging Deployment & Verification
 
 - [ ] **Deploy to Staging**
-  - [ ] Merge `main` into `staging` branch and push:
+  - [ ] Push to `main` branch (triggers Cloud Build build & deploy to `shareabouts-pbcambridge-stg` in `us-central1`):
     ```bash
-    git checkout -B staging
-    git merge main
-    git push origin staging
+    git checkout main
+    git push origin main
     ```
   - [ ] Apply staging env vars to Cloud Run:
     ```bash
@@ -61,7 +61,7 @@ labels: ['deployment', 'annual-cycle']
       --region=us-central1
     ```
 - [ ] **Run Staging Verification Checklist**
-  - [ ] Map loads centered on Cambridge with boundary overlay
+  - [ ] Map loads centered on Cambridge with boundary overlay (`https://shareabouts-pbcambridge-stg-1045183798776.us-central1.run.app`)
   - [ ] Address search / geocoding autocomplete functions properly
   - [ ] Category marker icons display at all zoom levels
   - [ ] Point idea submission works
@@ -78,17 +78,17 @@ labels: ['deployment', 'annual-cycle']
 ## 4. Production Launch
 
 - [ ] **Deploy to Production**
-  - [ ] Merge `main` into `prod` branch and push:
+  - [ ] Merge `main` into `prod` branch and push (triggers Cloud Build build & deploy to `shareabouts-pbcambridge-prod` in `us-east4`):
     ```bash
     git checkout prod
     git merge main
     git push origin prod
     ```
-  - [ ] Update Cloud Run production service configuration:
+  - [ ] Update Cloud Run production service configuration (**region: `us-east4`**):
     ```bash
     gcloud run services update shareabouts-pbcambridge-prod \
       --env-vars-file=<(cat .env.gcp-prod | python3 env2yml.py) \
-      --region=us-central1
+      --region=us-east4
     ```
 - [ ] **Production Sanity Smoke Test**
   - [ ] Verify production domain (`pb.cambridgema.gov`) serves the new flavor
