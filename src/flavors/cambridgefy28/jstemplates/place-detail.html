@@ -34,8 +34,13 @@
   {{/if}}
 
   {{#if description}}
-    <div><small><strong>{{#_}}What is your idea, and how does it improve Cambridge?{{/_}}</strong></small></div>
+    <div><small><strong>{{#_}}What problem does your idea solve?{{/_}}</strong></small></div>
     <p>{{description}}</p>
+  {{/if}}
+
+  {{#if impact}}
+    <div><small><strong>{{#_}}How does your idea improve Cambridge? Who will benefit from your idea?{{/_}}</strong></small></div>
+    <p>{{impact}}</p>
   {{/if}}
 
   {{#each attachments }}

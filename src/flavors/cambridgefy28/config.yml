@@ -225,14 +225,12 @@ place:
     - prompt: _(How does your idea improve Cambridge? Who will benefit from your idea?)
       type: textarea
       name: impact
-      optional: false
+      optional: true
       attrs:
         - key: placeholder
           value: "_(Consider: What is the impact of your idea?)"
         - key: maxlength
           value: 1000
-        - key: required
-          value: true
     - prompt: _(Pick a category for your idea)
       name: location_type
       type: radiogroup
